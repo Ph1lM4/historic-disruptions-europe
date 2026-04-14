@@ -4,6 +4,8 @@
 
 **What makes this different:** Most AI-and-labour commentary cites one or two historic analogies (usually ATMs and horses). This project analyses 20 case studies across 580 years — 9 general-purpose technologies and 11 occupation-level disruptions — and extracts 5 distinct disruption patterns with 6 diagnostic variables that predict which pattern a given occupation will follow.
 
+![Screenshot](historic-disruptions.png)
+
 ## Live Site
 
 **[disruptions.nexalps.com →](https://disruptions.nexalps.com)** *(static site, no backend)*
