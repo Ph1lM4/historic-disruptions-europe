@@ -1206,69 +1206,91 @@
       "robot_density_comparison": [
         {
           "country": "South Korea",
-          "robots_per_10k": 1012,
+          "robots_per_10k": 1220,
           "manufacturing_job_change_pct": -12,
-          "type": "CME-adjacent"
+          "type": "CME-adjacent",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data). manufacturing_job_change_pct legacy estimate, pre-dates BR-21; approximate 1990-2020 window, not matched to uniform definition across entries — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "China",
-          "robots_per_10k": 392,
+          "robots_per_10k": 166,
           "manufacturing_job_change_pct": -25,
-          "type": "SME"
+          "type": "SME",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data; +17% YoY, rank 22 worldwide). Note: large downward shift from prior WR2023 figure (392) reflects IFR denominator methodology update between reports — applied uniformly across all entries this vintage. manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "Singapore",
-          "robots_per_10k": 730,
+          "robots_per_10k": 818,
           "manufacturing_job_change_pct": -8,
-          "type": "LME-adjacent"
+          "type": "LME-adjacent",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data; +13%/yr CAGR since 2019). manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "Japan",
-          "robots_per_10k": 399,
+          "robots_per_10k": 446,
           "manufacturing_job_change_pct": -15,
-          "type": "CME"
+          "type": "CME",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data; +5%/yr CAGR since 2019). manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "Germany",
-          "robots_per_10k": 397,
+          "robots_per_10k": 449,
           "manufacturing_job_change_pct": -5,
-          "type": "CME"
+          "type": "CME",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data; +5%/yr CAGR since 2019). manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "Taiwan",
-          "robots_per_10k": 292,
+          "robots_per_10k": 302,
           "manufacturing_job_change_pct": -10,
-          "type": "CME-adjacent"
+          "type": "CME-adjacent",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data). manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "Sweden",
-          "robots_per_10k": 321,
+          "robots_per_10k": 377,
           "manufacturing_job_change_pct": -3,
-          "type": "CME"
+          "type": "CME",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data). manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "Denmark",
-          "robots_per_10k": 246,
+          "robots_per_10k": 329,
           "manufacturing_job_change_pct": -2,
-          "type": "CME"
+          "type": "CME",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data). manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "United States",
-          "robots_per_10k": 285,
+          "robots_per_10k": 307,
           "manufacturing_job_change_pct": -36,
-          "type": "LME"
+          "type": "LME",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data; rank 8 worldwide). manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "United Kingdom",
-          "robots_per_10k": 101,
+          "robots_per_10k": 111,
           "manufacturing_job_change_pct": -28,
-          "type": "LME"
+          "type": "LME",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (rank 19 worldwide in new installations 2024; UK density ~111 per 10k per IFR WR 2025, cited in trade press summarising report — below WR2025 top-22 press-release chart cutoff of 166). manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k MEDIUM (IFR report figure via trade press, not primary chart); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "France",
-          "robots_per_10k": 163,
+          "robots_per_10k": 195,
           "manufacturing_job_change_pct": -20,
-          "type": "Mixed"
+          "type": "Mixed",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, 2024 data). manufacturing_job_change_pct legacy estimate — see BL-03.",
+          "uncertainty_band": "robots_per_10k HIGH (IFR direct); manufacturing_job_change_pct ±5pp"
         },
         {
           "country": "Switzerland",
