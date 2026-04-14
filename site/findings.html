@@ -212,6 +212,20 @@ p{font-size:16px;color:#d4d4d8;line-height:1.8}
 let DATA=null;
 fetch('disruptions-data.json').then(r=>r.json()).then(d=>{DATA=d;render()}).catch(e=>console.error('Data load failed:',e));
 
+// Analytics — scroll depth + outbound clicks (ship-ready spec §7)
+setTimeout(function(){
+  if(typeof posthog==='undefined')return;
+  var thresholds=[25,50,75,100],fired={};
+  window.addEventListener('scroll',function(){
+    var h=document.body.scrollHeight-window.innerHeight;if(h<=0)return;
+    var pct=Math.round((window.scrollY/h)*100);
+    thresholds.forEach(function(t){if(pct>=t&&!fired[t]){fired[t]=true;posthog.capture('scroll_depth',{percent:t,page:'findings'})}});
+  },{passive:true});
+  document.querySelectorAll('a[target="_blank"]').forEach(function(a){
+    a.addEventListener('click',function(){posthog.capture('outbound_click',{url:a.href,text:(a.textContent||'').trim().slice(0,80),page:'findings'})});
+  });
+},500);
+
 function render(){
   renderPatterns();
   renderPredictions();
