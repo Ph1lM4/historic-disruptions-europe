@@ -524,10 +524,13 @@ function renderRobotChart(){
   const el=document.getElementById('robot-chart');
   const data=DATA.cross_cutting.european_divergence.robot_density_comparison;
   if(!data||!el)return;
-  const W=Math.min(el.clientWidth||700,800),H=392,m={t:24,r:32,b:48,l:64};
+  const W=800,H=392,m={t:24,r:32,b:48,l:64};
   const iw=W-m.l-m.r,ih=H-m.t-m.b;
-  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H)
-    .attr('role','img').attr('aria-label','Bar chart comparing industrial robot density per 10,000 manufacturing workers across Germany, South Korea, Japan, and the United States');
+  const svg=d3.select(el).append('svg')
+    .attr('viewBox','0 0 '+W+' '+H)
+    .attr('preserveAspectRatio','xMidYMid meet')
+    .style('width','100%').style('height','auto').style('max-width',W+'px').style('display','block')
+    .attr('role','img').attr('aria-label','Scatter chart comparing industrial robot density per 10,000 manufacturing workers against manufacturing job change across 13 countries');
   const g=svg.append('g').attr('transform','translate('+m.l+','+m.t+')');
 
   const x=d3.scaleLinear().domain([0,d3.max(data,d=>d.robots_per_10k)*1.1]).range([0,iw]);
