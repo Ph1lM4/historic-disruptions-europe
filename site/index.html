@@ -557,8 +557,8 @@ function renderRobotChart(){
   // Per-country label offsets for overlap avoidance at 2024 IFR positions.
   // Default: above the dot (dy:-12). Override where collision occurs.
   const labelOffset={
-    'South Korea':{dx:0,dy:18},       // below — Korea's far-right outlier, breaks top-edge crowding
-    'United Kingdom':{dx:0,dy:18}     // below — clears China label sitting directly above
+    'South Korea':{dx:0,dy:18,anchor:'middle'},  // below — Korea's far-right outlier, breaks top-edge crowding
+    'United Kingdom':{dx:0,dy:18,anchor:'middle'} // below — clears China label sitting directly above
   };
   data.forEach(d=>{
     g.append('circle').attr('cx',x(d.robots_per_10k)).attr('cy',y(d.manufacturing_job_change_pct))
@@ -570,9 +570,9 @@ function renderRobotChart(){
         .attr('fill','#0a0a0a').attr('font-size',9).attr('font-weight',700)
         .text(numberedCluster[d.country]);
     }else{
-      const off=labelOffset[d.country]||{dx:0,dy:-12};
+      const off=labelOffset[d.country]||{dx:0,dy:-12,anchor:'middle'};
       g.append('text').attr('x',x(d.robots_per_10k)+off.dx).attr('y',y(d.manufacturing_job_change_pct)+off.dy)
-        .attr('text-anchor','middle').attr('fill','#d4d4d8').attr('font-size',10).attr('font-weight',500)
+        .attr('text-anchor',off.anchor).attr('fill','#d4d4d8').attr('font-size',10).attr('font-weight',500)
         .text(d.country);
     }
   });
