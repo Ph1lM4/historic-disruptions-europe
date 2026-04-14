@@ -1,0 +1,9 @@
+year,total_employees,male_employees,female_employees,telephones_000s,calls_MMs,att_market_share_pct,source
+1902,78752,,,2371,5071,56,"Feigenbaum & Gross 2021 Table 1 (US Census of Electrical Industries)"
+1907,144169,,,6119,11373,51,"Feigenbaum & Gross 2021 Table 1"
+1912,183361,,,8730,13736,58,"Feigenbaum & Gross 2021 Table 1 (1912 call volume slightly understated — restricted to companies >$5000 income)"
+1917,262629,91510,171119,11717,21846,63,"Feigenbaum & Gross 2021 Table 1"
+1922,312015,104433,207582,14347,24648,66,"Feigenbaum & Gross 2021 Table 1"
+1927,375272,131802,243470,18523,31614,74,"Feigenbaum & Gross 2021 Table 1 — PEAK employment. Also peak female employment."
+1932,334085,128677,205408,17424,30048,79,"Feigenbaum & Gross 2021 Table 1 — Depression contraction; first substantial employment fall"
+1937,333162,129722,203440,19453,33618,79,"Feigenbaum & Gross 2021 Table 1 — recovery flat; mechanization ramping. Female employment still below 1927 peak."

@@ -1,0 +1,74 @@
+# What Happened Every Other Time: Historic Technology Disruptions and European Labour
+> https://disruptions.nexalps.com/
+
+## What this is
+Product 3 of 6 in the Nexalps European AI Labour Market suite. Analyses 580 years of technology disruptions to extract patterns that predict how AI will reshape European labour markets.
+
+## Key findings
+- Every general purpose technology follows a 20-50 year arc from market entry to productivity gains
+- Disruptions follow 5 distinct patterns: Transformation+Expansion, Elimination, Absorption, Restructuring, Demand Creation
+- 6 diagnostic variables predict which pattern an occupation will follow
+- Retraining programmes show "modest positive effects at best" (207-study meta-analysis)
+- Worker recovery collapses after age 50: reemployment probability halved, earnings loss doubled
+- Geographic scarring lasts 30-50 years (UK coalfields, US Rust Belt — still no convergence)
+- European institutional frameworks (works councils, Kurzarbeit, co-determination) produce measurably different outcomes than US flexibility
+- Children of displaced workers earn 9% less — displacement transmits across generations
+- AI is currently a net hiring driver in Europe (ECB SAFE survey, 5,300 firms, March 2026)
+- 25% of German firms expect AI job cuts within 5 years (ifo 2025) — displacement is delayed, not cancelled
+
+## 20 case studies analysed
+### 9 Macro (General Purpose Technologies)
+1. Printing Press (1440s-1600s) — 160-year arc
+2. Mechanised Loom (1760s-1850s) — 90-year arc
+3. Steam/Railways (1800s-1870s) — 70-year arc
+4. Electricity (1880s-1930s) — 50-year arc, 40-year productivity lag
+5. Assembly Line (1910s-1950s) — 40-year arc
+6. Computer/Mainframe (1950s-1980s) — 40-year arc, Solow paradox
+7. PC/Office Automation (1980s-2000s) — 25-year arc
+8. Internet/E-commerce (1995-2015) — 20-year arc
+9. Mobile/Platform Economy (2007-2020) — 13-year arc
+
+### 11 Micro (Occupation-Level)
+1. ATMs to Bank Tellers — Type 2 (employment doubled before mobile banking reversed it)
+2. Spreadsheets to Accountants — Type 2 (market expansion, accountants grew)
+3. Containerisation to Dockworkers — Type 5 (90%+ reduction, 40-year geographic scarring)
+4. CAD to Technical Drafters — Type 3 (role absorbed into engineering)
+5. Telephone Operators — Type 5 (full elimination over 60 years)
+6. Elevator Operators — Type 5 (50-year adoption despite mature technology)
+7. DTP to Typesetters — Type 5 (high-skill role eliminated in 15 years)
+8. Industrial Robots to Manufacturing — Type 2/5 hybrid (Germany vs US divergence)
+9. GPS/Ride-hailing to Taxi — Type 4 (restructuring + absorption)
+10. E-commerce to Retail — Type 2 transitioning to Type 4
+11. LLMs to AI-Exposed Knowledge Workers — Type 2 early stage (74.5% programmer task coverage; no net unemployment yet but young worker hiring slowed 14%)
+
+## 5 disruption pattern types
+- Type 1: Demand Creation (new occupations)
+- Type 2: Transformation + Market Expansion (ATM pattern)
+- Type 3: Role Absorption (CAD/drafting pattern)
+- Type 4: Market Restructuring (Uber/taxi pattern)
+- Type 5: Full Task Automation → Elimination (containerisation pattern)
+
+## Pages
+- index.html — Overview: GPT timeline, disruption taxonomy, 10 key patterns
+- cases.html — 20 case study deep dives with ISCO codes
+- outcomes.html — 8 displaced worker outcomes, retraining evidence, age gradient
+- findings.html — Ten findings + ten predictions (headline synthesis page)
+- analysis.html — Deep-dive analyses: spreadsheets counterfactual, two eras of institutional response, incumbent-vs-cohort, capability-adoption gap, feasibility matrix
+- sources.html — ~52 academic and institutional sources with tier ratings
+- disruptions-data.json — Machine-readable structured data
+
+## Data sources (~52 primary)
+Tier 1: Dittmar (QJE 2011), Paul David (AER 1990), Acemoglu & Restrepo (JPE 2020), Feigenbaum & Gross (QJE 2024), Card/Kluve/Weber meta-analysis, Autor/Dorn/Hanson, Dauth et al. (CEPR 2017), BLS OEWS, Eurostat
+Tier 2: IFR World Robotics, McKinsey, BLS Beyond the Numbers, Burning Glass Institute
+Tier 3: Levinson (The Box), Thompson (Making of the English Working Class)
+
+## Connection to other products
+- ai-exposure.nexalps.com = which jobs AI hits (130 ISCO groups x 36 countries)
+- job-market.nexalps.com = where demand is going (9 roles x 34 countries)
+- disruptions.nexalps.com = what happened every other time (20 case studies x 580 years)
+- ISCO-08 codes bridge all three products
+- Same design system (shadcn dark, Geist font, #f97316 orange accent)
+
+## Author
+Philipp Maul, Nexalps (https://nexalps.com)
+Licensed under CC-BY 4.0

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worker Outcomes &mdash; What Actually Happened to Displaced Workers</title>
+<meta name="description" content="8 displaced worker case studies, retraining evidence from 207 studies, and the age gradient that predicts recovery. The historical record on what happens after disruption.">
+<link rel="canonical" href="https://disruptions.nexalps.com/outcomes.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Actually Happened to Displaced Workers">
+<meta property="og:description" content="8 cases, 207-study meta-analysis. Retraining shows modest effects at best. Age 50 is the cliff.">
+<meta property="og:url" content="https://disruptions.nexalps.com/outcomes.html">
+<meta property="og:site_name" content="Nexalps">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://disruptions.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:title" content="What Actually Happened to Displaced Workers">
+<meta name="twitter:description" content="8 cases, 207-study meta-analysis. Retraining shows modest effects at best.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
+  --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#71717a;
+  --accent:#27272a;--border:rgba(255,255,255,0.12);--ring:#f97316;
+  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+  --transition:150ms cubic-bezier(0.4,0,0.2,1);
+}
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}
+.site-nav-links a:hover{color:var(--foreground)}
+.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);min-width:44px;min-height:44px;padding:13px 12px;cursor:pointer;flex-direction:column;justify-content:center;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}
+.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}
+.burger-panel a:hover{color:var(--foreground)}
+.burger-panel a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger-sep{height:1px;background:var(--border);margin:4px 0}
+@media(max-width:900px){.site-nav-links{display:none}.burger{display:flex}.container{padding:0 16px}}
+
+/* Hero */
+.hero{padding:80px 32px 24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}
+.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.hero .byline a:hover{color:var(--foreground)}
+.hero .byline+.byline{margin-top:4px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero{padding:64px 20px 20px}}
+
+/* Stat cards */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;line-height:1.5;margin-top:4px}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger-sep{height:1px;background:var(--border);margin:4px 0}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+
+/* Chart box */
+.chart-box{margin:32px 0;padding:24px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:16px}
+.chart-box svg text{font-family:var(--font)}
+
+/* Data table */
+.data-table{width:100%;border-collapse:collapse;font-size:14px}
+.data-table th{text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted-foreground)}
+.data-table td{padding:12px;color:#d4d4d8;border-bottom:1px solid var(--card-border);vertical-align:top;line-height:1.5}
+.data-table td strong{color:var(--foreground);font-weight:600}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0 24px;border:1px solid var(--card-border);border-radius:var(--radius-md)}
+.table-wrap .data-table td:last-child,.table-wrap .data-table th:last-child{padding-right:16px}
+.table-wrap .data-table td:first-child,.table-wrap .data-table th:first-child{padding-left:16px}
+.table-wrap .data-table tr:last-child td{border-bottom:0}
+
+/* Per-case stat chips (inside outcomes.html accordion content) */
+.case-stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 20px}
+.case-stat{padding:12px 14px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md)}
+.case-stat .cs-value{font-size:20px;font-weight:700;color:var(--foreground);letter-spacing:-0.02em;line-height:1.2}
+.case-stat .cs-value.cs-text{font-size:13px;font-weight:600;letter-spacing:0}
+.case-stat .cs-label{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-top:4px}
+.case-stat .rt-green{color:#86efac}
+.case-stat .rt-amber{color:#fde047}
+.case-stat .rt-red{color:#fca5a5}
+.case-stat .rt-grey{color:#d4d4d8}
+.case-stat .cs-neutral{color:#e4e4e7}
+
+/* Accordion */
+.accordion-section{border-bottom:1px solid var(--card-border)}
+.accordion-section:first-of-type{border-top:1px solid var(--card-border)}
+.accordion-trigger{width:100%;background:none;border:none;color:var(--foreground);font-family:var(--font);font-size:17px;font-weight:600;text-align:left;padding:20px 40px 20px 0;cursor:pointer;position:relative;line-height:1.4;transition:color var(--transition)}
+.accordion-trigger:hover{color:var(--ring)}
+.accordion-trigger .num{color:var(--ring);font-weight:700;margin-right:8px}
+.accordion-trigger::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;background:var(--accent);color:var(--muted);font-size:16px;font-weight:500}
+.accordion-trigger[aria-expanded="true"]::after{content:"\2212"}
+.accordion-content{max-height:0;overflow:hidden;transition:max-height 350ms ease}
+.accordion-content .inner{padding:16px 20px 28px;background:rgba(255,255,255,0.03);border-radius:var(--radius-md);margin-bottom:4px}
+.accordion-content p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:12px 0}
+.accordion-content p:first-child{margin-top:0}
+.accordion-content strong{color:var(--foreground);font-weight:600}
+.accordion-content h4{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin:20px 0 8px}
+
+/* Highlight */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight .pattern-num{font-size:12px;font-weight:700;color:var(--ring);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px}
+.highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Author note */
+.author-note{padding:24px 28px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.10);border-radius:var(--radius-lg);margin:32px 0}
+.author-note h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:12px}
+.author-note p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+.author-note .sig{margin-top:16px;font-size:14px;font-weight:500;color:var(--muted-foreground)}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}
+.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+.footer a:hover{color:var(--foreground)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Actually Happened to Displaced Workers", "description": "8 displacement cases, 207-study meta-analysis. Retraining shows modest effects at best. Age 50 is the cliff.", "url": "https://disruptions.nexalps.com/outcomes.html", "isPartOf": {"@type": "Article", "name": "What Happened Every Other Time: Historic Technology Disruptions and European Labour", "url": "https://disruptions.nexalps.com/"}, "datePublished": "2026-04", "author": {"@type": "Person", "name": "Philipp Maul", "url": "https://www.linkedin.com/in/pmaul/", "affiliation": {"@type": "Organization", "name": "Nexalps", "url": "https://nexalps.com"}}, "publisher": {"@type": "Organization", "name": "Nexalps", "url": "https://nexalps.com"}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html">Overview</a>
+    <a href="cases.html">Case Studies</a>
+    <a href="findings.html">Findings & Predictions</a>
+    <a href="analysis.html">Deep Analysis</a>
+    <a href="outcomes.html" aria-current="page">Worker Outcomes</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html">Overview</a>
+  <a href="cases.html">Case Studies</a>
+  <a href="findings.html">Findings & Predictions</a>
+  <a href="analysis.html">Deep Analysis</a>
+  <a href="outcomes.html" aria-current="page">Worker Outcomes</a>
+  <a href="sources.html">Sources</a>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+
+</div>
+
+<main id="main" role="main">
+
+<header class="hero container">
+  <h1>What Actually Happened to Displaced Workers</h1>
+  <p class="lede">The case studies show what changed. This page shows who paid the price &mdash; and whether retraining, relocation, or institutional support made any difference.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a> &middot; Early 2026 &middot; Part 3 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Based on <a href="sources.html">52 primary sources</a> including Acemoglu &amp; Restrepo, Dittmar, Feigenbaum &amp; Gross, David and Autor.</p>
+</header>
+
+<section class="container" role="region" aria-label="Key statistics">
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-label">Kurzarbeit (2008&ndash;09)</div>
+      <div class="stat-value">400K jobs saved</div>
+      <div class="stat-sublabel">&euro;5.5B cost &mdash; prevention 20&times; cheaper than remediation</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Recovery Threshold</div>
+      <div class="stat-value">Age 50</div>
+      <div class="stat-sublabel">Reemployment probability collapses; earnings halved</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Geographic Scarring</div>
+      <div class="stat-value">30&ndash;50 yrs</div>
+      <div class="stat-sublabel">UK coalfields, Ruhr Valley, Rust Belt &mdash; still no recovery</div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 1: Does Retraining Work? -->
+<section class="container" role="region" aria-label="Retraining evidence">
+  <h2><span class="num">1.</span> Does Retraining Work? <span class="subtitle">The evidence from 207 studies and 4 major programmes</span></h2>
+
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:16px">The conventional policy response to technology displacement is retraining: teach workers new skills, and they'll find new jobs. The evidence says otherwise. Across four major evaluations spanning decades and millions of workers, the pattern is consistent: <strong>retraining shows modest effects at best</strong>.</p>
+
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:24px">The chart below shows the "leaky pipeline" from the US Trade Adjustment Assistance programme &mdash; the most comprehensive evaluation of displaced worker retraining ever conducted (Mathematica, 2012). Of every 100 eligible workers, only 18 ultimately found employment in their retrained field. And those who completed the programme earned <strong>~&euro;3,000 less</strong> than similar workers who received no training at all. European programmes show similar patterns: the UK Work Programme achieved sustained employment for only 3.6% of 1.81 million referrals &mdash; worse than the 5% baseline. Sweden's Job Security Councils perform better (~80% reemployment) but are funded by employers, not government &mdash; and cover only unionised sectors.</p>
+
+  <div class="chart-box" role="img" aria-label="Sankey showing retraining pipeline: 100 eligible workers narrow to 18 finding retrained-field work, with proportional dropoffs at each stage">
+    <h3>TAA Retraining Pipeline &mdash; Where Do the 100 Workers Go?</h3>
+    <div id="funnel-chart"></div>
+    <div class="funnel-legend" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px 20px;margin-top:16px;padding-top:14px;border-top:1px solid var(--card-border);font-size:12px;color:var(--muted-foreground);line-height:1.5">
+      <div><strong style="color:#fca5a5">&minus;40 Never enrol</strong><br>Info gap &middot; already in lower-pay work</div>
+      <div><strong style="color:#fca5a5">&minus;12 Drop out</strong><br>Financial &middot; family &middot; programme mismatch</div>
+      <div><strong style="color:#fca5a5">&minus;30 No matching job</strong><br>Skills mismatch &middot; geography &middot; age</div>
+    </div>
+    <details>
+      <summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:14px">View data as table</summary>
+      <div id="funnel-table"></div>
+    </details>
+  </div>
+
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:16px"><strong>The broader evidence confirms this.</strong> Card, Kluve, and Weber analysed 207 studies covering 857 programme evaluations worldwide. Their finding: short-run training impacts are "near zero." Modest positive effects appear only after 2+ years, and only for specific subgroups (adult women, long-term unemployed). The gold-standard National JTPA Study found ~&euro;1,100&ndash;&euro;1,200 positive effects for adults over 30 months &mdash; but zero to <em>negative</em> effects for youth. Japan&rsquo;s experience mirrors this: despite generous public employment services, displaced manufacturing workers over 50 in the Rust Belt regions (e.g. Kitakyushu) showed similarly poor outcomes.</p>
+
+  <div class="highlight">
+    <h3>The Kurzarbeit Contrast: Prevention vs Remediation</h3>
+    <p>Germany's short-time work scheme (Kurzarbeit) saved an estimated <strong>400,000 jobs</strong> during the 2008&ndash;09 crisis at a cost of ~&euro;5.5 billion. GDP collapsed 7%, but unemployment rose less than 1 percentage point. For comparison, the US spent <strong>~€97 billion</strong> on unemployment compensation in 2009 alone. The lesson: <strong>prevention is 20&times; more cost-effective than remediation</strong>. But Kurzarbeit was designed for cyclical downturns &mdash; structural transformation at AI speed may exceed its design envelope.</p>
+  </div>
+
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:16px"><strong>The deeper problem is structural, not frictional.</strong> Susskind (2020) distinguishes two forms of technological unemployment: <em>frictional</em> (workers have the wrong skills for available work &mdash; a transition problem) and <em>structural</em> (not enough demand for human work at all). Retraining addresses frictional TU. It cannot address structural TU. Frey documents that US labour productivity grew 8&times; faster than hourly compensation since 1979 &mdash; a structural divergence, not a skills gap. Acemoglu &amp; Johnson call this the &ldquo;productivity bandwagon&rdquo; failure: technology raises average output while reducing the marginal value of each additional worker.</p>
+
+  <p style="font-size:15px;color:#d4d4d8;line-height:1.8;margin-top:16px"><strong>Heckman&rsquo;s verdict</strong> (Nobel laureate, landmark review of retraining evidence): &ldquo;At best a modest impact. Many programs cannot pass a cost-benefit test. Returns to human capital investment decline steeply with age. Adult retraining cannot remedy skill deficits accumulated over a lifetime.&rdquo;</p>
+</section>
+
+<!-- Section 2: Eight Cases -->
+<section class="container" role="region" aria-label="Displaced worker cases">
+  <h2><span class="num">2.</span> Thirteen Displaced Worker Cases <span class="subtitle">What actually happened to the people behind the statistics</span></h2>
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:16px">The macro data tells you jobs were lost. These thirteen cases &mdash; spanning the UK, US, Germany, France, China, Japan, and South Korea &mdash; show what that meant for real communities: wage collapses, geographic scarring, deaths of despair, and the rare exceptions where institutional response made a difference. Each case follows four questions: <strong>How big was the workforce?</strong> &rarr; <strong>Did they recover?</strong> &rarr; <strong>What lasting damage?</strong> &rarr; <strong>What did institutions do?</strong></p>
+  <p style="font-size:14px;color:var(--muted);margin-bottom:24px">The pattern across all thirteen: recovery is generational replacement, not worker transition. The handloom weavers didn't become factory workers &mdash; their children did. The miners didn't become tech workers &mdash; their grandchildren (in Pittsburgh, not Youngstown) did.</p>
+  <div id="case-accordions" role="region" aria-label="Displaced worker case studies"></div>
+</section>
+
+<!-- Section 3: Age Gradient -->
+<section class="container" role="region" aria-label="Age gradient">
+  <h2><span class="num">3.</span> The Age Gradient <span class="subtitle">Why age 50 is the approximate point of no return</span></h2>
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:16px">The chart below tells the single most important story in displaced worker research. <strong>Green bars</strong> show the percentage of displaced workers who find new employment. <strong>Red bars</strong> show how much less they earn compared to their pre-displacement income. The cliff at age 50 is not gradual &mdash; it's a structural break.</p>
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:24px">Workers displaced at ages 25&ndash;34 have a 75% chance of finding new work and lose only ~5% of earnings. By age 50&ndash;59, reemployment probability drops to 50% and earnings loss reaches <strong>42%</strong> &mdash; their household income is effectively halved. Men aged 50&ndash;61 are 39% less likely to find work each month compared to 25&ndash;34 year-olds (Urban Institute). After age 60, the system effectively collapses: most never return to equivalent employment.</p>
+
+  <div class="chart-box" role="img" aria-label="Dual-axis bar chart showing reemployment rate declining and earnings loss increasing with age, with a sharp cliff at age 50">
+    <h3>Reemployment Rate (green) vs Earnings Loss (red) by Age</h3>
+    <div id="age-chart"></div>
+    <details>
+      <summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+      <div id="age-table"></div>
+    </details>
+  </div>
+
+  <div class="highlight">
+    <h3>Why the cliff exists</h3>
+    <p>Three forces compound at age 50: (1) <strong>employer age discrimination</strong> reduces callback rates regardless of qualifications, (2) <strong>shorter remaining career</strong> makes retraining economically irrational &mdash; the return on investment is approximately half that of younger workers (Jacobson et al.), and (3) <strong>disability pathways open</strong> &mdash; SSDI becomes an alternative to job search, and in trade-exposed US regions, disability payments were 30&ndash;40&times; larger than retraining assistance.</p>
+  </div>
+
+  <div class="highlight">
+    <h3>What Protects You: Frey&rsquo;s Three Engineering Bottlenecks</h3>
+    <p>Frey &amp; Osborne identified three capabilities that remain hardest to automate: (1) <strong>Perception and manipulation</strong> in unstructured environments (surgical nurses, physical therapists), (2) <strong>Creative intelligence</strong> producing genuine novelty (not just recombination), (3) <strong>Social-emotional intelligence</strong> requiring complex interpersonal interaction (coaches, negotiators, therapists). Workers whose roles require one or more of these bottlenecks are durably protected. The income gradient is stark: 83% of workers earning under &euro;18/hour are at high automation risk; only 4% earning over &euro;36/hour.</p>
+  </div>
+</section>
+
+<!-- Section 4: Geographic Scarring -->
+<section class="container" role="region" aria-label="Geographic scarring">
+  <h2><span class="num">4.</span> Geographic Scarring <span class="subtitle">Cities survive bombs better than economic shocks</span></h2>
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:16px">Glaeser's research shows that cities are resilient to physical destruction (bombs, earthquakes, fires) but highly vulnerable to economic shocks. The reason: physical destruction doesn't eliminate human capital; economic shocks do.</p>
+
+  <div class="chart-box" role="img" aria-label="World map showing locations of thirteen scarred industrial cases across six continents, with Pittsburgh the only recovery case.">
+    <h3>Geographic scarring &mdash; thirteen cases across six continents</h3>
+    <div id="scarring-map"></div>
+    <p style="font-size:12px;color:var(--muted-foreground);margin-top:12px;line-height:1.6;display:flex;flex-wrap:wrap;gap:16px;align-items:center"><span><span style="display:inline-block;width:10px;height:10px;background:#fde047;border-radius:50%;vertical-align:middle;margin-right:6px"></span>Light shock (&lt;25% / &lt;50pp)</span><span><span style="display:inline-block;width:10px;height:10px;background:#fca5a5;border-radius:50%;vertical-align:middle;margin-right:6px"></span>Moderate (25&ndash;50%)</span><span><span style="display:inline-block;width:10px;height:10px;background:#ef4444;border-radius:50%;vertical-align:middle;margin-right:6px"></span>Severe (&gt;50% / &gt;80pp)</span><span><span style="display:inline-block;width:10px;height:10px;background:#86efac;border-radius:50%;vertical-align:middle;margin-right:6px"></span>Recovery (Pittsburgh)</span><span style="color:var(--muted)">Numbers on pins key to the table below.</span></p>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data-table" aria-label="Geographic scarring cases by metric">
+      <thead>
+        <tr>
+          <th style="width:40px">#</th>
+          <th>Case</th>
+          <th>Shock magnitude</th>
+          <th>Metric</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="color:#ef4444;font-weight:700">1</td><td><strong>Detroit</strong> <span style="color:var(--muted-foreground);font-weight:400">· N America</span></td><td style="color:#ef4444;font-weight:600">&minus;60%</td><td>Population (from 1.85M peak)</td><td>Bankruptcy 2013; still scarred</td></tr>
+        <tr><td style="color:#86efac;font-weight:700">2</td><td><strong>Pittsburgh</strong> <span style="color:var(--muted-foreground);font-weight:400">· N America</span></td><td style="color:#86efac;font-weight:600">Recovery</td><td>Pivot to healthcare + tech</td><td>31% degree holders &middot; Carnegie Mellon &middot; UPitt</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">3</td><td><strong>UK coalfields</strong> <span style="color:var(--muted-foreground);font-weight:400">· Europe</span></td><td style="color:#fde047;font-weight:600">&minus;22%</td><td>Jobs per 100 working-age (40yr post)</td><td>Need 80k extra residents in work to close gap</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">4</td><td><strong>Nord-Pas-de-Calais</strong> <span style="color:var(--muted-foreground);font-weight:400">· Europe</span></td><td style="color:#ef4444;font-weight:600">Poorest</td><td>Department rank (France)</td><td>Lens, Valenciennes in bottom quintile</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">5</td><td><strong>Gelsenkirchen (Ruhr)</strong> <span style="color:var(--muted-foreground);font-weight:400">· Europe</span></td><td style="color:#ef4444;font-weight:600">+100pp</td><td>Unemployment vs national average</td><td>Scarred despite &euro;90B+ in structural funds</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">6</td><td><strong>Kitakyushu</strong> <span style="color:var(--muted-foreground);font-weight:400">· E Asia (Japan)</span></td><td style="color:#fca5a5;font-weight:600">&minus;40%</td><td>Population (since 1970s)</td><td>Scarred despite relocation programmes</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">7</td><td><strong>Mumbai Girangaon</strong> <span style="color:var(--muted-foreground);font-weight:400">· S Asia (India)</span></td><td style="color:#ef4444;font-weight:600">&minus;95%</td><td>Textile mill employment (post-1982 strike)</td><td>Mills razed; land converted to luxury real estate</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">8</td><td><strong>São Paulo ABC</strong> <span style="color:var(--muted-foreground);font-weight:400">· S America (Brazil)</span></td><td style="color:#fca5a5;font-weight:600">&minus;40%</td><td>Industrial jobs (1989&ndash;2000s)</td><td>Auto-cluster decline; partial logistics pivot</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">9</td><td><strong>Copperbelt (Kitwe)</strong> <span style="color:var(--muted-foreground);font-weight:400">· Africa (Zambia)</span></td><td style="color:#fca5a5;font-weight:600">&minus;50%</td><td>ZCCM mining employment post-privatisation</td><td>Ferguson &ldquo;Expectations of Modernity&rdquo;; still scarred</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">10</td><td><strong>Abadan</strong> <span style="color:var(--muted-foreground);font-weight:400">· Middle East (Iran)</span></td><td style="color:#ef4444;font-weight:600">&minus;98%</td><td>Population: 300K → 6K (1976→1986)</td><td>Iran&ndash;Iraq war + revolution; partial rebuild only</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">11</td><td><strong>Latrobe Valley</strong> <span style="color:var(--muted-foreground);font-weight:400">· Oceania (Australia)</span></td><td style="color:#ef4444;font-weight:600">+100pp</td><td>Unemployment vs state average</td><td>Hazelwood 2017 closure; coal phase-out scarring</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">12</td><td><strong>Shenyang / Liaoning</strong> <span style="color:var(--muted-foreground);font-weight:400">· E Asia (China NE)</span></td><td style="color:#fde047;font-weight:600">+35pp</td><td>Effective unemployment vs national avg (SOE reform)</td><td>35M+ SOE laid off 1995&ndash;2002; &lt;50% reemployed formally</td></tr>
+        <tr><td style="color:#ef4444;font-weight:700">13</td><td><strong>Geoje (Korea)</strong> <span style="color:var(--muted-foreground);font-weight:400">· E Asia (S Korea)</span></td><td style="color:#fca5a5;font-weight:600">&minus;40%</td><td>Shipbuilding employment (2015&ndash;2018)</td><td>&ldquo;Industry crisis special area&rdquo;; subcontractors hit hardest</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:16px">Strongest predictor of recovery: <strong>pre-existing human capital</strong>. Pittsburgh had it. Detroit, Gelsenkirchen, and Kitakyushu didn't.</p>
+
+  <div class="highlight">
+    <h3>Intergenerational Transmission</h3>
+    <p>Children of displaced workers earn <strong>9% less</strong> as adults, concentrated when displacement occurs at ages 10&ndash;14 (Oreopoulos, Page, Stevens 2008). Geographic variation in upward mobility maps closely onto areas of concentrated displacement (Chetty). Former industrial areas are &ldquo;social mobility cold spots&rdquo; where young people are half as likely to attend university (UK Social Mobility Commission 2025).</p>
+  </div>
+
+  <div class="highlight">
+    <h3>The Marienthal Warning: Work Provides More Than Income</h3>
+    <p>Jahoda&rsquo;s 1933 study of Marienthal, Austria &mdash; where factory closure left 75% of families workless &mdash; found that unemployment destroyed <strong>temporal structure, social participation, and sense of purpose</strong>, not just income. Library borrowing halved. Athletic club membership fell 52%. Anonymous denunciations tripled. Work provides five latent functions beyond wages: time structure, social contact, collective purpose, social identity, and regular activity. Unemployment benefits replace income but none of these. This is why geographic scarring persists even where benefits are generous &mdash; and why Susskind argues structural technological unemployment requires &ldquo;leisure policy,&rdquo; not just welfare policy.</p>
+  </div>
+</section>
+
+<!-- Predictions moved to findings page -->
+<section class="container" role="region" aria-label="Predictions">
+  <h2><span class="num">5.</span> What Happens Next? <span class="subtitle">Ten predictions grounded in the historical record</span></h2>
+  <p style="font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:16px">The ten predictions for AI displacement &mdash; base rates from 580 years of data &mdash; live on the <a href="findings.html#predictions-heading" style="color:var(--ring);text-decoration:underline">Findings &amp; Predictions page &rarr;</a></p>
+</section>
+
+<!-- Author Note -->
+<section class="container">
+  <div class="author-note">
+    <h3>Author&rsquo;s Note</h3>
+    <p>The most uncomfortable finding in 580 years of disruption data isn't that workers suffer &mdash; everyone expects that. It's that <strong>recovery is the exception, not the rule</strong>. Of the thirteen cases studied, only telephone operators experienced anything close to a &ldquo;good news&rdquo; outcome &mdash; and that required a 57-year transition timeline plus a rapidly growing economy absorbing displaced women into new roles.</p>
+    <p>The actual adjustment mechanism, again and again, is not retraining or relocation. It's <strong>generational replacement</strong>. The handloom weavers didn't become factory workers; their children did. The miners didn't become tech workers; their grandchildren (in Pittsburgh, not in Youngstown) did. The question for AI isn't whether the economy will eventually adjust &mdash; it will. The question is whether we're willing to accept that &ldquo;eventually&rdquo; means a generation of workers who bear the full cost.</p>
+    <div class="sig">&mdash; Philipp Maul</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="container">
+  <div class="cta-bar">
+    <h3>Which jobs will AI hit?</h3>
+    <p>The AI Exposure Map shows exposure scores for 130 ISCO occupation groups across 36 European countries.</p>
+    <div class="btn-row">
+      <a href="https://ai-exposure.nexalps.com/" class="btn btn-primary" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+      <a href="https://job-market.nexalps.com/" class="btn btn-outline" target="_blank" rel="noopener">Job Market ↗</a>
+      <a href="cases.html" class="btn btn-outline">20 Case Studies &rarr;</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer container" role="contentinfo">
+  What Happened Every Other Time v1.0 &middot; Early 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="cases.html">Case Studies</a> &middot; <a href="findings.html">Findings &amp; Predictions</a> &middot; <a href="analysis.html">Deep Analysis</a> &middot; <a href="outcomes.html">Worker Outcomes</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> Philipp Maul | Nexalps
+</footer>
+
+<script>
+(function(){
+'use strict';
+let DATA=null;
+fetch('disruptions-data.json').then(r=>r.json()).then(d=>{DATA=d;render()}).catch(e=>console.error('Data load failed:',e));
+
+function render(){
+  renderFunnelChart();
+  renderScarringMap();
+  renderCaseAccordions();
+  renderAgeChart();
+  setupAccordions();
+  setupBurger();
+}
+
+// ── Geographic Scarring: world map with scarred-city pins ──
+function renderScarringMap(){
+  const el=document.getElementById('scarring-map');
+  if(!el||typeof topojson==='undefined') return;
+  // dx/dy are pixel offsets after projection — keeps pins visible where cities cluster tightly
+  // severity: 'light' orange / 'medium' coral / 'severe' red / 'recovery' green — mirrors the table magnitude colors
+  const sevFill={light:'#fde047',medium:'#fca5a5',severe:'#ef4444',recovery:'#86efac'};
+  const cities=[
+    {name:'Detroit',lat:42.33,lon:-83.05,sev:'severe',metric:'−60% population',dx:-8,dy:-6},
+    {name:'Pittsburgh',lat:40.44,lon:-79.99,sev:'recovery',metric:'Recovery: universities + tech',dx:8,dy:6},
+    {name:'UK coalfields',lat:53.55,lon:-1.20,sev:'light',metric:'−22% jobs per 100 (40yr post)',dx:-8,dy:-6},
+    {name:'Nord-Pas-de-Calais',lat:50.40,lon:3.00,sev:'severe',metric:'Poorest French department',dx:0,dy:10},
+    {name:'Gelsenkirchen',lat:51.51,lon:7.10,sev:'severe',metric:'+100pp unemployment',dx:12,dy:-4},
+    {name:'Kitakyushu',lat:33.88,lon:130.88,sev:'medium',metric:'−40% population',dx:12,dy:10},
+    {name:'Mumbai Girangaon',lat:18.98,lon:72.83,sev:'severe',metric:'−95% textile mill employment',dx:0,dy:0},
+    {name:'São Paulo ABC',lat:-23.70,lon:-46.55,sev:'medium',metric:'−40% industrial jobs',dx:0,dy:0},
+    {name:'Copperbelt (Kitwe)',lat:-12.82,lon:28.21,sev:'medium',metric:'−50% ZCCM mining jobs',dx:0,dy:0},
+    {name:'Abadan',lat:30.34,lon:48.29,sev:'severe',metric:'−98% population (1976→1986)',dx:0,dy:-8},
+    {name:'Latrobe Valley',lat:-38.23,lon:146.40,sev:'severe',metric:'Hazelwood closure 2017',dx:0,dy:0},
+    {name:'Shenyang / Liaoning',lat:41.80,lon:123.43,sev:'light',metric:'+35pp effective unemployment (SOE reform)',dx:-10,dy:-6},
+    {name:'Geoje (Korea)',lat:34.88,lon:128.62,sev:'medium',metric:'−40% shipbuilding employment',dx:-14,dy:-12}
+  ];
+  const W=Math.min(el.clientWidth||700,820),H=Math.round(W*0.52);
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H).attr('viewBox',`0 0 ${W} ${H}`)
+    .style('max-width','820px').style('width','100%').style('height','auto').style('display','block')
+    .attr('role','img').attr('aria-label','World map with thirteen scarred industrial cities across six continents, pins colored by shock severity');
+
+  // Global band: −45°S to 62°N captures all 13 cases incl. Latrobe Valley and Copperbelt
+  const proj=d3.geoNaturalEarth1();
+  const bounds={type:'Polygon',coordinates:[[[-140,-45],[160,-45],[160,62],[-140,62],[-140,-45]]]};
+  proj.fitSize([W-20,H-30],bounds);
+  const path=d3.geoPath(proj);
+
+  // Sphere outline (subtle)
+  svg.append('g').attr('transform','translate(10,15)')
+    .append('path').datum({type:'Sphere'}).attr('d',path)
+    .attr('fill','rgba(255,255,255,0.02)').attr('stroke','rgba(255,255,255,0.06)').attr('stroke-width',1);
+
+  const mapG=svg.append('g').attr('transform','translate(10,15)');
+
+  fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(r=>r.json()).then(world=>{
+    const countries=topojson.feature(world,world.objects.countries);
+    mapG.append('g').selectAll('path').data(countries.features).join('path')
+      .attr('d',path)
+      .attr('fill','rgba(161,161,170,0.12)')
+      .attr('stroke','rgba(255,255,255,0.10)')
+      .attr('stroke-width',0.5);
+    // Plot numbered pins — numbers key to the legend + table below
+    cities.forEach((c,i)=>{
+      const p=proj([c.lon,c.lat]);
+      if(!p) return;
+      const [gx,gy]=p;
+      const x=gx+(c.dx||0), y=gy+(c.dy||0);
+      const fill=sevFill[c.sev]||'#ef4444';
+      // Connector from true location to offset pin (faint)
+      if(c.dx||c.dy){
+        mapG.append('line').attr('x1',gx).attr('y1',gy).attr('x2',x).attr('y2',y)
+          .attr('stroke',fill).attr('stroke-width',1).attr('opacity',0.45);
+      }
+      // True-location dot (small)
+      mapG.append('circle').attr('cx',gx).attr('cy',gy).attr('r',2)
+        .attr('fill',fill).attr('opacity',0.7);
+      // Pin halo
+      mapG.append('circle').attr('cx',x).attr('cy',y).attr('r',12)
+        .attr('fill',fill).attr('opacity',0.22);
+      // Pin body
+      mapG.append('circle').attr('cx',x).attr('cy',y).attr('r',9)
+        .attr('fill',fill).attr('stroke','#09090b').attr('stroke-width',1.5);
+      // Number inside pin
+      mapG.append('text').attr('x',x).attr('y',y+4).attr('text-anchor','middle')
+        .attr('fill','#09090b').attr('font-size',11).attr('font-weight',700).text(i+1);
+    });
+  }).catch(err=>{
+    console.error('World atlas load failed:',err);
+    mapG.append('text').attr('x',W/2).attr('y',H/2).attr('text-anchor','middle')
+      .attr('fill','#71717a').attr('font-size',12).text('Map failed to load — see table below');
+  });
+}
+
+// ── TAA Sankey — proper proportional flow widths ──
+function renderFunnelChart(){
+  const el=document.getElementById('funnel-chart');
+  const W=Math.min(el.clientWidth||700,820),H=272,m={t:32,r:72,b:32,l:24};
+  const iw=W-m.l-m.r,ih=H-m.t-m.b;
+
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H).attr('viewBox',`0 0 ${W} ${H}`)
+    .style('max-width','820px').style('width','100%').style('height','auto').style('display','block')
+    .attr('role','img').attr('aria-label','Sankey: 100 eligible workers narrow to 18 finding work in retrained field; dropoffs exit at each stage');
+  const g=svg.append('g').attr('transform',`translate(${m.l},${m.t})`);
+
+  // Data
+  const stages=[
+    {key:'eligible',label:'Eligible',count:100,fill:'#22c55e'},
+    {key:'enrol',label:'Enrol',count:60,fill:'#eab308'},
+    {key:'complete',label:'Complete',count:48,fill:'#f97316'},
+    {key:'findwork',label:'Find work',count:18,fill:'#ef4444'}
+  ];
+  const dropoffs=[
+    {between:0,count:40,label:'Never enrol',detail:'info gap · already in lower-pay work'},
+    {between:1,count:12,label:'Drop out',detail:'financial · family · programme mismatch'},
+    {between:2,count:30,label:'No matching job',detail:'skills mismatch · geography · age'}
+  ];
+
+  // Geometry — main flow band anchored at top
+  const scale=0.75; // pixels per worker (Eligible 100 → 75px tall)
+  const colW=iw/3;
+  const nodeW=8;
+  const topY=0;
+  const mainBandBottom=topY+100*scale; // 75px
+  const dropRowY=mainBandBottom+60; // terminal nodes share one horizontal row
+  const dropBoxLabelOffset=14;
+
+  // Main continuation ribbons (stage i → stage i+1)
+  stages.slice(0,-1).forEach((s,i)=>{
+    const next=stages[i+1];
+    const x1=i*colW+nodeW, x2=(i+1)*colW;
+    const y1t=topY, y1b=topY+next.count*scale;
+    const y2t=topY, y2b=topY+next.count*scale;
+    const cx=(x1+x2)/2;
+    const path=`M ${x1} ${y1t} C ${cx} ${y1t}, ${cx} ${y2t}, ${x2} ${y2t} L ${x2} ${y2b} C ${cx} ${y2b}, ${cx} ${y1b}, ${x1} ${y1b} Z`;
+    g.append('path').attr('d',path).attr('fill',next.fill).attr('opacity',0.20);
+  });
+
+  // Dropoff ribbons — minimal inline labels (just -count); details live in legend below the SVG
+  dropoffs.forEach((d,i)=>{
+    const s=stages[d.between], next=stages[d.between+1];
+    const x1=d.between*colW+nodeW;
+    const ribSrcTop=topY+next.count*scale;
+    const ribSrcBot=topY+s.count*scale;
+    const termCx=d.between*colW+colW*0.6;
+    const termH=d.count*scale;
+    const termX=termCx-nodeW/2;
+    const termY=dropRowY;
+    const ribDstTop=termY;
+    const ribDstBot=termY+termH;
+    const cx=(x1+termX)/2;
+    const path=`M ${x1} ${ribSrcTop} C ${cx} ${ribSrcTop}, ${cx} ${ribDstTop}, ${termX} ${ribDstTop} L ${termX} ${ribDstBot} C ${cx} ${ribDstBot}, ${cx} ${ribSrcBot}, ${x1} ${ribSrcBot} Z`;
+    g.append('path').attr('d',path).attr('fill','#52525b').attr('opacity',0.35);
+    // Terminal node bar
+    g.append('rect').attr('x',termX).attr('y',termY).attr('width',nodeW).attr('height',termH)
+      .attr('fill','#71717a').attr('rx',2);
+    // Inline count only (labels move to legend below the SVG)
+    g.append('text').attr('x',termX+nodeW+4).attr('y',termY+termH/2+4).attr('dominant-baseline','middle')
+      .attr('fill','#fca5a5').attr('font-size',11).attr('font-weight',700).text(`−${d.count}`);
+  });
+
+  // Main stage nodes + inline count labels; all stages show label + count to RIGHT of node for consistency
+  stages.forEach((s,i)=>{
+    const x=i*colW, h=s.count*scale;
+    g.append('rect').attr('x',x).attr('y',topY).attr('width',nodeW).attr('height',h)
+      .attr('fill',s.fill).attr('opacity',0.95).attr('rx',2);
+    const tickX=x+nodeW+4;
+    g.append('text').attr('x',tickX).attr('y',topY-8).attr('text-anchor','start')
+      .attr('fill','#a1a1aa').attr('font-size',11).attr('font-weight',600).text(s.label);
+    g.append('text').attr('x',tickX).attr('y',topY+h/2+5).attr('text-anchor','start')
+      .attr('fill','#fafafa').attr('font-size',15).attr('font-weight',700).text(s.count);
+  });
+
+  // Summary (two lines to avoid clipping on narrow viewports)
+  g.append('text').attr('x',iw/2).attr('y',ih-14).attr('text-anchor','middle')
+    .attr('fill','#a1a1aa').attr('font-size',11).attr('font-style','italic')
+    .text('100 eligible → 18 find retrained-field work.');
+  g.append('text').attr('x',iw/2).attr('y',ih).attr('text-anchor','middle')
+    .attr('fill','#71717a').attr('font-size',10).attr('font-style','italic')
+    .text('82 absorbed into lower-pay work, unemployment, or disability.');
+
+  // Fallback table
+  document.getElementById('funnel-table').innerHTML='<div class="table-wrap" style="margin-top:12px"><table class="data-table"><caption class="sr-only">Retraining pipeline data</caption><thead><tr><th scope="col">Stage</th><th scope="col">Continue</th><th scope="col">Drop Off</th><th scope="col">Where They Go</th></tr></thead><tbody>'+
+    '<tr><td>Eligible</td><td>100</td><td>—</td><td>—</td></tr>'+
+    '<tr><td>Enrol</td><td>60</td><td>40</td><td>Never enrol: lack of info, ineligibility, already found lower-paying work</td></tr>'+
+    '<tr><td>Complete</td><td>48</td><td>12</td><td>Drop out: financial pressure, family obligations, programme mismatch</td></tr>'+
+    '<tr><td>Find Work in New Field</td><td>18</td><td>30</td><td>No matching job: skills mismatch, geographic barrier, age discrimination</td></tr>'+
+    '</tbody></table></div>';
+}
+
+// ── Case Accordions ──
+function renderCaseAccordions(){
+  const el=document.getElementById('case-accordions');
+  el.innerHTML=DATA.displaced_worker_cases.map((c,i)=>{
+    // Format peak workforce compactly (K/M for scannability)
+    const wf=c.peak_workforce;
+    const wfLabel=wf>=1e6?(wf/1e6).toFixed(wf>=1e7?0:1)+'M':wf>=1e3?Math.round(wf/1e3)+'K':wf;
+    // Recovery-type badge: red (severe/permanent/displacement/ongoing), amber (partial/mixed/generational/slow), green (genuine recovery / 'good news'), grey (default)
+    // Check worst qualifiers first so "limited recovery" doesn't match "recovery" → green
+    const rt=(c.recovery_type||'').toLowerCase();
+    let rtClass;
+    if(/severe|permanent|gentrification|ongoing|limited recovery|no recovery|never|displacement for many|fail/.test(rt)){
+      rtClass='rt-red';
+    }else if(/partial|mixed|generational|split|slow decline|fewer than half|60\+ years|45-year/.test(rt)){
+      rtClass='rt-amber';
+    }else if(/good news/.test(rt)||(/recovery/.test(rt)&&!/limited|no recovery/.test(rt))){
+      rtClass='rt-green';
+    }else{
+      rtClass='rt-grey';
+    }
+    // Stat chips row — consistent color semantics: green good · amber partial · red severe · grey neutral-scale
+    // Wage decline gradation: <25% amber (halfway), 25-50% coral, >50% deep red
+    const wdPct=c.wage_decline_pct;
+    const wdColor=wdPct?(wdPct<25?'#fde047':wdPct<=50?'#fca5a5':'#ef4444'):null;
+    const stats=[
+      `<div class="case-stat"><div class="cs-value cs-neutral">${wfLabel}</div><div class="cs-label">Peak workforce</div></div>`,
+      wdPct?`<div class="case-stat"><div class="cs-value" style="color:${wdColor}">&minus;${wdPct}%</div><div class="cs-label">Wage decline</div></div>`:'',
+      `<div class="case-stat"><div class="cs-value cs-text ${rtClass}">${c.recovery_type}</div><div class="cs-label">Recovery</div></div>`
+    ].filter(Boolean).join('');
+    return`<div class="accordion-section" id="${c.id}">
+      <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-${c.id}">
+        <span class="num">${i+1}.</span> ${c.title} (${c.period})
+      </button>
+      <div class="accordion-content" id="acc-${c.id}" role="region" aria-label="${c.title} case study">
+        <div class="inner">
+          <div class="case-stats-row">${stats}</div>
+          <p><strong>${c.key_stat}</strong></p>
+          ${c.wage_peak?'<h4>Scale</h4><p>Peak workforce: <strong>'+c.peak_workforce.toLocaleString()+'</strong> &middot; Peak wages: '+c.wage_peak+(c.wage_nadir?' &rarr; nadir: '+c.wage_nadir:'')+'</p>':''}
+          <h4>Recovery</h4>
+          <p><strong>${c.recovery_type}.</strong> ${c.recovery_detail}</p>
+          <h4>Scarring</h4>
+          <p>${c.scarring}</p>
+          <h4>Institutional Response</h4>
+          <p>${c.institutional_response}</p>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Age Gradient Chart (Dual-axis bars) ──
+function renderAgeChart(){
+  const el=document.getElementById('age-chart');
+  const data=DATA.age_gradient;
+  const W=Math.min(el.clientWidth||600,700),H=296,m={t:24,r:64,b:40,l:64};
+  const iw=W-m.l-m.r,ih=H-m.t-m.b;
+
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H).attr('role','img')
+    .attr('aria-label','Reemployment rate vs earnings loss by age band, showing cliff at age 50');
+  const g=svg.append('g').attr('transform',`translate(${m.l},${m.t})`);
+
+  const x=d3.scaleBand().domain(data.map(d=>d.age_band)).range([0,iw]).padding(0.3);
+  const yLeft=d3.scaleLinear().domain([0,1]).range([ih,0]);
+  const yRight=d3.scaleLinear().domain([0,50]).range([ih,0]);
+
+  // Grid lines
+  g.append('g').call(d3.axisLeft(yLeft).ticks(5).tickFormat(d=>(d*100)+'%').tickSize(-iw))
+    .selectAll('text').attr('fill','#71717a').attr('font-size',10);
+  g.selectAll('.domain').attr('stroke','none');
+  g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.04)');
+
+  // X axis
+  g.append('g').attr('transform',`translate(0,${ih})`).call(d3.axisBottom(x).tickSize(0))
+    .selectAll('text').attr('fill','#a1a1aa').attr('font-size',11);
+
+  const halfBand=x.bandwidth()/2;
+
+  data.forEach(d=>{
+    // Green bar: reemployment rate (left)
+    const greenH=ih-yLeft(d.reemployment_rate);
+    g.append('rect').attr('x',x(d.age_band)).attr('y',yLeft(d.reemployment_rate))
+      .attr('width',halfBand-2).attr('height',greenH).attr('rx',3).attr('fill','#22c55e').attr('opacity',0.85);
+    // Label
+    g.append('text').attr('x',x(d.age_band)+halfBand/2-1).attr('y',yLeft(d.reemployment_rate)-6)
+      .attr('text-anchor','middle').attr('fill','#86efac').attr('font-size',10).attr('font-weight',600)
+      .text(Math.round(d.reemployment_rate*100)+'%');
+
+    // Red bar: earnings loss (right)
+    const redH=ih-yRight(d.earnings_loss_pct);
+    g.append('rect').attr('x',x(d.age_band)+halfBand+2).attr('y',yRight(d.earnings_loss_pct))
+      .attr('width',halfBand-2).attr('height',redH).attr('rx',3).attr('fill','#ef4444').attr('opacity',0.85);
+    // Label
+    g.append('text').attr('x',x(d.age_band)+halfBand*1.5+1).attr('y',yRight(d.earnings_loss_pct)-6)
+      .attr('text-anchor','middle').attr('fill','#fca5a5').attr('font-size',10).attr('font-weight',600)
+      .text(d.earnings_loss_pct+'%');
+  });
+
+  // Right axis
+  g.append('g').attr('transform',`translate(${iw},0)`).call(d3.axisRight(yRight).ticks(5).tickFormat(d=>d+'%').tickSize(0))
+    .selectAll('text').attr('fill','#71717a').attr('font-size',10);
+
+  // Axis labels
+  g.append('text').attr('x',-ih/2).attr('y',-44).attr('transform','rotate(-90)').attr('text-anchor','middle')
+    .attr('fill','#22c55e').attr('font-size',11).attr('font-weight',500).text('Reemployment rate');
+  g.append('text').attr('x',-ih/2).attr('y',iw+48).attr('transform','rotate(-90)').attr('text-anchor','middle')
+    .attr('fill','#ef4444').attr('font-size',11).attr('font-weight',500).text('Earnings loss');
+
+  // Fallback table
+  document.getElementById('age-table').innerHTML='<table class="data-table" style="margin-top:12px"><caption class="sr-only">Age gradient data</caption><thead><tr><th scope="col">Age Band</th><th scope="col">Reemployment Rate</th><th scope="col">Earnings Loss</th></tr></thead><tbody>'+
+    data.map(d=>`<tr><td>${d.age_band}</td><td>${Math.round(d.reemployment_rate*100)}%</td><td>${d.earnings_loss_pct}%</td></tr>`).join('')+'</tbody></table>';
+}
+
+// ── Accordion ──
+function setupAccordions(){
+  document.querySelectorAll('.accordion-trigger').forEach(tr=>{
+    tr.addEventListener('click',()=>{
+      const exp=tr.getAttribute('aria-expanded')==='true';
+      tr.setAttribute('aria-expanded',exp?'false':'true');
+      const c=tr.nextElementSibling;
+      if(!exp){c.style.maxHeight=c.scrollHeight+'px'}else{c.style.maxHeight=null}
+      if(!exp&&window.posthog){posthog.capture('accordion_opened',{case_id:tr.closest('.accordion-section').id})}
+    });
+  });
+  function openHash(){
+    const h=location.hash.replace('#','');if(!h)return;
+    const s=document.getElementById(h);if(!s?.classList.contains('accordion-section'))return;
+    const t=s.querySelector('.accordion-trigger');
+    if(t&&t.getAttribute('aria-expanded')!=='true'){t.click();setTimeout(()=>s.scrollIntoView({behavior:'smooth',block:'start'}),150)}
+  }
+  openHash();window.addEventListener('hashchange',openHash);
+}
+
+// ── Burger ──
+function setupBurger(){
+  const btn=document.getElementById('burger-btn'),panel=document.getElementById('burger-panel');
+  btn.addEventListener('click',()=>{const o=panel.classList.toggle('open');btn.classList.toggle('open',o);btn.setAttribute('aria-expanded',o)});
+  document.addEventListener('click',e=>{if(!panel.contains(e.target)&&!btn.contains(e.target)&&panel.classList.contains('open')){panel.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('open')){panel.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+}
+
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Happened Every Other Time &mdash; Historic Technology Disruptions &amp; European Labour</title>
+<meta name="description" content="20 technology disruption case studies spanning 580 years, analysed for patterns that predict AI's impact on European labour markets.">
+<link rel="canonical" href="https://disruptions.nexalps.com/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Happened Every Other Time: Historic Technology Disruptions">
+<meta property="og:description" content="20 case studies, 580 years, 5 disruption patterns. What history tells us about AI and European labour.">
+<meta property="og:url" content="https://disruptions.nexalps.com/">
+<meta property="og:site_name" content="Nexalps">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://disruptions.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:description" content="20 case studies, 580 years, 5 disruption patterns. What history tells us about AI and European labour.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="twitter:title" content="What Happened Every Other Time: Historic Technology Disruptions">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"What Happened Every Other Time: Historic Technology Disruptions and European Labour","description":"20 technology disruption case studies spanning 580 years, analysed for patterns that predict AI's impact on European labour markets.","url":"https://disruptions.nexalps.com/","datePublished":"2026-04","author":{"@type":"Person","name":"Philipp Maul","url":"https://www.linkedin.com/in/pmaul/","affiliation":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"}},"publisher":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"},"keywords":["technology disruption","labour market","AI impact","GPT history","displaced workers","European labour","automation","retraining"]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+:root{
+  --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
+  --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#71717a;
+  --accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);
+  --ring:#f97316;
+  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+  --transition:150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+/* Skip + Focus */
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+/* Layout */
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}
+.site-nav-links a:hover{color:var(--foreground)}
+.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);min-width:44px;min-height:44px;padding:13px 12px;cursor:pointer;flex-direction:column;justify-content:center;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}
+.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}
+.burger-panel a:hover{color:var(--foreground)}
+.burger-panel a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger-sep{height:1px;background:var(--border);margin:4px 0}
+@media(max-width:900px){.site-nav-links{display:none}.burger{display:flex}}
+
+/* Hero */
+.hero{padding:80px 32px 24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}
+.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.hero .byline a:hover{color:var(--foreground)}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero{padding:64px 20px 20px}}
+@media(max-width:480px){.hero h1{font-size:20px}.stat-card .stat-value{font-size:18px!important}}
+
+/* Stat cards */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger-sep{height:1px;background:var(--border);margin:4px 0}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+
+/* Chart containers */
+.chart-box{margin:24px 0;padding:20px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:12px}
+.chart-box svg text{font-family:var(--font)}
+
+/* Taxonomy cards */
+.taxonomy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:32px}
+.taxonomy-card{padding:20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);border-left:3px solid}
+.taxonomy-card h3{font-size:15px;font-weight:600;margin-bottom:6px}
+.taxonomy-card .type-num{font-size:12px;font-weight:700;margin-right:4px}
+.taxonomy-card p{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+.taxonomy-card .example{font-size:11px;color:var(--muted-foreground);margin-top:8px;text-transform:uppercase;letter-spacing:0.04em}
+.taxonomy-card .case-badges{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger-sep{height:1px;background:var(--border);margin:4px 0}
+@media(max-width:768px){.taxonomy-grid{grid-template-columns:1fr 1fr}}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger-sep{height:1px;background:var(--border);margin:4px 0}
+@media(max-width:768px){#mechanism-cards{grid-template-columns:1fr!important}}
+@media(max-width:480px){.taxonomy-grid{grid-template-columns:1fr}}
+
+/* Type badges */
+.type-badge{display:inline-block;padding:3px 10px;border-radius:9999px;font-size:11px;font-weight:500}
+.type-1{background:rgba(74,222,128,0.10);color:#4ade80;border:1px solid rgba(74,222,128,0.2)}
+.type-2{background:rgba(74,222,128,0.10);color:#4ade80;border:1px solid rgba(74,222,128,0.2)}
+.type-3{background:rgba(245,158,11,0.10);color:#fbbf24;border:1px solid rgba(245,158,11,0.2)}
+.type-4{background:rgba(245,158,11,0.10);color:#fbbf24;border:1px solid rgba(245,158,11,0.2)}
+.type-5{background:rgba(248,113,113,0.10);color:#fca5a5;border:1px solid rgba(248,113,113,0.2)}
+
+/* Source tier badges */
+.source-badge{font-size:10px;padding:1px 6px;border-radius:9999px;font-weight:600}
+.tier-1{background:rgba(212,212,216,0.12);color:#d4d4d8;border:1px solid rgba(212,212,216,0.2)}
+.tier-2{background:rgba(161,161,170,0.12);color:#a1a1aa;border:1px solid rgba(161,161,170,0.2)}
+.tier-3{background:rgba(113,113,122,0.15);color:#71717a;border:1px solid rgba(113,113,122,0.25)}
+
+/* Data table */
+.data-table{width:100%;border-collapse:collapse;font-size:14px}
+.data-table th{text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;padding:8px 12px;border-bottom:1px solid var(--border);color:var(--muted-foreground)}
+.data-table td{padding:10px 12px;color:#d4d4d8;border-bottom:1px solid var(--card-border)}
+.data-table td:first-of-type{font-weight:600}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:24px}
+
+/* AI Relevance card */
+.ai-card{margin:16px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.ai-card h4{color:var(--ring);margin:0 0 6px}
+.ai-card p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Highlight boxes */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight .pattern-num{font-size:12px;font-weight:700;color:var(--ring);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px}
+.highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Author note */
+.author-note{padding:24px 28px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.10);border-radius:var(--radius-lg);margin:32px 0}
+.author-note h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:12px}
+.author-note p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+.author-note .sig{margin-top:16px;font-size:14px;font-weight:500;color:var(--muted-foreground)}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}
+.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+.footer a:hover{color:var(--foreground)}
+
+/* Reduced motion */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}
+}
+
+/* Mobile container padding */
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger-sep{height:1px;background:var(--border);margin:4px 0}
+@media(max-width:768px){.container,.container-narrow{padding:0 16px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html" aria-current="page">Overview</a>
+    <a href="cases.html">Case Studies</a>
+    <a href="findings.html">Findings & Predictions</a>
+    <a href="analysis.html">Deep Analysis</a>
+    <a href="outcomes.html">Worker Outcomes</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html" aria-current="page">Overview</a>
+  <a href="cases.html">Case Studies</a>
+  <a href="findings.html">Findings & Predictions</a>
+  <a href="analysis.html">Deep Analysis</a>
+  <a href="outcomes.html">Worker Outcomes</a>
+  <a href="sources.html">Sources</a>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+
+</div>
+
+<main id="main" role="main">
+
+<header class="hero container">
+  <h1>What Happened Every Other Time</h1>
+  <p class="lede">580 years of technology disruptions, 20 case studies, and what actually happened to the workers. History doesn't predict the future &mdash; but it narrows the range of plausible outcomes.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a> &middot; Early 2026 &middot; Part 3 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Based on <a href="sources.html">52 primary sources</a> including Acemoglu &amp; Restrepo, Dittmar, Feigenbaum &amp; Gross, David and Autor.</p>
+</header>
+
+<section class="container" role="region" aria-label="Summary statistics">
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-label">Time Span</div>
+      <div class="stat-value">580 years</div>
+      <div class="stat-sublabel">Printing press (1440) to AI (2022)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Median Adoption Lag</div>
+      <div class="stat-value">20&ndash;50 yrs</div>
+      <div class="stat-sublabel">Market entry to measurable productivity</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Disruption Patterns</div>
+      <div class="stat-value">5 types</div>
+      <div class="stat-sublabel">Create, Expand, Absorb, Restructure, Eliminate</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Worst-Case Job Loss</div>
+      <div class="stat-value">90%</div>
+      <div class="stat-sublabel">Containerisation of dock work</div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 1: GPT Timeline -->
+<section class="container" role="region" aria-label="GPT adoption timeline">
+  <h2><span class="num">1.</span> The Adoption Timeline <span class="subtitle">Every general-purpose technology follows a multi-decade arc from market entry to restructuring</span></h2>
+  <p class="section-sub">10 general-purpose technologies (9 historic + AI), plotted across 4 phases. AI is in the earliest stages of adoption &mdash; the historical pattern predicts 15&ndash;40 years to full restructuring.</p>
+  <div class="chart-box" role="img" aria-label="Timeline showing 10 technology disruptions from 1440 to 2026, with adoption arcs compressing from 160 years to 13 years">
+    <h3>Technology Adoption Arcs</h3>
+    <div id="gpt-timeline"></div>
+    <details>
+      <summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+      <div id="gpt-timeline-table"></div>
+    </details>
+  </div>
+</section>
+
+<!-- Section 2: Disruption Taxonomy -->
+<section class="container" role="region" aria-label="Disruption taxonomy">
+  <h2><span class="num">2.</span> Five Disruption Types <span class="subtitle">Not all disruptions work the same way &mdash; the type determines who wins and who loses</span></h2>
+  <p class="section-sub">Every occupation-level disruption in our dataset follows one of five types. The diagnostic framework below helps predict which one.</p>
+  <div style="display:flex;gap:24px;margin-bottom:16px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:8px"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#4ade80"></span><span style="font-size:13px;color:var(--muted)">Net job creation or preservation</span></div>
+    <div style="display:flex;align-items:center;gap:8px"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b"></span><span style="font-size:13px;color:var(--muted)">Jobs persist but transform or degrade</span></div>
+    <div style="display:flex;align-items:center;gap:8px"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#f87171"></span><span style="font-size:13px;color:var(--muted)">Jobs eliminated</span></div>
+  </div>
+  <div class="taxonomy-grid" id="taxonomy-grid"></div>
+
+  <h3 style="font-size:16px;font-weight:600;margin:32px 0 12px">Diagnostic Framework</h3>
+  <p style="font-size:14px;color:var(--muted);margin-bottom:16px">Six variables predict which disruption type an occupation will follow. The single most important question: does the technology automate <em>some</em> tasks (leaving high-value human tasks) or <em>all</em> core tasks?</p>
+  <div class="table-wrap">
+    <table class="data-table" id="diagnostic-table" aria-label="Diagnostic framework: 6 variables across 5 disruption types">
+      <caption class="sr-only">Diagnostic framework showing how six variables predict disruption type</caption>
+    </table>
+  </div>
+</section>
+
+<!-- Section 3: European Divergence -->
+<section class="container" role="region" aria-label="European divergence">
+  <h2><span class="num">3.</span> European Divergence <span class="subtitle">Same technology, different outcomes</span></h2>
+  <p class="section-sub">The most consistent finding across 580 years: <strong>institutional frameworks shape who bears the cost</strong>, not whether disruption occurs. Hall &amp; Soskice&rsquo;s <em>Varieties of Capitalism</em> (2001) explains why.</p>
+
+  <h3 style="font-size:16px;font-weight:600;margin:32px 0 12px">Three Varieties of Capitalism</h3>
+  <p style="font-size:14px;color:var(--muted);margin-bottom:16px">Three institutional logics produce structurally different responses to the same technology. Neither is superior &mdash; but they specialise. <strong style="color:#f97316">LMEs</strong> (Liberal Market Economies &mdash; US, UK, Australia) coordinate through competitive markets, flexible labour, and equity capital. <strong style="color:#4ade80">CMEs</strong> (Coordinated Market Economies &mdash; Germany, Nordics, Japan, Switzerland) coordinate through works councils, vocational training, and patient capital. <strong style="color:#c084fc">SMEs</strong> (State-led Market Economies &mdash; China) coordinate through industrial policy, state-directed credit, and administrative control.</p>
+  <div class="table-wrap">
+    <table class="data-table" id="lme-cme-table" aria-label="LME vs CME vs SME comparison across 6 variables">
+      <caption class="sr-only">Comparison of Liberal, Coordinated, and State-led Market Economy institutions</caption>
+    </table>
+  </div>
+
+  <h3 style="font-size:16px;font-weight:600;margin:32px 0 12px">Robot Density vs Manufacturing Job Loss</h3>
+  <p style="font-size:14px;color:var(--muted);margin-bottom:16px">Germany has 4&times; the robot density of the US but lost only 5% of manufacturing jobs (vs 36% in the US). The variable is institutional design, not technology.</p>
+  <div class="chart-box" role="img" aria-label="Scatter chart showing robot density vs manufacturing job change by country">
+    <h3>Robots per 10,000 Manufacturing Workers vs Job Change (%)</h3>
+    <div id="robot-chart"></div>
+  </div>
+
+  <h3 style="font-size:16px;font-weight:600;margin:32px 0 12px">Four Institutional Mechanisms That Redirect Disruption</h3>
+  <div id="mechanism-cards" style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px"></div>
+
+  <div class="author-note" style="margin-top:32px">
+    <h3>Author&rsquo;s Note</h3>
+    <p>The academic framework for this divergence is Hall &amp; Soskice&rsquo;s <strong>Varieties of Capitalism</strong> (2001): Liberal Market Economies (US, UK) coordinate through markets and produce radical innovation; Coordinated Market Economies (Germany, Nordics, Japan) coordinate through institutions and produce incremental innovation; State-led Market Economies (China) coordinate through industrial policy and produce directed leapfrog innovation. Acemoglu &amp; Johnson call the critical variable <strong>enabling vs. replacing technology</strong>: does AI augment workers or substitute them? Europe&rsquo;s institutional architecture gives it a structural advantage in steering toward the enabling path &mdash; if it chooses to use it.</p>
+    <div class="sig">&mdash; Philipp Maul</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="container">
+  <div class="cta-bar">
+    <h3>Go deeper</h3>
+    <p>Explore the 20 case studies in detail, or see what actually happened to the displaced workers.</p>
+    <div class="btn-row">
+      <a href="cases.html" class="btn btn-primary">20 Case Studies &rarr;</a>
+      <a href="findings.html" class="btn btn-outline">Findings &amp; Predictions &rarr;</a>
+      <a href="outcomes.html" class="btn btn-outline">Worker Outcomes &rarr;</a>
+      <a href="https://ai-exposure.nexalps.com/" class="btn btn-outline" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+      <a href="https://job-market.nexalps.com/" class="btn btn-outline" target="_blank" rel="noopener">Job Market ↗</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer container" role="contentinfo">
+  What Happened Every Other Time v1.0 &middot; Early 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="cases.html">Case Studies</a> &middot; <a href="findings.html">Findings &amp; Predictions</a> &middot; <a href="analysis.html">Deep Analysis</a> &middot; <a href="outcomes.html">Worker Outcomes</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> Philipp Maul | Nexalps
+</footer>
+
+<script>
+(function(){
+'use strict';
+let DATA=null;
+fetch('disruptions-data.json').then(r=>r.json()).then(d=>{DATA=d;render()}).catch(e=>console.error('Data load failed:',e));
+
+function render(){
+  renderGPTTimeline();
+  renderTaxonomy();
+  renderDiagnosticTable();
+  renderLMECMETable();
+  renderRobotChart();
+  renderMechanismCards();
+  setupBurger();
+}
+
+// ── GPT Timeline (Horizontal Gantt) ──
+function renderGPTTimeline(){
+  const el=document.getElementById('gpt-timeline');
+  const tl=DATA.gpt_timeline;
+  const W=Math.min(el.clientWidth||900,1100);
+  const rowH=40, m={t:24,r:32,b:40,l:168};
+  const H=m.t+m.b+tl.length*rowH;
+  const iw=W-m.l-m.r;
+
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H).attr('role','img')
+    .attr('aria-label','Timeline of 10 general-purpose technologies from 1440 to 2026');
+  const g=svg.append('g').attr('transform',`translate(${m.l},${m.t})`);
+
+  const x=d3.scaleLinear().domain([1440,2030]).range([0,iw]);
+  const y=d3.scaleBand().domain(tl.map(d=>d.label)).range([0,tl.length*rowH]).padding(0.25);
+
+  // X axis
+  g.append('g').attr('transform',`translate(0,${tl.length*rowH})`).call(
+    d3.axisBottom(x).tickValues([1440,1500,1600,1700,1800,1900,2000]).tickFormat(d3.format('d')).tickSize(-tl.length*rowH)
+  ).selectAll('text').attr('fill','#71717a').attr('font-size',11);
+  g.selectAll('.domain').attr('stroke','none');
+  g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.04)');
+
+  // Phase colors: zinc-to-orange ramp
+  const phaseColors=['#52525b','#a1a1aa','#f97316','#fb923c'];
+  const phaseLabels=['Market Entry','Adoption','Productivity','Restructuring'];
+
+  // Legend
+  const leg=g.append('g').attr('transform',`translate(0,-12)`);
+  phaseLabels.forEach((label,i)=>{
+    const lx=i*130;
+    leg.append('rect').attr('x',lx).attr('y',0).attr('width',12).attr('height',12).attr('rx',2).attr('fill',phaseColors[i]);
+    leg.append('text').attr('x',lx+16).attr('y',10).attr('fill','#a1a1aa').attr('font-size',11).attr('font-weight',500).text(label);
+  });
+
+  // Bars — only show phases that have real data (not null)
+  tl.forEach(d=>{
+    const yPos=y(d.label);
+    const bh=y.bandwidth();
+
+    // Label
+    g.append('text').attr('x',-8).attr('y',yPos+bh/2).attr('text-anchor','end').attr('dominant-baseline','middle')
+      .attr('fill','#a1a1aa').attr('font-size',12).attr('font-weight',500).text(d.label);
+
+    // Build segments only from real data
+    const phaseYears=[d.market_entry_year, d.mass_adoption_year, d.productivity_visible_year, d.full_restructuring_year];
+
+    // Draw segments between consecutive non-null years
+    for(let i=0;i<3;i++){
+      const start=phaseYears[i];
+      const end=phaseYears[i+1];
+      if(start==null||end==null)break; // stop at first unknown
+      const sx=x(start),sw=Math.max(x(end)-x(start),4);
+      g.append('rect').attr('x',sx).attr('y',yPos).attr('width',sw).attr('height',bh)
+        .attr('rx',3).attr('fill',phaseColors[i]);
+    }
+    // Last phase (restructuring→end) only if restructuring year exists
+    if(phaseYears[3]!=null){
+      const restr=phaseYears[3];
+      const endYr=Math.min(restr+15,2030);
+      const sx=x(restr),sw=Math.max(x(endYr)-x(restr),4);
+      g.append('rect').attr('x',sx).attr('y',yPos).attr('width',sw).attr('height',bh)
+        .attr('rx',3).attr('fill',phaseColors[3]);
+    }
+
+    // For rows with unknowns: show "?" at the end of last known phase
+    const lastKnown=phaseYears.filter(v=>v!=null);
+    const hasUnknowns=phaseYears.some(v=>v==null);
+    if(hasUnknowns&&lastKnown.length>0){
+      const lastYr=lastKnown[lastKnown.length-1];
+      const qx=x(lastYr)+8;
+      g.append('text').attr('x',Math.min(qx,iw-8)).attr('y',yPos+bh/2).attr('dominant-baseline','middle')
+        .attr('fill','#71717a').attr('font-size',12).attr('font-weight',700).text('?');
+    }
+  });
+
+  // Fallback table
+  const tableEl=document.getElementById('gpt-timeline-table');
+  tableEl.innerHTML='<table class="data-table" style="margin-top:12px"><caption class="sr-only">GPT adoption timeline data</caption><thead><tr><th scope="col">Technology</th><th scope="col">Market Entry</th><th scope="col">Mass Adoption</th><th scope="col">Productivity Visible</th><th scope="col">Full Restructuring</th><th scope="col">Arc (years)</th></tr></thead><tbody>'+
+    tl.map(d=>`<tr><td>${d.label}</td><td>${d.market_entry_year}</td><td>${d.mass_adoption_year||'?'}</td><td>${d.productivity_visible_year||'?'}</td><td>${d.full_restructuring_year||'?'}</td><td>${d.total_arc_years||'?'}</td></tr>`).join('')+
+    '</tbody></table>';
+}
+
+// ── Taxonomy Cards ──
+function renderTaxonomy(){
+  const allTypes=DATA.disruption_taxonomy.types;
+  // Reorder: 1 → 4 → 3 → 2 → 5 (same as diagnostic table)
+  const typeOrder=[1,2,3,4,5];
+  const types=typeOrder.map(id=>allTypes.find(t=>t.id===id));
+  document.getElementById('taxonomy-grid').innerHTML=types.map((t,idx)=>{
+    let cases;
+    // Hardcoded example badges for types with few micro_disruptions
+    const extraExamples={
+      1:['ATM Technicians','Data Scientists','App Developers','BIM Specialists','Logistics Coordinators'],
+      3:['AI Translation → Translators','Legal AI → Paralegals','Self-checkout → Cashiers','Robo-advisors → Financial Planners'],
+      4:['Airbnb → Hotel Workers','Food Delivery → Restaurant Staff','Cloud Kitchens → Traditional Chefs','Algorithmic Trading → Floor Traders']
+    };
+    if(extraExamples[t.id]&&t.id===1){
+      cases=extraExamples[t.id].map(e=>`<span class="type-badge type-${t.id}">${e}</span>`).join(' ');
+    } else {
+      cases=t.cases.map(c=>{
+        const md=DATA.micro_disruptions.find(m=>m.id===c);
+        return md?`<span class="type-badge type-${t.id}">${md.technology} → ${md.occupation}</span>`:'';
+      }).filter(Boolean).join(' ');
+      if(extraExamples[t.id]&&t.id!==1){
+        cases+=' '+extraExamples[t.id].map(e=>`<span class="type-badge type-${t.id}">${e}</span>`).join(' ');
+      }
+    }
+    return`<div class="taxonomy-card" style="border-left-color:${t.color}">
+      <h3><span class="type-num" style="color:${t.color}">Type ${t.id}</span> ${t.name}</h3>
+      <p>${t.description}</p>
+      <div class="example">${t.example_pattern}</div>
+      ${cases?'<div class="case-badges">'+cases+'</div>':''}
+    </div>`;
+  }).join('');
+}
+
+// ── Diagnostic Table ──
+function renderDiagnosticTable(){
+  const allTypes=DATA.disruption_taxonomy.types;
+  // Reorder: 1 → 4 → 3 → 2 → 5 (spectrum from least to most automated)
+  const typeOrder=[1,2,3,4,5];
+  const types=typeOrder.map(id=>allTypes.find(t=>t.id===id));
+  const vars=DATA.disruption_taxonomy.diagnostic_variables;
+  const table=document.getElementById('diagnostic-table');
+  table.innerHTML=`<thead><tr><th scope="col">Variable</th>${types.map(t=>'<th scope="col" style="color:var(--muted-foreground)">Type '+t.id+'</th>').join('')}</tr></thead><tbody>${
+    vars.map(v=>{
+      const key=v.toLowerCase().replace(/[^a-z]/g,'_').replace(/_+/g,'_').replace(/_$/,'');
+      const keyMap={
+        'task_automation_scope':'task_automation_scope',
+        'market_price_elasticity':'market_price_elasticity',
+        'remaining_human_task_value':'remaining_human_task_value',
+        'physical_relational_barrier':'physical_relational_barrier',
+        'tech_maturity_vs_institutional_speed':'tech_vs_institutional_speed',
+        'union_regulatory_effect':'union_regulatory_effect'
+      };
+      const dKey=keyMap[key]||key;
+      return`<tr><th scope="row">${v}</th>${types.map((t,i)=>{
+        const val=t.diagnostic[dKey]||'—';
+        if(i===0) return`<td style="color:#f97316;font-weight:600">${val}</td>`;
+        if(i===types.length-1) return`<td style="font-weight:400">${val}</td>`;
+        return`<td>${val}</td>`;
+      }).join('')}</tr>`;
+    }).join('')
+  }</tbody>`;
+}
+
+// ── LME/CME Table ──
+function renderLMECMETable(){
+  const rows=DATA.cross_cutting.european_divergence.lme_cme_comparison;
+  if(!rows)return;
+  document.getElementById('lme-cme-table').innerHTML=
+    '<thead><tr><th scope="col">Variable</th><th scope="col" style="color:#4ade80;font-weight:600">CME (DE, Nordics)</th><th scope="col" style="color:#f97316;font-weight:600">LME (US, UK)</th><th scope="col" style="color:#c084fc;font-weight:600">SME (China)</th></tr></thead><tbody>'+
+    rows.map(r=>'<tr><th scope="row">'+r.variable+'</th><td>'+r.cme+'</td><td>'+r.lme+'</td><td>'+r.sme+'</td></tr>').join('')+
+    '</tbody>';
+}
+
+// ── Robot Density Chart ──
+function renderRobotChart(){
+  const el=document.getElementById('robot-chart');
+  const data=DATA.cross_cutting.european_divergence.robot_density_comparison;
+  if(!data||!el)return;
+  const W=Math.min(el.clientWidth||700,800),H=392,m={t:24,r:32,b:48,l:64};
+  const iw=W-m.l-m.r,ih=H-m.t-m.b;
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H)
+    .attr('role','img').attr('aria-label','Bar chart comparing industrial robot density per 10,000 manufacturing workers across Germany, South Korea, Japan, and the United States');
+  const g=svg.append('g').attr('transform','translate('+m.l+','+m.t+')');
+
+  const x=d3.scaleLinear().domain([0,d3.max(data,d=>d.robots_per_10k)*1.1]).range([0,iw]);
+  const y=d3.scaleLinear().domain([d3.min(data,d=>d.manufacturing_job_change_pct)*1.2,5]).range([ih,0]);
+
+  // Grid
+  g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(d=>d+'%').tickSize(-iw))
+    .selectAll('text').attr('fill','#71717a').attr('font-size',10);
+  g.selectAll('.domain').attr('stroke','none');
+  g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.04)');
+
+  // X axis
+  g.append('g').attr('transform','translate(0,'+ih+')').call(d3.axisBottom(x).ticks(6).tickSize(0))
+    .selectAll('text').attr('fill','#71717a').attr('font-size',10);
+
+  // Zero line
+  g.append('line').attr('x1',0).attr('x2',iw).attr('y1',y(0)).attr('y2',y(0))
+    .attr('stroke','rgba(255,255,255,0.15)').attr('stroke-dasharray','4,4');
+
+  // Dots
+  const colors={CME:'#4ade80',LME:'#f97316',Mixed:'#fbbf24','CME-adjacent':'#86efac','LME-adjacent':'#fb923c',SME:'#c084fc','State-led':'#c084fc'};
+  // Dense-cluster countries get a numbered marker instead of a text label; legend keyed below the chart
+  const numberedCluster={Taiwan:1,Switzerland:2,Austria:3};
+  data.forEach(d=>{
+    g.append('circle').attr('cx',x(d.robots_per_10k)).attr('cy',y(d.manufacturing_job_change_pct))
+      .attr('r',7).attr('fill',colors[d.type]||'#a1a1aa').attr('opacity',0.85);
+    if(numberedCluster[d.country]){
+      // White number centered inside the dot
+      g.append('text').attr('x',x(d.robots_per_10k)).attr('y',y(d.manufacturing_job_change_pct))
+        .attr('text-anchor','middle').attr('dominant-baseline','central')
+        .attr('fill','#0a0a0a').attr('font-size',9).attr('font-weight',700)
+        .text(numberedCluster[d.country]);
+    }else{
+      g.append('text').attr('x',x(d.robots_per_10k)).attr('y',y(d.manufacturing_job_change_pct)-12)
+        .attr('text-anchor','middle').attr('fill','#d4d4d8').attr('font-size',10).attr('font-weight',500)
+        .text(d.country);
+    }
+  });
+
+  // Axis labels
+  g.append('text').attr('x',iw/2).attr('y',ih+34).attr('text-anchor','middle')
+    .attr('fill','#71717a').attr('font-size',11).text('Robots per 10,000 manufacturing workers');
+  g.append('text').attr('x',-ih/2).attr('y',-44).attr('transform','rotate(-90)').attr('text-anchor','middle')
+    .attr('fill','#71717a').attr('font-size',11).text('Manufacturing job change (%)');
+
+  // Legend — outside chart as HTML
+  const legHtml=[
+    {label:'CME (Coordinated)',color:'#4ade80'},{label:'LME (Liberal)',color:'#f97316'},
+    {label:'Mixed',color:'#fbbf24'},{label:'SME (State-led)',color:'#c084fc'}
+  ].map(item=>'<span style="display:inline-flex;align-items:center;gap:6px;margin-right:16px"><span style="width:10px;height:10px;border-radius:50%;background:'+item.color+'"></span><span style="font-size:12px;color:var(--muted)">'+item.label+'</span></span>').join('');
+  const legDiv=document.createElement('div');
+  legDiv.style.cssText='display:flex;flex-wrap:wrap;gap:4px;margin-top:12px;padding:0 4px';
+  legDiv.innerHTML=legHtml;
+  el.appendChild(legDiv);
+
+  // Numbered key for dense-cluster countries
+  const numKey=[{n:1,c:'Taiwan'},{n:2,c:'Switzerland'},{n:3,c:'Austria'}];
+  const numHtml=numKey.map(k=>'<span style="display:inline-flex;align-items:center;gap:6px;margin-right:16px"><span style="display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;border-radius:50%;background:#4ade80;color:#0a0a0a;font-size:9px;font-weight:700">'+k.n+'</span><span style="font-size:12px;color:var(--muted)">'+k.c+'</span></span>').join('');
+  const numDiv=document.createElement('div');
+  numDiv.style.cssText='display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;padding:0 4px';
+  numDiv.innerHTML=numHtml;
+  el.appendChild(numDiv);
+}
+
+// ── Mechanism Cards ──
+function renderMechanismCards(){
+  const mechs=DATA.cross_cutting.european_divergence.institutional_mechanisms;
+  if(!mechs)return;
+  document.getElementById('mechanism-cards').innerHTML=mechs.map(m=>
+    '<div style="padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);border-left:3px solid #4ade80">'+
+    '<div style="font-size:12px;font-weight:600;color:#4ade80;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px">'+m.country+'</div>'+
+    '<h4 style="font-size:15px;font-weight:600;margin-bottom:6px">'+m.name+'</h4>'+
+    '<p style="font-size:13px;color:var(--muted);line-height:1.6;margin:0 0 8px">'+m.description+'</p>'+
+    '<p style="font-size:12px;color:#86efac;line-height:1.5;margin:0"><strong>Evidence:</strong> '+m.evidence+'</p>'+
+    '</div>'
+  ).join('');
+}
+
+// ── Burger ──
+function setupBurger(){
+  const btn=document.getElementById('burger-btn'),panel=document.getElementById('burger-panel');
+  btn.addEventListener('click',()=>{const o=panel.classList.toggle('open');btn.classList.toggle('open',o);btn.setAttribute('aria-expanded',o)});
+  document.addEventListener('click',e=>{if(!panel.contains(e.target)&&!btn.contains(e.target)&&panel.classList.contains('open')){panel.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('open')){panel.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+}
+
+})();
+</script>
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+</body>
+</html>

@@ -1,0 +1,29 @@
+table,outcome,specification,coefficient,std_error,significance,interpretation
+Table 1 col 8,Total local employment (log),IV preferred with all controls + drop automotive outliers,-0.0848,0.150,insignificant,Zero aggregate employment effect
+Table 2 Panel A col 1,Total local employment (log),IV preferred,-0.0058,0.120,insignificant,Zero aggregate
+Table 2 Panel A col 2,Manufacturing employment (log),IV preferred,-0.3837,0.152,p<0.05,Manufacturing loss
+Table 2 Panel A col 3,Manufacturing automotive (log),IV preferred,-3.4084,1.142,p<0.01,Auto sector concentration
+Table 2 Panel A col 4,Manufacturing other (log),IV preferred,-0.6525,0.210,p<0.01,Non-auto manuf loss
+Table 2 Panel A col 5,Non-manufacturing employment (log),IV preferred,0.4177,0.206,p<0.05,Offsetting service-sector gain
+Table 2 Panel C col 2,Manufacturing low-skilled (log),IV preferred,-0.7549,0.315,p<0.05,Low-skilled manuf loss
+Table 2 Panel D col 2,Manufacturing medium-skilled (log),IV preferred,-0.3346,0.151,p<0.05,Medium-skilled manuf loss
+Table 2 Panel E col 2,Manufacturing high-skilled (log),IV preferred,-0.1559,0.333,insignificant,High-skilled manuf neutral
+Table 2 Panel F col 2,Manufacturing emp/pop ratio (pp),IV preferred,-0.0595,0.027,p<0.05,2.12 jobs per robot per 1000 workers
+Table 3 Panel B col 1,Worker days employed cumulative 20yr,IV basic,3.5591,0.848,p<0.01,Incumbents more stable
+Table 3 Panel B col 6,Worker days employed cumulative 20yr,IV full controls + drop automotive,1.1534,0.596,p<0.10,Incumbents more stable robust
+Table 4 Panel A col 2,Days same employer same sector,IV,11.4410,2.124,p<0.01,In-firm retention mechanism
+Table 4 Panel A col 3,Days same sector different employer,IV,-4.6514,1.475,p<0.01,Cross-firm displacement if no retention
+Table 4 Panel A col 4,Days different manufacturing industry,IV,-2.0260,1.669,insignificant,Some cross-industry displacement
+Table 4 Panel A col 5,Days outside manufacturing,IV,-3.9632,0.363,p<0.01,Displaced workers do not go to services
+Table 4 Panel B col 2,Days same occupation same employer,IV,6.3888,1.584,p<0.01,Stay in same job
+Table 4 Panel B col 3,Days same occupation different employer,IV,5.0522,0.744,p<0.01,Or same job elsewhere
+Table 4 Panel B col 4,Days different occupation same employer,IV,-7.5556,1.692,p<0.01,Not task-reassigned internally
+Table 4 Panel B col 5,Days different occupation different employer,IV,-3.0850,0.559,p<0.01,Not redeployed externally
+Table 5 col 1,Youth manufacturing-entry share (pp),IV,-0.1335,0.068,p<0.05,Foreclosed youth entry
+Table 5 col 2,Returnee manufacturing-reentry share (pp),IV,0.0297,0.079,insignificant,No effect on returnees
+Table 6 Panel A col 6,Cumulative earnings 20yr (log),IV full controls + drop automotive,-1.0822,0.388,p<0.01,Earnings decline
+Table 6 Panel B col 6,Average daily wage (log),IV full controls + drop automotive,-0.0649,0.015,p<0.01,Wage decline per exposure
+Table 7 col 1,Labor productivity (log change 2004-2014),IV,0.5365,0.268,p<0.05,Productivity gain
+Table 7 col 2,Average wage (log change 2004-2014),IV,-0.0766,0.129,insignificant,No wage growth
+Table 7 col 4,Labor prod minus gross pay (log change),IV,2.0757,0.945,p<0.05,Productivity captured by capital
+Table 7 col 7,Unemployment rate (pp change 2004-2014),IV,-0.0693,0.038,p<0.10,Slight UE reduction

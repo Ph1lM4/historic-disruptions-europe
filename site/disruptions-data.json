@@ -1,0 +1,2453 @@
+{
+  "meta": {
+    "title": "What Happened Every Other Time: Historic Technology Disruptions and European Labour",
+    "last_updated": "2026-04",
+    "source_count": 57,
+    "case_count": 20,
+    "time_span_years": 580,
+    "url": "https://disruptions.nexalps.com/"
+  },
+  "gpt_timeline": [
+    {
+      "id": "printing_press",
+      "label": "Printing Press",
+      "market_entry_year": 1440,
+      "market_entry_note": "Gutenberg, Mainz",
+      "mass_adoption_year": 1480,
+      "mass_adoption_note": "110+ cities with presses",
+      "productivity_visible_year": 1510,
+      "productivity_visible_note": "City growth effects; Reformation 1517",
+      "full_restructuring_year": 1600,
+      "full_restructuring_note": "2,894 printers active across 77 Italian cities",
+      "total_arc_years": 160
+    },
+    {
+      "id": "mechanised_loom",
+      "label": "Mechanised Loom",
+      "market_entry_year": 1764,
+      "market_entry_note": "Spinning jenny (Hargreaves)",
+      "mass_adoption_year": 1800,
+      "mass_adoption_note": "Factory spinning dominant",
+      "productivity_visible_year": 1830,
+      "productivity_visible_note": "TFP accelerates to 0.8%/yr",
+      "full_restructuring_year": 1850,
+      "full_restructuring_note": "Handloom weavers reduced to 43,000",
+      "total_arc_years": 90
+    },
+    {
+      "id": "steam_railways",
+      "label": "Steam / Railways",
+      "market_entry_year": 1825,
+      "market_entry_note": "Stockton & Darlington Railway",
+      "mass_adoption_year": 1850,
+      "mass_adoption_note": "6,000 miles of UK network",
+      "productivity_visible_year": 1860,
+      "productivity_visible_note": "Social savings 7–11% of NNI",
+      "full_restructuring_year": 1870,
+      "full_restructuring_note": "70%+ of final route mileage built",
+      "total_arc_years": 50
+    },
+    {
+      "id": "electricity",
+      "label": "Electricity",
+      "market_entry_year": 1882,
+      "market_entry_note": "Edison's Pearl Street Station",
+      "mass_adoption_year": 1920,
+      "mass_adoption_note": "50%+ of US factory power",
+      "productivity_visible_year": 1925,
+      "productivity_visible_note": "Manufacturing TFP ~5%/yr",
+      "full_restructuring_year": 1940,
+      "full_restructuring_note": "88 log pp TFP gain 1919–1941",
+      "total_arc_years": 55
+    },
+    {
+      "id": "assembly_line",
+      "label": "Assembly Line",
+      "market_entry_year": 1913,
+      "market_entry_note": "Ford Highland Park plant",
+      "mass_adoption_year": 1930,
+      "mass_adoption_note": "European manufacturers adopt",
+      "productivity_visible_year": 1925,
+      "productivity_visible_note": "Linked to electrification gains",
+      "full_restructuring_year": 1950,
+      "full_restructuring_note": "Fordism as socioeconomic system",
+      "total_arc_years": 40
+    },
+    {
+      "id": "computer_mainframe",
+      "label": "Computer / Mainframe",
+      "market_entry_year": 1951,
+      "market_entry_note": "UNIVAC I / LEO I",
+      "mass_adoption_year": 1970,
+      "mass_adoption_note": "IBM System/360 era",
+      "productivity_visible_year": 1995,
+      "productivity_visible_note": "Solow Paradox resolved — 44 year lag",
+      "full_restructuring_year": 2000,
+      "full_restructuring_note": "IT employment 3.4M, college premium 80%",
+      "total_arc_years": 50
+    },
+    {
+      "id": "pc_office",
+      "label": "PC / Office Automation",
+      "market_entry_year": 1981,
+      "market_entry_note": "IBM PC launched",
+      "mass_adoption_year": 1992,
+      "mass_adoption_note": "Semi-ubiquitous in offices",
+      "productivity_visible_year": 1995,
+      "productivity_visible_note": "Productivity boom >3%/yr",
+      "full_restructuring_year": 2005,
+      "full_restructuring_note": "Job polarisation documented across Europe",
+      "total_arc_years": 25
+    },
+    {
+      "id": "internet_ecommerce",
+      "label": "Internet / E-commerce",
+      "market_entry_year": 1995,
+      "market_entry_note": "Netscape IPO",
+      "mass_adoption_year": 2007,
+      "mass_adoption_note": "Broadband saturation",
+      "productivity_visible_year": 2005,
+      "productivity_visible_note": "Retail/logistics transformation",
+      "full_restructuring_year": 2015,
+      "full_restructuring_note": "Online 15%+ of retail; ongoing",
+      "total_arc_years": 20
+    },
+    {
+      "id": "mobile_platform",
+      "label": "Mobile / Platform Economy",
+      "market_entry_year": 2007,
+      "market_entry_note": "iPhone launch",
+      "mass_adoption_year": 2014,
+      "mass_adoption_note": "50%+ smartphone penetration",
+      "productivity_visible_year": null,
+      "productivity_visible_note": "Uncertain — convenience value unmeasured",
+      "full_restructuring_year": null,
+      "full_restructuring_note": "EU regulatory framework still forming",
+      "total_arc_years": 13
+    },
+    {
+      "id": "ai",
+      "label": "Artificial Intelligence",
+      "market_entry_year": 2017,
+      "market_entry_note": "Transformer paper (Vaswani et al.)",
+      "mass_adoption_year": null,
+      "mass_adoption_note": "78% of firms use AI in ≥1 function, but only ~1% at mature deployment",
+      "productivity_visible_year": null,
+      "productivity_visible_note": "Not yet visible at macro level",
+      "full_restructuring_year": null,
+      "full_restructuring_note": "Historical pattern predicts 2035–2050",
+      "total_arc_years": null
+    }
+  ],
+  "micro_disruptions": [
+    {
+      "id": "atm_tellers",
+      "technology": "ATMs",
+      "occupation": "Bank Tellers",
+      "disruption_type": 2,
+      "type_label": "Transformation + Expansion",
+      "isco_codes": [
+        "4211"
+      ],
+      "date_range": "1970s–2010s",
+      "tech_ready_year": 1970,
+      "employment_peak_year": 2007,
+      "near_complete_year": null,
+      "total_span_years": 55,
+      "peak_employment": 608000,
+      "current_employment": 340820,
+      "employment_change_pct": -43,
+      "mechanism": "ATMs reduced tellers per branch from 21 to 13, but cheaper branches meant 43% more urban branches. Mobile banking (post-2010) triggered the decline ATMs never caused.",
+      "european_variation": "Similar patterns across Europe; UK lost 6,000+ branches since 2015.",
+      "winners": "Banks (lower costs), consumers (24/7 access), tellers who upskilled to universal bankers",
+      "losers": "Post-2010 displaced tellers — only 4% transition to higher-paying roles; universal banker salary fell from ~€59K to ~€44K",
+      "employment_data": [
+        {
+          "year": 1970,
+          "value": 268000
+        },
+        {
+          "year": 1980,
+          "value": 500000
+        },
+        {
+          "year": 1990,
+          "value": 520000
+        },
+        {
+          "year": 2000,
+          "value": 560000
+        },
+        {
+          "year": 2007,
+          "value": 608000
+        },
+        {
+          "year": 2013,
+          "value": 527680
+        },
+        {
+          "year": 2023,
+          "value": 340820
+        }
+      ],
+      "key_stat": "Employment doubled 1970–2007, then fell 43% after mobile banking",
+      "sources": [
+        "bessen_2015",
+        "imf_2015",
+        "bls_oews",
+        "burning_glass_2024"
+      ]
+    },
+    {
+      "id": "spreadsheets_accountants",
+      "technology": "Spreadsheets",
+      "occupation": "Accountants & Bookkeepers",
+      "disruption_type": 2,
+      "type_label": "Transformation + Expansion",
+      "isco_codes": [
+        "2411",
+        "4311"
+      ],
+      "date_range": "1979–2000s",
+      "tech_ready_year": 1979,
+      "employment_peak_year": 1980,
+      "near_complete_year": null,
+      "total_span_years": 45,
+      "peak_employment": 339000,
+      "current_employment": 1400000,
+      "employment_change_pct": 313,
+      "mechanism": "VisiCalc compressed 20-hour models to 15 minutes. 400,000 clerk jobs vanished, but 600,000 professional accountant jobs were created — net gain of 200,000.",
+      "european_variation": "1.5 billion people now use spreadsheets globally. Similar regulatory-driven expansion (Sarbanes-Oxley, IFRS).",
+      "winners": "Professional accountants, financial analysts, small businesses",
+      "losers": "Manual bookkeepers, typing pools, calculation-focused clerks",
+      "employment_data": [
+        {
+          "year": 1980,
+          "value": 339000
+        },
+        {
+          "year": 2000,
+          "value": 500000
+        },
+        {
+          "year": 2022,
+          "value": 1400000
+        }
+      ],
+      "key_stat": "400,000 clerk jobs lost, 600,000 accountant jobs created — net +200,000",
+      "sources": [
+        "harford_ft",
+        "bls_oews",
+        "bls_btn_2018"
+      ]
+    },
+    {
+      "id": "containerisation_dockworkers",
+      "technology": "Containerisation",
+      "occupation": "Dockworkers",
+      "disruption_type": 5,
+      "type_label": "Elimination",
+      "isco_codes": [
+        "9333"
+      ],
+      "date_range": "1956–1980s",
+      "tech_ready_year": 1956,
+      "employment_peak_year": 1955,
+      "near_complete_year": 1980,
+      "total_span_years": 25,
+      "peak_employment": 82000,
+      "current_employment": 9400,
+      "employment_change_pct": -88,
+      "mechanism": "Productivity jumped from 1.5 to 37.5 tons per worker-hour (25× increase). Labour was 60–75% of cargo transport costs — containerisation eliminated the cost driver.",
+      "european_variation": "UK NDLS insulated workers for ~2 decades but abolished 1989. Port districts had higher employment in 1971, significantly lower 20 years later — deficit persisted 40 years.",
+      "winners": "Shipping companies, consumers (costs fell >90%), remaining workers (~€145K/yr ILWU)",
+      "losers": "Manual dockworkers, casual 'B men,' traditional port communities — 40-year geographic scarring",
+      "employment_data": [
+        {
+          "year": 1955,
+          "value": 82000
+        },
+        {
+          "year": 1970,
+          "value": 40000
+        },
+        {
+          "year": 1989,
+          "value": 9400
+        }
+      ],
+      "key_stat": "90%+ workforce reduction; 25× productivity gain; 40-year geographic scarring",
+      "sources": [
+        "levinson_the_box",
+        "el_sahli_upward_2017",
+        "hansard"
+      ]
+    },
+    {
+      "id": "cad_drafters",
+      "technology": "CAD",
+      "occupation": "Technical Drafters",
+      "disruption_type": 3,
+      "type_label": "Absorption",
+      "isco_codes": [
+        "3118"
+      ],
+      "date_range": "1982–2020",
+      "tech_ready_year": 1982,
+      "employment_peak_year": 1990,
+      "near_complete_year": 2020,
+      "total_span_years": 40,
+      "peak_employment": 326000,
+      "current_employment": 192100,
+      "employment_change_pct": -41,
+      "mechanism": "CAD gave 5–20× productivity over manual methods. Phase 1: augmentation. Phase 2: engineers drafted own work. Phase 3: BIM specialist roles emerged.",
+      "european_variation": "Similar trajectory. BIM mandated for public projects in UK, Germany, Nordics.",
+      "winners": "Engineers, architects, BIM specialists",
+      "losers": "Mid-career manual drafters, drafting education programmes",
+      "employment_data": [
+        {
+          "year": 1982,
+          "value": 280000
+        },
+        {
+          "year": 1990,
+          "value": 326000
+        },
+        {
+          "year": 2024,
+          "value": 192100
+        }
+      ],
+      "key_stat": "Stabilised at ~60% of peak — role absorbed into engineering, not eliminated",
+      "sources": [
+        "ieee_majchrzak_salzman",
+        "bls_ooh"
+      ]
+    },
+    {
+      "id": "telephone_operators",
+      "technology": "Automatic Switching",
+      "occupation": "Telephone Operators",
+      "disruption_type": 5,
+      "type_label": "Elimination",
+      "isco_codes": [
+        "4223"
+      ],
+      "date_range": "1892–1983",
+      "tech_ready_year": 1892,
+      "employment_peak_year": 1950,
+      "near_complete_year": 1983,
+      "total_span_years": 91,
+      "peak_employment": 350000,
+      "current_employment": 23800,
+      "employment_change_pct": -93,
+      "mechanism": "Strowger automatic switch (1892) to AT&T fully automated (1978). 86-year diffusion. Three slowing factors: increasing costs, AT&T monopoly, valued personal service.",
+      "european_variation": "UK peak 57,000 operators in 1967. Similar trajectory but different institutional context.",
+      "winners": "AT&T, consumers, future cohorts of young women (freed from operator pools)",
+      "losers": "Incumbent operators — employment of young women as operators fell 50–80% after city automation",
+      "employment_data": [
+        {
+          "year": 1920,
+          "value": 200000
+        },
+        {
+          "year": 1950,
+          "value": 350000
+        },
+        {
+          "year": 1960,
+          "value": 250000
+        },
+        {
+          "year": 1984,
+          "value": 40000
+        },
+        {
+          "year": 2023,
+          "value": 23800
+        }
+      ],
+      "key_stat": "91-year arc from tech-ready to near-complete — longest disruption timeline",
+      "sources": [
+        "feigenbaum_gross_qje_2024",
+        "baker_1964",
+        "bls_oes"
+      ]
+    },
+    {
+      "id": "elevator_operators",
+      "technology": "Automatic Elevators",
+      "occupation": "Elevator Operators",
+      "disruption_type": 5,
+      "type_label": "Elimination",
+      "isco_codes": [],
+      "date_range": "1900s–1990",
+      "tech_ready_year": 1900,
+      "employment_peak_year": 1950,
+      "near_complete_year": 1990,
+      "total_span_years": 90,
+      "peak_employment": 114473,
+      "current_employment": 0,
+      "employment_change_pct": -100,
+      "mechanism": "Technology ready by ~1900 but took 50 years to peak employment. Public fear, union resistance, building codes all delayed adoption. Only 1 of 270 detailed 1950 Census occupations fully eliminated.",
+      "european_variation": "Similar pattern. European adoption slightly slower due to building stock age.",
+      "winners": "Building owners, elevator manufacturers",
+      "losers": "Operators — complete elimination. 1945 NYC strike: 15,000 operators, ~€85M economic losses",
+      "employment_data": [
+        {
+          "year": 1950,
+          "value": 114473
+        },
+        {
+          "year": 1960,
+          "value": 50000
+        },
+        {
+          "year": 1990,
+          "value": 0
+        }
+      ],
+      "key_stat": "Only occupation fully eliminated from 270 detailed 1950 Census categories",
+      "sources": [
+        "atkinson_wu_itif_2017",
+        "bessen_harvard"
+      ]
+    },
+    {
+      "id": "dtp_typesetters",
+      "technology": "Desktop Publishing",
+      "occupation": "Typesetters / Compositors",
+      "disruption_type": 5,
+      "type_label": "Elimination",
+      "isco_codes": [
+        "7321"
+      ],
+      "date_range": "1985–2000",
+      "tech_ready_year": 1985,
+      "employment_peak_year": 1965,
+      "near_complete_year": 2000,
+      "total_span_years": 15,
+      "peak_employment": 100000,
+      "current_employment": 5000,
+      "employment_change_pct": -95,
+      "mechanism": "PageMaker (1985) + PostScript + laser printers democratised typesetting. ITU membership halved 1984–1987. Wapping dispute: 670 workers replaced 6,800.",
+      "european_variation": "Wapping dispute (1986) was watershed. UK printing unions destroyed. Continental Europe's stronger works councils slowed but didn't prevent displacement.",
+      "winners": "Media companies (News International profits: ~€14M → ~€105M), consumers",
+      "losers": "Fleet Street workers — most did NOT transition to DTP despite related skills",
+      "employment_data": [
+        {
+          "year": 1965,
+          "value": 100000
+        },
+        {
+          "year": 1986,
+          "value": 40000
+        },
+        {
+          "year": 2000,
+          "value": 10000
+        },
+        {
+          "year": 2024,
+          "value": 5000
+        }
+      ],
+      "key_stat": "Fastest completed disruption: 15 years. High-skill role eliminated.",
+      "sources": [
+        "romano_whattheythink",
+        "bls_soc_43_9031"
+      ]
+    },
+    {
+      "id": "robots_manufacturing",
+      "technology": "Industrial Robots",
+      "occupation": "Manufacturing Assembly",
+      "disruption_type": 2,
+      "type_label": "Transformation (hybrid Type 2/5)",
+      "isco_codes": [
+        "8210"
+      ],
+      "date_range": "1961–present",
+      "tech_ready_year": 1961,
+      "employment_peak_year": 1979,
+      "near_complete_year": null,
+      "total_span_years": 65,
+      "peak_employment": 19600000,
+      "current_employment": 12600000,
+      "employment_change_pct": -36,
+      "mechanism": "Same technology, different outcomes: US lost 36% of manufacturing jobs, Germany maintained ~25% manufacturing employment, Japan saw employment INCREASES. Institutions are the variable.",
+      "european_variation": "Germany 2014: 7.6 robots per 1,000 workers (vs US 1.6, European avg 2.7) — Dauth/Findeisen/Südekum/Wößner IAB-DP 30/2017. Zero aggregate employment effect (total −0.0058, insignificant) despite −2.12 manufacturing jobs per robot per 1,000 workers (Table 2 Panel F) because manufacturing loss is fully offset by non-manufacturing services gain (+0.4177 log-points). Mechanism: +11.44 days same-employer retention per robot per 1,000 workers (Table 4 Panel A col 2, p<0.01) — incumbents reassigned in-firm under co-determination + works councils + apprenticeship. Aggregate 276,507 manufacturing jobs lost 1994-2014 = 23% of manufacturing decline; driven by foreclosed youth entry (−0.1335 pp, Table 5 col 1, p<0.05), not by incumbent displacement. Wage cost absorbed by medium-skilled workers (~75% of sample): −€63 to −€800/year depending on exposure gradient.",
+      "winners": "Remaining workers (higher productivity), consumers, robot manufacturers",
+      "losers": "US Rust Belt workers — 6 million jobs lost 2000–2010 (trade + robots). Geographic scarring, deaths of despair.",
+      "employment_data": [
+        {
+          "year": 1970,
+          "value": 18000000
+        },
+        {
+          "year": 1979,
+          "value": 19600000
+        },
+        {
+          "year": 2000,
+          "value": 17300000
+        },
+        {
+          "year": 2010,
+          "value": 11500000
+        },
+        {
+          "year": 2026,
+          "value": 12600000
+        }
+      ],
+      "key_stat": "Germany has 4× US robot density but maintained manufacturing employment",
+      "sources": [
+        "acemoglu_restrepo_jpe_2020",
+        "dauth_et_al_cepr_2017",
+        "ifr_2024",
+        "fred"
+      ]
+    },
+    {
+      "id": "ridehailing_taxi",
+      "technology": "GPS / Ride-Hailing",
+      "occupation": "Taxi Dispatchers & Drivers",
+      "disruption_type": 4,
+      "type_label": "Restructuring (+ Absorption)",
+      "isco_codes": [
+        "8322",
+        "4323"
+      ],
+      "date_range": "2010–present",
+      "tech_ready_year": 2010,
+      "employment_peak_year": 2010,
+      "near_complete_year": null,
+      "total_span_years": 15,
+      "peak_employment": null,
+      "current_employment": null,
+      "employment_change_pct": null,
+      "mechanism": "Core task persists (driving people) but employment relationship restructured. Dispatchers eliminated (4,510 remain). Earnings collapsed: ~€35,500 for 2013 incumbents vs ~€9,700 for 2015 entrants.",
+      "european_variation": "Germany: Uber must comply with taxi regulations. France: liberalised with protections. UK: Supreme Court ruled drivers are 'workers' (2021). London black cabs: -34.5%.",
+      "winners": "Consumers (lower prices, convenience), platform companies",
+      "losers": "NYC medallion owners (value crashed from ~€1.1M to ~€68K–170K), incumbent drivers, at least 9 NYC driver suicides",
+      "employment_data": [
+        {
+          "year": 2010,
+          "value": 176000,
+          "label": "Nonemployer establishments"
+        },
+        {
+          "year": 2015,
+          "value": 480000,
+          "label": "Nonemployer establishments"
+        }
+      ],
+      "key_stat": "NYC medallion value crashed 90%; new entrant earnings 73% below incumbents",
+      "sources": [
+        "berger_chen_frey_2018",
+        "bls_oes",
+        "tfl_data",
+        "maguire_et_al"
+      ]
+    },
+    {
+      "id": "llm_knowledge_workers",
+      "technology": "Large Language Models",
+      "occupation": "AI-Exposed Knowledge Workers",
+      "disruption_type": 2,
+      "type_label": "Transformation + Expansion (early stage)",
+      "isco_codes": [
+        "2511",
+        "4222",
+        "4132",
+        "3344",
+        "2431",
+        "3321"
+      ],
+      "date_range": "2022–present",
+      "tech_ready_year": 2022,
+      "employment_peak_year": null,
+      "near_complete_year": null,
+      "total_span_years": 3,
+      "peak_employment": null,
+      "current_employment": null,
+      "employment_change_pct": null,
+      "mechanism": "LLMs introduce 'Observed Exposure' — combining theoretical AI capability with real-world automated usage. 74.5% of computer programmer tasks, 70.1% of customer service tasks, and 67.1% of data entry tasks now see automated coverage. But theoretical capability far exceeds deployment: Computer & Math category shows 94% theoretical vs 33% observed. No systematic net unemployment yet (DiD coefficient +0.002, SE 0.0019), but hiring of workers aged 22–25 into exposed occupations has slowed 14% post-ChatGPT (DiD: −14.3, SE 7.2). Pattern mirrors early stages of historical GPTs where entry-level effects precede incumbent displacement.",
+      "european_variation": "ECB SAFE survey (March 2026, 5,300 firms): AI currently net hiring driver in Europe. ifo (2025): 25% of German firms expect job cuts within 5 years. European regulatory friction (EU AI Act) may widen the theoretical-vs-observed gap further than in the US.",
+      "winners": "Firms adopting AI (productivity gains), workers with complementary skills, API-economy builders",
+      "losers": "Young entrants to exposed occupations (hiring slowed 14%), workers in occupations with high automation-to-augmentation ratios (customer service, data entry)",
+      "employment_data": [
+        {
+          "year": 2022,
+          "value": null,
+          "label": "Pre-ChatGPT baseline"
+        },
+        {
+          "year": 2025,
+          "value": null,
+          "label": "No systematic unemployment effect (DiD: +0.002)"
+        }
+      ],
+      "key_stat": "74.5% of programmer tasks automated; young worker hiring slowed 14%; no net unemployment yet — adoption gap is the story",
+      "sources": [
+        "massenkoff_mccrory_2026",
+        "brynjolfsson_et_al_2025"
+      ]
+    },
+    {
+      "id": "ecommerce_retail",
+      "technology": "E-commerce",
+      "occupation": "Retail Salespeople",
+      "disruption_type": 2,
+      "type_label": "Transformation → Restructuring",
+      "isco_codes": [
+        "5223"
+      ],
+      "date_range": "2000–present",
+      "tech_ready_year": 2000,
+      "employment_peak_year": 2017,
+      "near_complete_year": null,
+      "total_span_years": 25,
+      "peak_employment": 15900000,
+      "current_employment": 15427000,
+      "employment_change_pct": -3,
+      "mechanism": "E-commerce grew from <1% to 16.4% of retail. Warehousing employment grew 86%, couriers 54%, while retail grew only 8%. UK lost 420,000 bricks-and-mortar retail jobs since 2010.",
+      "european_variation": "UK online penetration ~27% vs US ~16%. UK lost 47 stores daily (PwC 2023). Continental Europe slower but accelerating.",
+      "winners": "E-commerce platforms, consumers, warehouse/logistics workers",
+      "losers": "Department store workers, UK high street (foot traffic down 40% since 2012). Amazon workers earn 26% less than local average.",
+      "employment_data": [
+        {
+          "year": 2010,
+          "value": 14800000
+        },
+        {
+          "year": 2017,
+          "value": 15900000
+        },
+        {
+          "year": 2020,
+          "value": 15100000
+        },
+        {
+          "year": 2026,
+          "value": 15427000
+        }
+      ],
+      "key_stat": "UK: 420,000 retail jobs lost since 2010; 47 stores closing daily",
+      "sources": [
+        "fred",
+        "census_ecommerce",
+        "ihl_group_2019",
+        "bls_btn",
+        "pwc_2023"
+      ]
+    }
+  ],
+  "displaced_worker_cases": [
+    {
+      "id": "handloom_weavers",
+      "title": "Hand-Loom Weavers",
+      "period": "1800–1860s",
+      "peak_workforce": 240000,
+      "wage_peak": "20 shillings/week (1806)",
+      "wage_nadir": "5 shillings/week (late 1820s)",
+      "wage_decline_pct": 75,
+      "recovery_type": "Generational replacement",
+      "recovery_detail": "Children entered factories; weavers themselves died in the trade. Economy-wide living standards did not improve until 1840s–1850s.",
+      "scarring": "Lancashire weaving towns: poor-relief costs 1.7–2× higher. East Lancashire: ~40% of population dependent on hand-loom weaving.",
+      "institutional_response": "Parliamentary investigations 1837–1841. No effective intervention.",
+      "key_stat": "75% real income drop over 25 years",
+      "sources": [
+        "thompson",
+        "bythell_1969",
+        "acemoglu_johnson_2024"
+      ]
+    },
+    {
+      "id": "dockworkers",
+      "title": "Dockworkers (Containerisation)",
+      "period": "1956–1989",
+      "peak_workforce": 82000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Gentrification replaced community",
+      "recovery_detail": "London Docklands: 60% derelict, 17.8% unemployment. LDDC invested £1.86B, created 120,000 new jobs — mostly financial services, inaccessible to former dockers.",
+      "scarring": "Port districts: employment lower than non-port 20 years later, deficit persisted 40 years through 2011. Liverpool: 46% unemployment, heroin epidemics, Toxteth riots.",
+      "institutional_response": "ILWU M&M Agreement (no-layoff guarantees), ILA container royalty, UK NDLS (2 decades of insulation, abolished 1989 with £25K–35K severance).",
+      "key_stat": "88% workforce reduction; 40-year geographic scarring",
+      "sources": [
+        "el_sahli_upward_2017",
+        "butler_2007"
+      ]
+    },
+    {
+      "id": "china_shock",
+      "title": "US Manufacturing (China Shock)",
+      "period": "2001–2019",
+      "peak_workforce": 19500000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Permanent displacement for many",
+      "recovery_detail": "Job losses converted 'nearly one-for-one into long-term unemployment.' Lifetime earnings loss ~€95,000 over 25 years. Earnings still 15–20% below expected 2 decades later.",
+      "scarring": "Detroit: 60% population loss. Gary: 50%+ population loss, 13,000 vacant structures. Youngstown: 40% poverty. Deaths of despair: 500,000 excess deaths since 1998.",
+      "institutional_response": "TAA programme — participants earned ~€2,800 LESS than non-participants. SSDI payments 30–40× larger than TAA.",
+      "key_stat": "2.0–2.4 million jobs destroyed; ~€95,000 lifetime earnings loss",
+      "sources": [
+        "autor_dorn_hanson",
+        "jacobson_lalonde_sullivan_1993",
+        "davis_von_wachter_2011",
+        "pierce_schott_2020"
+      ]
+    },
+    {
+      "id": "print_compositors",
+      "title": "Print Compositors (DTP)",
+      "period": "1985–2000",
+      "peak_workforce": 100000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Split outcome — cooperation vs resistance",
+      "recovery_detail": "NYT: 1,785 compositors given lifetime employment (last retired 2016). Wapping: 5,500 dismissed overnight. No academic study of displaced Wapping workers was ever conducted.",
+      "scarring": "Limited geographic scarring — urban locations with alternative employment. But subjective degradation documented (Cockburn interviews).",
+      "institutional_response": "NYT union cooperation = successful transition. UK printing unions split between NGA and SOGAT, unable to coordinate.",
+      "key_stat": "670 replacement workers produced same output as 6,800 — 90% workforce reduction overnight",
+      "sources": [
+        "cockburn"
+      ]
+    },
+    {
+      "id": "telephone_operators_displaced",
+      "title": "Telephone Operators",
+      "period": "1920s–1980s",
+      "peak_workforce": 350000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Closest to 'good news' case",
+      "recovery_detail": "Gradual timeline (57 years of active displacement) + growing economy + expanding female education = absorption. But: ~10% ended in lower-paying jobs vs 1% of non-exposed peers.",
+      "scarring": "Limited — but incumbent operators at city level suffered when cutovers were sudden (50–80% employment drop).",
+      "institutional_response": "AT&T managed gradual transition. Multi-year advance notice. No formal retraining programme needed due to timeline.",
+      "key_stat": "57-year displacement timeline — yet incumbents still suffered at city level",
+      "sources": [
+        "feigenbaum_gross_qje_2024"
+      ]
+    },
+    {
+      "id": "uk_coal_miners",
+      "title": "UK Coal Mining Communities",
+      "period": "1980s–2015",
+      "peak_workforce": 237000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Permanent geographic scarring",
+      "recovery_detail": "237,000 to fewer than 7,000. Last deep mine (Kellingley) closed 2015. Over 90,000 men diverted to incapacity benefits. 40 years later: still no convergence.",
+      "scarring": "57 jobs per 100 working-age vs 73 nationally. Earnings 8–10% below average. 1 in 6 on out-of-work benefits. Life expectancy ~1 year below national average. 42% of neighbourhoods in most deprived 30%.",
+      "institutional_response": "Minimal effective intervention. Grimethorpe: named poorest village in England (1994 EU report).",
+      "key_stat": "40 years post-closure: 80,000 additional residents would need work to match national rates",
+      "sources": [
+        "beatty_fothergill",
+        "saville_williams_2025",
+        "social_mobility_commission_2025"
+      ]
+    },
+    {
+      "id": "us_coal_appalachia",
+      "title": "US Appalachian Coal",
+      "period": "2011–2020",
+      "peak_workforce": 92000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Severe displacement with limited recovery",
+      "recovery_detail": "87% of losses concentrated in Appalachia. 37% of separated workers never held covered employment again. Only 28% employed consistently at 1, 3, and 5-year horizons.",
+      "scarring": "Diseases of despair mortality: 45–53% higher than non-Appalachian US. Opioid overdose rates: 50% higher. Age 35–44 mortality: 55–66% above non-Appalachian rates.",
+      "institutional_response": "TAA programme — poor outcomes (see retraining evidence).",
+      "key_stat": "37% never worked again; just over half ever earned comparable wages",
+      "sources": [
+        "kystats_2024",
+        "dol_gold_standard_2008"
+      ]
+    },
+    {
+      "id": "retail_workers",
+      "title": "Retail Workers (E-commerce)",
+      "period": "2010–present",
+      "peak_workforce": null,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Ongoing — lateral moves to lower-quality work",
+      "recovery_detail": "UK: 420,000 bricks-and-mortar jobs lost since 2010. US: department stores shed 241,000. Warehouse jobs available but pay 26% less than local average. Amazon injury rates 2× national average.",
+      "scarring": "No comprehensive longitudinal study exists. UK high street devastation — 47 stores closing daily. Over half of UK gig workers earn less than minimum wage.",
+      "institutional_response": "No dedicated programme. No 'internet-affected worker' TAA-equivalent category exists.",
+      "key_stat": "No longitudinal study exists tracking displaced retail workers",
+      "sources": [
+        "time_magazine",
+        "nelp",
+        "resolution_foundation"
+      ]
+    },
+    {
+      "id": "ruhr_valley_steel",
+      "title": "Ruhr Valley Steel & Coal (Germany)",
+      "period": "1960s–present",
+      "peak_workforce": 600000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Partial institutional recovery — but 60+ years and counting",
+      "recovery_detail": "Steel and coal employment fell from ~600,000 (1957) to under 10,000 by 2020. Despite €90+ billion in structural funds, Gelsenkirchen's unemployment remains 2× the national average. Duisburg and Dortmund diversified into logistics and tech; Gelsenkirchen and Herne did not.",
+      "scarring": "Population decline across the Ruhr: Gelsenkirchen lost 30% of residents since peak. Youth unemployment 2× national average. The region produces 7% less GDP per capita than the German average despite decades of investment.",
+      "institutional_response": "Largest structural fund programme in European history. Works councils (Betriebsräte) negotiated gradual closures over decades. Kurzarbeit preserved jobs during cyclical downturns. Universities (TU Dortmund, Universität Duisburg-Essen) drove partial pivot to knowledge economy.",
+      "key_stat": "€90+ billion invested over 60 years — still no convergence",
+      "sources": [
+        "ruhr_structural_funds"
+      ]
+    },
+    {
+      "id": "nord_pas_de_calais",
+      "title": "Nord-Pas-de-Calais Mining Basin (France)",
+      "period": "1960s–1990",
+      "peak_workforce": 220000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Permanent geographic scarring",
+      "recovery_detail": "220,000 miners at peak. Last mine (Oignies) closed 1990. Lens, Valenciennes, and Béthune still rank among France's poorest departments. Unemployment 3–5 percentage points above national average decades later.",
+      "scarring": "The former mining basin was classified as a UNESCO World Heritage Site (2012) — recognition of historical value, not economic recovery. Poverty rates 30–40% above national average. Life expectancy 2 years below French average.",
+      "institutional_response": "French state managed gradual closures via Charbonnages de France (nationalised coal company). Early retirement packages, retraining centres. EU structural funds. Toyota plant in Valenciennes (1998) brought ~5,000 jobs but could not offset the scale of loss.",
+      "key_stat": "220,000 jobs lost; still among France's poorest departments 35 years later",
+      "sources": [
+        "nord_pas_de_calais_heritage"
+      ]
+    },
+    {
+      "id": "china_soe",
+      "title": "State-Owned Enterprise Workers (China)",
+      "period": "1995–2002",
+      "peak_workforce": 113000000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": 23,
+      "recovery_type": "Partial — fewer than half found formal reemployment",
+      "recovery_detail": "SOE employment fell from ~113 million (1995) to ~67 million (2004) — 40% reduction. Between 1997 and 2002, 27–43 million workers laid off. In 1998 alone, 11 million — 7.1% of the entire urban workforce. Fewer than half found reemployment. Re-employed workers earned 23% less.",
+      "scarring": "Northeast 'rust belt' cities (Shenyang, Harbin): effective unemployment exceeded 40%. In Liaoning province, laid-off families earned half the provincial average. Workers reported worse health and higher depression rates. Average unemployment duration: ~4 years.",
+      "institutional_response": "Re-employment Centres (RECs) at restructuring SOEs — 3 years of living allowances + retraining + job search. Results inconsistent: Wuhan training improved reemployment by 9–12pp; Shenyang training had zero effect on reemployment.",
+      "key_stat": "27–43 million displaced; fewer than half found new formal work",
+      "sources": [
+        "appleton_2006"
+      ]
+    },
+    {
+      "id": "kitakyushu_steel",
+      "title": "Kitakyushu Steel City (Japan)",
+      "period": "1965–present",
+      "peak_workforce": 28000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "45-year slow decline with recent signs of revival",
+      "recovery_detail": "27,713 steel jobs lost between 1965 and 1988. City population fell from 1,068,000 (1979 peak) to 939,000 (2020) — 12% decline. Nippon Steel shifted production to Kimitsu near Tokyo. Unionised workers protected from involuntary redundancy but experienced early retirement and forced transfers.",
+      "scarring": "Ageing rate reached 30.6% by 2020 — worst of any designated city in Japan. Unemployment consistently above national average (7.7% vs 5.9% nationally in 2005). First Japanese 'former million city.' Persistent outmigration for decades.",
+      "institutional_response": "Nippon Steel pursued capacity rationalisation and diversification. City pivoted to environmental technology — from one of Japan's most polluted cities to a global green industry model. Recent positive signal: startup rate rose to highest in Japan (2023–24).",
+      "key_stat": "Population fell 12% over 40 years; ageing rate worst in Japan",
+      "sources": [
+        "edgington_1999"
+      ]
+    },
+    {
+      "id": "korea_shipyards",
+      "title": "Shipyard Workers (South Korea)",
+      "period": "2015–2018",
+      "peak_workforce": 40000,
+      "wage_peak": null,
+      "wage_nadir": null,
+      "wage_decline_pct": null,
+      "recovery_type": "Industry-level recovery; worker-level mixed",
+      "recovery_detail": "DSME cut 24% of direct workforce; including subcontractors, up to 70,000 positions eliminated. Samsung Heavy Industries planned 30–40% cuts. In Geoje, employment dropped 12,900 (-10%). Recovery came through LNG carrier orders — Korean yards won ~80% of global LNG newbuilds.",
+      "scarring": "Geoje and Tongyeong designated 'industry crisis special areas.' Subcontracted workers (2× the direct workforce) bore the brunt with no severance protection. Regional small businesses collapsed as spending power evaporated.",
+      "institutional_response": "Government designated five shipbuilding regions as crisis areas with tax exemptions (up to 5 years) for new businesses. Creditor banks injected €3.4 billion into DSME. DSME acquired by Hanwha Group in 2022 (€1.4 billion).",
+      "key_stat": "Up to 70,000 jobs lost; €3.4 billion bank injection to save one yard",
+      "sources": [
+        "korea_herald_shipyard"
+      ]
+    }
+  ],
+  "disruption_taxonomy": {
+    "types": [
+      {
+        "id": 1,
+        "name": "Demand Creation",
+        "short_name": "Creation",
+        "color": "#4ade80",
+        "description": "Technology creates entirely new occupations that didn't exist before. Historically, new jobs are either higher-skill/fewer or lower-quality/more numerous.",
+        "example_pattern": "Every disruption creates new roles",
+        "cases": [
+          "type5_examples"
+        ],
+        "diagnostic": {
+          "task_automation_scope": "N/A — new tasks emerge",
+          "market_price_elasticity": "New market created",
+          "remaining_human_task_value": "High (novel skills)",
+          "physical_relational_barrier": "Variable",
+          "tech_vs_institutional_speed": "Tech creates new needs",
+          "union_regulatory_effect": "Minimal role"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Transformation + Market Expansion",
+        "short_name": "Expansion",
+        "color": "#4ade80",
+        "description": "Technology automates some tasks, but cost reduction expands the market. More workers needed overall — at least temporarily.",
+        "example_pattern": "ATM pattern",
+        "cases": [
+          "atm_tellers",
+          "spreadsheets_accountants",
+          "robots_manufacturing"
+        ],
+        "diagnostic": {
+          "task_automation_scope": "Partial",
+          "market_price_elasticity": "High — cost down → demand up",
+          "remaining_human_task_value": "High (judgment, relational)",
+          "physical_relational_barrier": "Strong (face-to-face, trust)",
+          "tech_vs_institutional_speed": "Gradual; institutions keep pace",
+          "union_regulatory_effect": "Neutral to positive"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Role Absorption",
+        "short_name": "Absorption",
+        "color": "#f59e0b",
+        "description": "The function survives but the standalone role disappears — tasks absorbed into adjacent, higher-skilled positions.",
+        "example_pattern": "CAD/drafting pattern",
+        "cases": [
+          "cad_drafters"
+        ],
+        "diagnostic": {
+          "task_automation_scope": "Partial, but remaining tasks belong elsewhere",
+          "market_price_elasticity": "Low to moderate",
+          "remaining_human_task_value": "High, but in adjacent role",
+          "physical_relational_barrier": "Weak (informational)",
+          "tech_vs_institutional_speed": "Interface democratises function",
+          "union_regulatory_effect": "Low impact"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Market Restructuring",
+        "short_name": "Restructuring",
+        "color": "#f59e0b",
+        "description": "The job persists but the employment relationship changes. Technology restructures the market, not the task.",
+        "example_pattern": "Uber/taxi pattern",
+        "cases": [
+          "ridehailing_taxi",
+          "ecommerce_retail"
+        ],
+        "diagnostic": {
+          "task_automation_scope": "Low — core task persists",
+          "market_price_elasticity": "High — friction down → demand up",
+          "remaining_human_task_value": "Moderate (commodity)",
+          "physical_relational_barrier": "Physical presence required",
+          "tech_vs_institutional_speed": "Tech outruns regulation",
+          "union_regulatory_effect": "Critical determinant of outcome"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Full Task Automation → Elimination",
+        "short_name": "Elimination",
+        "color": "#f87171",
+        "description": "Technology replaces all core tasks. The occupation disappears, regardless of timeline or institutional response.",
+        "example_pattern": "Containerisation pattern",
+        "cases": [
+          "containerisation_dockworkers",
+          "telephone_operators",
+          "elevator_operators",
+          "dtp_typesetters"
+        ],
+        "diagnostic": {
+          "task_automation_scope": "Complete",
+          "market_price_elasticity": "Irrelevant — labour cost per unit collapses",
+          "remaining_human_task_value": "None",
+          "physical_relational_barrier": "None",
+          "tech_vs_institutional_speed": "Variable (10–90 years)",
+          "union_regulatory_effect": "Delays but cannot prevent"
+        }
+      }
+    ],
+    "diagnostic_variables": [
+      "Task automation scope",
+      "Market price elasticity",
+      "Remaining human task value",
+      "Physical/relational barrier",
+      "Tech maturity vs institutional speed",
+      "Union/regulatory effect"
+    ]
+  },
+  "retraining_evidence": {
+    "taa_evaluation": {
+      "source": "D'Amico and Schochet, Mathematica, 2012",
+      "finding": "Participants earned ~~€2,800 LESS than matched comparison workers 4 years later",
+      "pipeline": [
+        {
+          "stage": "Eligible",
+          "count": 100,
+          "label": "Workers eligible for retraining"
+        },
+        {
+          "stage": "Enrolled",
+          "count": 60,
+          "label": "Enrolled in training programme"
+        },
+        {
+          "stage": "Completed",
+          "count": 48,
+          "label": "Completed training"
+        },
+        {
+          "stage": "Employed in field",
+          "count": 18,
+          "label": "Found job in retrained field"
+        }
+      ]
+    },
+    "meta_analysis": {
+      "source": "Card, Kluve, Weber (OECD)",
+      "studies": 207,
+      "estimates": 857,
+      "finding": "Short-run impacts near zero. Modest positive effects only after 2+ years, only for certain subgroups (adult women, long-term unemployed)."
+    },
+    "jtpa_study": {
+      "source": "National JTPA Study (gold-standard RCT)",
+      "adult_women_effect": 1300,
+      "adult_men_effect": 1200,
+      "youth_effect": "Zero to negative — male youth earned less than controls",
+      "period": "30 months"
+    },
+    "uk_work_programme": {
+      "referrals": 1810000,
+      "job_outcome_rate": 0.28,
+      "early_sustained_rate": 0.036,
+      "baseline_rate": 0.05,
+      "note": "Early results worse than no-intervention baseline"
+    },
+    "kurzarbeit": {
+      "gdp_collapse_pct": -7,
+      "unemployment_rise_pp": 1,
+      "jobs_saved": 400000,
+      "cost_eur": 5500000000,
+      "us_comparison": "US spent ~€97 billion on unemployment compensation in 2009",
+      "limitation": "Designed for cyclical downturns, not structural transformation"
+    },
+    "heckman_verdict": "At best a modest impact. Many programs cannot pass a cost-benefit test. Returns to human capital investment decline steeply with age."
+  },
+  "age_gradient": [
+    {
+      "age_band": "25–34",
+      "reemployment_rate": 0.75,
+      "earnings_loss_pct": 5,
+      "label": "Youngest displaced workers"
+    },
+    {
+      "age_band": "35–44",
+      "reemployment_rate": 0.72,
+      "earnings_loss_pct": 8,
+      "label": "Early-mid career"
+    },
+    {
+      "age_band": "45–49",
+      "reemployment_rate": 0.67,
+      "earnings_loss_pct": 15,
+      "label": "Outcomes begin deteriorating"
+    },
+    {
+      "age_band": "50–59",
+      "reemployment_rate": 0.5,
+      "earnings_loss_pct": 42,
+      "label": "The cliff — earnings halved"
+    },
+    {
+      "age_band": "60+",
+      "reemployment_rate": 0.3,
+      "earnings_loss_pct": 34,
+      "label": "System effectively collapses"
+    }
+  ],
+  "timescale_comparison": [
+    {
+      "case": "Telephone Operators",
+      "tech_ready": 1892,
+      "employment_peak": 1950,
+      "near_complete": 1983,
+      "total_span": 91
+    },
+    {
+      "case": "Elevator Operators",
+      "tech_ready": 1900,
+      "employment_peak": 1950,
+      "near_complete": 1990,
+      "total_span": 90
+    },
+    {
+      "case": "Industrial Robots (US)",
+      "tech_ready": 1961,
+      "employment_peak": 1979,
+      "near_complete": null,
+      "total_span": 65
+    },
+    {
+      "case": "ATMs → Tellers",
+      "tech_ready": 1970,
+      "employment_peak": 2007,
+      "near_complete": null,
+      "total_span": 55
+    },
+    {
+      "case": "Spreadsheets → Bookkeepers",
+      "tech_ready": 1979,
+      "employment_peak": 1980,
+      "near_complete": null,
+      "total_span": 45
+    },
+    {
+      "case": "CAD → Drafters",
+      "tech_ready": 1982,
+      "employment_peak": 1990,
+      "near_complete": 2020,
+      "total_span": 40
+    },
+    {
+      "case": "Containerisation",
+      "tech_ready": 1956,
+      "employment_peak": 1955,
+      "near_complete": 1980,
+      "total_span": 25
+    },
+    {
+      "case": "E-commerce → Retail",
+      "tech_ready": 2000,
+      "employment_peak": 2017,
+      "near_complete": null,
+      "total_span": 25
+    },
+    {
+      "case": "DTP → Typesetters",
+      "tech_ready": 1985,
+      "employment_peak": 1965,
+      "near_complete": 2000,
+      "total_span": 15
+    },
+    {
+      "case": "GPS/Ride-hailing → Taxi",
+      "tech_ready": 2010,
+      "employment_peak": 2010,
+      "near_complete": null,
+      "total_span": 15
+    }
+  ],
+  "cross_cutting": {
+    "acceleration": {
+      "summary": "Time to 70% household adoption fell from ~40 years (1900) to 17 years (2000). ChatGPT: 100 million users in ~2 months. But enterprise maturity still low: only ~1% of firms at mature deployment.",
+      "predicted_ai_timeline": "15–30 years from initial productive deployment. Full restructuring effects most likely 2035–2050."
+    },
+    "this_time_different": {
+      "case_for": "AI affects cognitive + physical simultaneously (unprecedented breadth). GPT-3 to GPT-4 qualitative leap in ~1 year.",
+      "case_against": "Only ~1% at mature deployment. Polanyi's Paradox (flexibility, judgment, common sense). Productivity J-curve (Brynjolfsson et al. 2021). Historical pattern: 20–50 year adoption lags."
+    },
+    "european_divergence": {
+      "summary": "Same technology, different outcomes. The institutional variable — not technology — determines who bears the cost of disruption.",
+      "key_finding": "Whether the institutional architecture produces managed transition or competitive disadvantage depends on implementation.",
+      "lme_cme_comparison": [
+        {
+          "variable": "Labour market",
+          "lme": "Flexible hiring/firing, at-will employment",
+          "cme": "Works councils, strong dismissal protection, co-determination",
+          "sme": "State-directed mobility, hukou system, no independent unions"
+        },
+        {
+          "variable": "Skills system",
+          "lme": "General skills via university education",
+          "cme": "Industry-specific skills via vocational training (dual system)",
+          "sme": "Massive state STEM investment, rapid vocational expansion, quality gap"
+        },
+        {
+          "variable": "Capital markets",
+          "lme": "Equity-based, short-term shareholder returns",
+          "cme": "Patient capital, bank-based, cross-shareholding",
+          "sme": "State-directed credit, SOE cross-subsidisation, policy bank financing"
+        },
+        {
+          "variable": "Innovation type",
+          "lme": "Radical innovation (biotech, software, semiconductors)",
+          "cme": "Incremental innovation (machine tools, engines, consumer durables)",
+          "sme": "State-directed leapfrog innovation (EVs, solar, batteries, AI)"
+        },
+        {
+          "variable": "Crisis response",
+          "lme": "Mass layoffs, rapid restructuring, flexible rehiring",
+          "cme": "Kurzarbeit, negotiated transitions, gradual adjustment",
+          "sme": "Administrative directives, infrastructure stimulus, internal migration"
+        },
+        {
+          "variable": "Union density (2020)",
+          "lme": "US 10%, UK 23%",
+          "cme": "Germany 17%, Sweden 65%, Denmark 67%",
+          "sme": "China ~90% (ACFTU, state-controlled, non-independent)"
+        }
+      ],
+      "robot_density_comparison": [
+        {
+          "country": "South Korea",
+          "robots_per_10k": 1012,
+          "manufacturing_job_change_pct": -12,
+          "type": "CME-adjacent"
+        },
+        {
+          "country": "China",
+          "robots_per_10k": 392,
+          "manufacturing_job_change_pct": -25,
+          "type": "SME"
+        },
+        {
+          "country": "Singapore",
+          "robots_per_10k": 730,
+          "manufacturing_job_change_pct": -8,
+          "type": "LME-adjacent"
+        },
+        {
+          "country": "Japan",
+          "robots_per_10k": 399,
+          "manufacturing_job_change_pct": -15,
+          "type": "CME"
+        },
+        {
+          "country": "Germany",
+          "robots_per_10k": 397,
+          "manufacturing_job_change_pct": -5,
+          "type": "CME"
+        },
+        {
+          "country": "Taiwan",
+          "robots_per_10k": 292,
+          "manufacturing_job_change_pct": -10,
+          "type": "CME-adjacent"
+        },
+        {
+          "country": "Sweden",
+          "robots_per_10k": 321,
+          "manufacturing_job_change_pct": -3,
+          "type": "CME"
+        },
+        {
+          "country": "Denmark",
+          "robots_per_10k": 246,
+          "manufacturing_job_change_pct": -2,
+          "type": "CME"
+        },
+        {
+          "country": "United States",
+          "robots_per_10k": 285,
+          "manufacturing_job_change_pct": -36,
+          "type": "LME"
+        },
+        {
+          "country": "United Kingdom",
+          "robots_per_10k": 101,
+          "manufacturing_job_change_pct": -28,
+          "type": "LME"
+        },
+        {
+          "country": "France",
+          "robots_per_10k": 163,
+          "manufacturing_job_change_pct": -20,
+          "type": "Mixed"
+        },
+        {
+          "country": "Switzerland",
+          "robots_per_10k": 294,
+          "manufacturing_job_change_pct": -7,
+          "type": "CME",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, Roboterdichte, 2024 data). manufacturing_job_change_pct triangulated from BFS sector-share data (Sekundärer Sektor 32.18% → 20.67% share, 1990→2020) combined with BFS total-employment growth ~40%; absolute secondary-sector jobs approximately flat, narrower manufacturing-only estimate ~-7%. Not direct-matched to other countries' window or definition.",
+          "uncertainty_band": "±5pp"
+        },
+        {
+          "country": "Austria",
+          "robots_per_10k": 272,
+          "manufacturing_job_change_pct": -10,
+          "type": "CME",
+          "derivation_method": "robots_per_10k from IFR World Robotics Report 2025 (press release Apr 8 2026, Roboterdichte, 2024 data). manufacturing_job_change_pct estimated from qualitative Statistik Austria / BMAW narrative: Sachgütererzeugung underwent structural decline 1990-2020 but less severe than FR/IT given CME institutions; positioned between DE (-5%) and FR (-20%). No direct absolute-count source for this value.",
+          "uncertainty_band": "±5pp"
+        }
+      ],
+      "institutional_mechanisms": [
+        {
+          "name": "Kurzarbeit",
+          "country": "Germany",
+          "description": "Short-time work scheme: government subsidises reduced hours during downturns, preserving employment relationships and firm-specific skills.",
+          "evidence": "Saved ~400,000 jobs in 2008-09 at €5.5B cost. GDP fell 7%, unemployment rose <1pp."
+        },
+        {
+          "name": "Flexicurity",
+          "country": "Denmark",
+          "description": "Combines flexible hiring/firing with generous unemployment benefits (up to 90% of prior salary) and comprehensive active labour market policies.",
+          "evidence": "85% of income differences between families eliminated within one generation (vs 50% in US)."
+        },
+        {
+          "name": "Works Councils",
+          "country": "Germany/Austria",
+          "description": "Employee-elected bodies with co-determination rights on working conditions, training, and technology adoption. Cannot be abolished by employer.",
+          "evidence": "German robot adoption maintained employment where US equivalent produced -5.6 jobs per robot per 1,000 workers."
+        },
+        {
+          "name": "Job Security Councils",
+          "country": "Sweden",
+          "description": "Employer-funded bodies that provide retraining, job search, and transition support for displaced workers in unionised sectors.",
+          "evidence": "~80% reemployment rate — far exceeding any government-run programme (TAA: 18%)."
+        }
+      ]
+    },
+    "ten_patterns": [
+      {
+        "number": 1,
+        "title": "The Productivity Paradox",
+        "summary": "Every GPT shows a 20–50 year lag between invention and measurable productivity gains. Electricity took 40 years (David, 1990). Acemoglu calls this the 'productivity bandwagon' — it only works when technology raises worker marginal productivity, not just average output. AI is in year 4–9 of this cycle."
+      },
+      {
+        "number": 2,
+        "title": "The J-Curve",
+        "summary": "Destruction outpaces creation for 1–3 decades before net positive effects emerge. The trough is where displaced workers live."
+      },
+      {
+        "number": 3,
+        "title": "Institutional Frameworks Shape Distribution",
+        "summary": "Same technology (robots) produced job losses (US), neutrality (Germany), gains (Japan). Hall & Soskice's LME/CME framework explains why: Liberal Market Economies accelerate displacement through flexible labour markets; Coordinated Market Economies buffer it through works councils, vocational training, and patient capital. The variable is institutional design."
+      },
+      {
+        "number": 4,
+        "title": "Type 1 Has a Half-Life",
+        "summary": "Market expansion is temporary. ATM tellers had 37 years of growth before mobile banking triggered the decline ATMs never caused."
+      },
+      {
+        "number": 5,
+        "title": "Speed ≠ Impact",
+        "summary": "Telephone operators took 91 years. DTP took 15 years. Both ended in >90% elimination. The timeline doesn't determine severity — only who bears the cost."
+      },
+      {
+        "number": 6,
+        "title": "Timescales Consistently Exceed Prediction",
+        "summary": "The median micro-disruption takes 30–40 years from tech-ready to near-complete. The telephone-operator case is now verified across 9 countries and 5 institutional traditions: US 59yr, UK ~64yr, Australia ~74yr, Germany 58yr, France 66yr, Spain 64yr, Austria 62yr, Poland ~63yr, Switzerland 36–42yr (scale outlier). Eight of nine land in a 58–74 year envelope despite spanning private monopoly, state PTT, dictatorship, and multiple regime transitions within one adoption window — organizational complexity dominates regulatory regime as the window-length predictor. Edgerton's 'use-based history' matches: the container took 20+ years from invention (1956) to cost collapse (late 1970s). Predictions consistently underestimate adoption friction."
+      },
+      {
+        "number": 7,
+        "title": "Only 1 in 270 Occupations Fully Eliminated",
+        "summary": "Elevator operators are the only 1950 Census occupation to reach zero. Susskind calls this the 'superiority assumption' — as long as humans remain best-placed to perform newly created tasks, jobs persist. The question for AI: will humans still be best-placed for whatever new tasks emerge? Even 'eliminated' roles persist in residual form for decades."
+      },
+      {
+        "number": 8,
+        "title": "Geographic Scarring Is Permanent",
+        "summary": "40-year employment deficits in UK port districts and coalfields. Detroit lost 60% of population over 70 years. Recovery without pre-existing human capital is the exception."
+      },
+      {
+        "number": 9,
+        "title": "Retraining Doesn't Work at Scale",
+        "summary": "207-study meta-analysis: 'modest positive effects at best.' TAA participants earned ~€2,800 less. Frey documents US labour productivity grew 8× faster than hourly compensation since 1979. Susskind's distinction: frictional technological unemployment (wrong skills) is solvable; structural TU (not enough demand for human work) requires fundamentally different policy. Only prevention (Kurzarbeit) shows strong evidence."
+      },
+      {
+        "number": 10,
+        "title": "Displacement Transmits Across Generations",
+        "summary": "Children of displaced workers earn 9% less. Former industrial areas are 'social mobility cold spots' — young people half as likely to attend university."
+      }
+    ]
+  },
+  "intergenerational": {
+    "earnings_penalty_pct": 9,
+    "source": "Oreopoulos, Page, Stevens (2008)",
+    "detail": "Concentrated when displacement occurs during childhood ages 10–14. Geographic variation in upward mobility maps closely onto areas of concentrated displacement (Chetty).",
+    "education_impact": "Former industrial areas: young people half as likely to attend university (UK Social Mobility Commission 2025)."
+  },
+  "predictions": [
+    {
+      "number": 1,
+      "title": "Workers Will Not Move",
+      "summary": "Geographic mobility has declined from 20% annual moves to 7.8%. Expecting workers to relocate for new jobs contradicts 40 years of declining mobility."
+    },
+    {
+      "number": 2,
+      "title": "Retraining at Scale Does Not Work",
+      "summary": "TAA, JTPA, UK Work Programme — all show modest to null effects. 207-study meta-analysis confirms: short-run impacts near zero. Susskind's key distinction: retraining addresses frictional unemployment (wrong skills) but cannot address structural unemployment (insufficient demand for human work). The policy response must match the problem type."
+    },
+    {
+      "number": 3,
+      "title": "Age 50 = Point of No Return",
+      "summary": "Reemployment probability halved. Monthly reemployment 39% less likely than ages 25–34. Post-50 median household income falls 42%."
+    },
+    {
+      "number": 4,
+      "title": "Disability and Exit, Not New Employment",
+      "summary": "Actual adjustment mechanism is labour-force exit. SSDI payments in trade-exposed regions were 30–40× larger than TAA payments."
+    },
+    {
+      "number": 5,
+      "title": "Income Recovery Is Rare and Slow",
+      "summary": "Earnings 15–25% below pre-displacement levels 10–20 years later. Lifetime earnings loss ~€95,000 over 25 years."
+    },
+    {
+      "number": 6,
+      "title": "Speed Matters Less Than Hoped",
+      "summary": "AI adoption will be bounded by organizational complexity, not capability. The historical base rate: 58–74 year convergent envelope for full-occupation mechanization, verified across 9 countries (Apr 2026). The 57-year operator and 60-year weaver timelines still produced pain for incumbents — slow displacement does not equal painless displacement. Plan around adoption curves (Anthropic Economic Index ~33% actual usage in computer/math occupations) rather than capability curves (Eloundou ~94% theoretical exposure)."
+    },
+    {
+      "number": 7,
+      "title": "Community Scarring Can Be Permanent",
+      "summary": "40–70 year gaps with no convergence. UK coalfields, US Rust Belt — still below national averages. Recovery requires pre-existing human capital infrastructure."
+    },
+    {
+      "number": 8,
+      "title": "Children Bear Measurable Costs",
+      "summary": "9% earnings penalty for children of displaced workers. Former industrial areas are social mobility cold spots with halved university attendance."
+    },
+    {
+      "number": 9,
+      "title": "Institutions Shape Distribution, Not Magnitude",
+      "summary": "ILWU, NYT compositors, NDLS, Kurzarbeit — all cushioned existing workers. None prevented aggregate job reduction. Hall & Soskice's Varieties of Capitalism framework explains why: CMEs (Germany, Nordics) redirect disruption through institutional coordination; LMEs (US, UK) absorb it through market adjustment. The institutional variable determines who pays."
+    },
+    {
+      "number": 10,
+      "title": "Only Prevention Works",
+      "summary": "Kurzarbeit saved 400,000 jobs at ~€5.5B cost. US spent ~€97B on unemployment compensation. Acemoglu & Johnson's three-prong redirection framework: (1) change the narrative, (2) build countervailing powers, (3) implement specific policy levers. Every evaluated retraining programme shows weaker returns than prevention."
+    }
+  ],
+  "sources": [
+    {
+      "id": "massenkoff_mccrory_2026",
+      "tier": 1,
+      "title": "Labor Market Impacts of AI: A New Measure and Early Evidence",
+      "author": "Maxim Massenkoff & Peter McCrory",
+      "year": 2026,
+      "type": "working_paper",
+      "journal": "Anthropic Research"
+    },
+    {
+      "id": "brynjolfsson_et_al_2025",
+      "tier": 1,
+      "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+      "author": "Erik Brynjolfsson, Bharat Chandar, Ruyu Chen",
+      "year": 2025,
+      "type": "journal",
+      "journal": "Digital Economy"
+    },
+    {
+      "id": "dittmar_2011",
+      "tier": 1,
+      "title": "Information Technology and Economic Change: The Impact of the Printing Press",
+      "author": "Jeremiah Dittmar",
+      "year": 2011,
+      "type": "journal",
+      "journal": "Quarterly Journal of Economics"
+    },
+    {
+      "id": "david_1990",
+      "tier": 1,
+      "title": "The Dynamo and the Computer: An Historical Perspective on the Modern Productivity Paradox",
+      "author": "Paul David",
+      "year": 1990,
+      "type": "journal",
+      "journal": "American Economic Review"
+    },
+    {
+      "id": "acemoglu_restrepo_jpe_2020",
+      "tier": 1,
+      "title": "Robots and Jobs: Evidence from US Labor Markets",
+      "author": "Daron Acemoglu & Pascual Restrepo",
+      "year": 2020,
+      "type": "journal",
+      "journal": "Journal of Political Economy"
+    },
+    {
+      "id": "feigenbaum_gross_qje_2024",
+      "tier": 1,
+      "title": "Automation and the Fate of Young Workers: Evidence from Telephone Operation in the Early 20th Century",
+      "author": "James Feigenbaum & Daniel Gross",
+      "year": 2024,
+      "type": "journal",
+      "journal": "Quarterly Journal of Economics"
+    },
+    {
+      "id": "card_kluve_weber",
+      "tier": 1,
+      "title": "What Works? A Meta-Analysis of Recent Active Labor Market Program Evaluations",
+      "author": "David Card, Jochen Kluve, Andrea Weber",
+      "year": 2018,
+      "type": "journal",
+      "journal": "Journal of the European Economic Association"
+    },
+    {
+      "id": "autor_dorn_hanson",
+      "tier": 1,
+      "title": "The China Syndrome: Local Labor Market Effects of Import Competition in the United States",
+      "author": "David Autor, David Dorn, Gordon Hanson",
+      "year": 2013,
+      "type": "journal",
+      "journal": "American Economic Review"
+    },
+    {
+      "id": "dauth_et_al_iab_dp_30_2017",
+      "tier": 1,
+      "title": "German Robots — The Impact of Industrial Robots on Workers",
+      "author": "Wolfgang Dauth, Sebastian Findeisen, Jens Südekum, Nicole Wößner",
+      "year": 2017,
+      "type": "working_paper",
+      "journal": "IAB-Discussion Paper 30/2017 (Institute for Employment Research, German Federal Employment Agency); also issued as CEPR Discussion Paper 12306",
+      "primary_source_verified": "Apr 14, 2026. 63pp; key coefficients Tables 1-7. Full extraction at data/european-histories/german-robots/. Key findings: +11.4410 days same-employer retention per robot per 1,000 workers over 20 years (Table 4 Panel A col 2, p<0.01); −2.12 manufacturing jobs per robot per 1,000 workers (Table 2 Panel F; ~one-third US coefficient of 6.2); aggregate −276,507 manufacturing jobs 1994-2014 = 23% of decline, driven by foreclosed youth entry (−0.1335 pp per robot, Table 5) not by incumbent displacement. Verifies Germany as canonical strong Mode 3 absorbing-employer case."
+    },
+    {
+      "id": "jacobson_lalonde_sullivan_1993",
+      "tier": 1,
+      "title": "Earnings Losses of Displaced Workers",
+      "author": "Louis Jacobson, Robert LaLonde, Daniel Sullivan",
+      "year": 1993,
+      "type": "journal",
+      "journal": "American Economic Review"
+    },
+    {
+      "id": "davis_von_wachter_2011",
+      "tier": 1,
+      "title": "Recessions and the Costs of Job Loss",
+      "author": "Steven Davis & Till von Wachter",
+      "year": 2011,
+      "type": "journal",
+      "journal": "Brookings Papers on Economic Activity"
+    },
+    {
+      "id": "oreopoulos_page_stevens_2008",
+      "tier": 1,
+      "title": "The Intergenerational Effects of Worker Displacement",
+      "author": "Philip Oreopoulos, Marianne Page, Ann Huff Stevens",
+      "year": 2008,
+      "type": "journal",
+      "journal": "Journal of Labor Economics"
+    },
+    {
+      "id": "pierce_schott_2020",
+      "tier": 1,
+      "title": "Trade Liberalization and Mortality: Evidence from US Counties",
+      "author": "Justin Pierce & Peter Schott",
+      "year": 2020,
+      "type": "journal",
+      "journal": "American Economic Review: Insights"
+    },
+    {
+      "id": "sullivan_von_wachter_2009",
+      "tier": 1,
+      "title": "Job Displacement and Mortality: An Analysis Using Administrative Data",
+      "author": "Daniel Sullivan & Till von Wachter",
+      "year": 2009,
+      "type": "journal",
+      "journal": "Quarterly Journal of Economics"
+    },
+    {
+      "id": "crafts_2021",
+      "tier": 1,
+      "title": "Understanding Productivity Growth in the Industrial Revolution",
+      "author": "Nicholas Crafts",
+      "year": 2021,
+      "type": "journal",
+      "journal": "Economic History Review"
+    },
+    {
+      "id": "brynjolfsson_rock_syverson_2021",
+      "tier": 1,
+      "title": "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies",
+      "author": "Erik Brynjolfsson, Daniel Rock, Chad Syverson",
+      "year": 2021,
+      "type": "journal",
+      "journal": "American Economic Journal: Macroeconomics"
+    },
+    {
+      "id": "el_sahli_upward_2017",
+      "tier": 1,
+      "title": "Off the Waterfront: The Long-run Impact of Technological Change on Dock Workers",
+      "author": "Zouheir El-Sahli & Richard Upward",
+      "year": 2017,
+      "type": "journal",
+      "journal": "British Journal of Industrial Relations"
+    },
+    {
+      "id": "adachi_kawaguchi_saito_2024",
+      "tier": 1,
+      "title": "Robots and Employment: Evidence from Japan",
+      "author": "Daisuke Adachi, Daiji Kawaguchi, Yukiko Saito",
+      "year": 2024,
+      "type": "journal",
+      "journal": "Journal of Labor Economics"
+    },
+    {
+      "id": "berger_chen_frey_2018",
+      "tier": 1,
+      "title": "Drivers of Disruption? Estimating the Uber Effect",
+      "author": "Thor Berger, Chinchih Chen, Carl Benedikt Frey",
+      "year": 2018,
+      "type": "journal",
+      "journal": "European Economic Review"
+    },
+    {
+      "id": "goos_manning_2007",
+      "tier": 1,
+      "title": "Lousy and Lovely Jobs: The Rising Polarization of Work in Britain",
+      "author": "Maarten Goos & Alan Manning",
+      "year": 2007,
+      "type": "journal",
+      "journal": "Review of Economics and Statistics"
+    },
+    {
+      "id": "autor_levy_murnane_2003",
+      "tier": 1,
+      "title": "The Skill Content of Recent Technological Change",
+      "author": "David Autor, Frank Levy, Richard Murnane",
+      "year": 2003,
+      "type": "journal",
+      "journal": "Quarterly Journal of Economics"
+    },
+    {
+      "id": "damico_schochet_2012",
+      "tier": 1,
+      "title": "The Evaluation of the Trade Adjustment Assistance Program",
+      "author": "Ronald D'Amico & Peter Schochet",
+      "year": 2012,
+      "type": "report",
+      "journal": "Mathematica Policy Research"
+    },
+    {
+      "id": "bls_oews",
+      "tier": 2,
+      "title": "Occupational Employment and Wage Statistics",
+      "author": "Bureau of Labor Statistics",
+      "year": 2024,
+      "type": "dataset",
+      "journal": "BLS"
+    },
+    {
+      "id": "bls_btn_2018",
+      "tier": 2,
+      "title": "Beyond the Numbers: Employment Trends",
+      "author": "Bureau of Labor Statistics",
+      "year": 2018,
+      "type": "report",
+      "journal": "BLS"
+    },
+    {
+      "id": "ifr_2024",
+      "tier": 2,
+      "title": "World Robotics 2024",
+      "author": "International Federation of Robotics",
+      "year": 2024,
+      "type": "report",
+      "journal": "IFR"
+    },
+    {
+      "id": "fred",
+      "tier": 2,
+      "title": "Federal Reserve Economic Data",
+      "author": "Federal Reserve Bank of St. Louis",
+      "year": 2026,
+      "type": "dataset",
+      "journal": "FRED"
+    },
+    {
+      "id": "burning_glass_2024",
+      "tier": 2,
+      "title": "The New Face of Banking: Teller Transition Analysis",
+      "author": "Burning Glass Institute",
+      "year": 2024,
+      "type": "report",
+      "journal": "Burning Glass Institute"
+    },
+    {
+      "id": "mckinsey_state_ai",
+      "tier": 2,
+      "title": "The State of AI in 2025",
+      "author": "McKinsey & Company",
+      "year": 2025,
+      "type": "report",
+      "journal": "McKinsey"
+    },
+    {
+      "id": "beatty_fothergill",
+      "tier": 2,
+      "title": "The State of the Coalfields 2024",
+      "author": "Christina Beatty & Stephen Fothergill",
+      "year": 2024,
+      "type": "report",
+      "journal": "Sheffield Hallam University"
+    },
+    {
+      "id": "kystats_2024",
+      "tier": 2,
+      "title": "Kentucky Coal Worker Longitudinal Study",
+      "author": "KYSTATS",
+      "year": 2024,
+      "type": "report",
+      "journal": "Kentucky Center for Statistics"
+    },
+    {
+      "id": "atkinson_wu_itif_2017",
+      "tier": 2,
+      "title": "False Alarmism: Technological Disruption and the U.S. Labor Market",
+      "author": "Robert Atkinson & John Wu",
+      "year": 2017,
+      "type": "report",
+      "journal": "ITIF"
+    },
+    {
+      "id": "census_ecommerce",
+      "tier": 2,
+      "title": "Quarterly Retail E-Commerce Sales",
+      "author": "US Census Bureau",
+      "year": 2025,
+      "type": "dataset",
+      "journal": "Census Bureau"
+    },
+    {
+      "id": "social_mobility_commission_2025",
+      "tier": 2,
+      "title": "State of the Nation 2025",
+      "author": "UK Social Mobility Commission",
+      "year": 2025,
+      "type": "report",
+      "journal": "UK Government"
+    },
+    {
+      "id": "bessen_2015",
+      "tier": 2,
+      "title": "Learning by Doing: The Real Connection Between Innovation, Wages, and Wealth",
+      "author": "James Bessen",
+      "year": 2015,
+      "type": "book",
+      "journal": "Yale University Press"
+    },
+    {
+      "id": "levinson_the_box",
+      "tier": 3,
+      "title": "The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger",
+      "author": "Marc Levinson",
+      "year": 2006,
+      "type": "book",
+      "journal": "Princeton University Press"
+    },
+    {
+      "id": "thompson",
+      "tier": 3,
+      "title": "The Making of the English Working Class",
+      "author": "E.P. Thompson",
+      "year": 1963,
+      "type": "book",
+      "journal": "Victor Gollancz"
+    },
+    {
+      "id": "bythell_1969",
+      "tier": 3,
+      "title": "The Handloom Weavers",
+      "author": "Duncan Bythell",
+      "year": 1969,
+      "type": "book",
+      "journal": "Cambridge University Press"
+    },
+    {
+      "id": "acemoglu_johnson_2024",
+      "tier": 1,
+      "title": "Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity",
+      "author": "Daron Acemoglu & Simon Johnson",
+      "year": 2023,
+      "type": "book",
+      "journal": "PublicAffairs"
+    },
+    {
+      "id": "hall_soskice_2001",
+      "tier": 1,
+      "title": "Varieties of Capitalism",
+      "author": "Peter Hall & David Soskice",
+      "year": 2001,
+      "type": "book",
+      "journal": "Oxford University Press"
+    },
+    {
+      "id": "edgerton_2006",
+      "tier": 3,
+      "title": "The Shock of the Old: Technology and Global History since 1900",
+      "author": "David Edgerton",
+      "year": 2006,
+      "type": "book",
+      "journal": "Profile Books"
+    },
+    {
+      "id": "imf_2015",
+      "tier": 2,
+      "title": "Toil and Technology",
+      "author": "IMF Finance & Development",
+      "year": 2015,
+      "type": "article",
+      "journal": "IMF"
+    },
+    {
+      "id": "harford_ft",
+      "tier": 3,
+      "title": "VisiCalc and the Rise of the Spreadsheet",
+      "author": "Tim Harford",
+      "year": 2017,
+      "type": "article",
+      "journal": "Financial Times"
+    },
+    {
+      "id": "romano_whattheythink",
+      "tier": 3,
+      "title": "The Death of Typesetting",
+      "author": "Frank Romano",
+      "year": 2004,
+      "type": "article",
+      "journal": "WhatTheyThink"
+    },
+    {
+      "id": "pwc_2023",
+      "tier": 2,
+      "title": "UK High Street Report 2023",
+      "author": "PricewaterhouseCoopers",
+      "year": 2023,
+      "type": "report",
+      "journal": "PwC"
+    },
+    {
+      "id": "ihl_group_2019",
+      "tier": 2,
+      "title": "Retail Store Openings and Closures",
+      "author": "IHL Group",
+      "year": 2019,
+      "type": "report",
+      "journal": "IHL Group"
+    },
+    {
+      "id": "baker_1964",
+      "tier": 3,
+      "title": "Technology and Women's Work",
+      "author": "Elizabeth Faulkner Baker",
+      "year": 1964,
+      "type": "book",
+      "journal": "Columbia University Press"
+    },
+    {
+      "id": "saville_williams_2025",
+      "tier": 1,
+      "title": "Deaths of Despair in Former Coal Communities",
+      "author": "Saville & Williams",
+      "year": 2025,
+      "type": "journal",
+      "journal": "Various"
+    },
+    {
+      "id": "acemoglu_johnson_2023",
+      "tier": 1,
+      "title": "Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity",
+      "author": "Daron Acemoglu & Simon Johnson",
+      "year": 2023,
+      "type": "book",
+      "journal": "PublicAffairs"
+    },
+    {
+      "id": "frey_2019",
+      "tier": 1,
+      "title": "The Technology Trap: Capital, Labor, and Power in the Age of Automation",
+      "author": "Carl Benedikt Frey",
+      "year": 2019,
+      "type": "book",
+      "journal": "Princeton University Press"
+    },
+    {
+      "id": "susskind_2020",
+      "tier": 1,
+      "title": "A World Without Work: Technology, Automation, and How We Should Respond",
+      "author": "Daniel Susskind",
+      "year": 2020,
+      "type": "book",
+      "journal": "Allen Lane"
+    },
+    {
+      "id": "hall_soskice_2001",
+      "tier": 1,
+      "title": "Varieties of Capitalism: The Institutional Foundations of Comparative Advantage",
+      "author": "Peter A. Hall & David Soskice",
+      "year": 2001,
+      "type": "book",
+      "journal": "Oxford University Press"
+    },
+    {
+      "id": "edgerton_2006",
+      "tier": 2,
+      "title": "The Shock of the Old: Technology and Global History since 1900",
+      "author": "David Edgerton",
+      "year": 2006,
+      "type": "book",
+      "journal": "Profile Books"
+    },
+    {
+      "id": "elsahli_upward_2017",
+      "tier": 1,
+      "title": "Off the Waterfront: The long-run impact of technological change on dockworkers",
+      "author": "Zouheir El-Sahli & Richard Upward",
+      "year": 2017,
+      "type": "journal",
+      "journal": "British Journal of Industrial Relations",
+      "note": "Longitudinal UK micro-census data over 40 years. Finds union-negotiated job guarantees protected dockworker employment until 1989 removal. Port-district employment higher than non-port in 1971, significantly lower 20 years later, still lower after 40 years. Directly supports 3-mode buffering taxonomy (income-floor mechanism under NY/UK dock contracts) and metric (d) geographic scarring."
+    },
+    {
+      "id": "feigenbaum_gross_ms_2025",
+      "tier": 1,
+      "title": "Organizational and Economic Obstacles to Automation: A Cautionary Tale from AT&T in the Twentieth Century",
+      "author": "James Feigenbaum & Daniel Gross",
+      "year": 2025,
+      "type": "journal",
+      "journal": "Management Science",
+      "note": "Companion to their QJE 2024 telephone operators paper. Finds interdependencies between call switching and AT&T's other business activities presented obstacles to change — organizational complexity as a distinct lag driver, separate from labour friction. Relevant to retrofit lag parametric model as a candidate third driver."
+    },
+    {
+      "id": "autor_chin_salomons_seegmiller_2024",
+      "tier": 1,
+      "title": "New Frontiers: The Origins and Content of New Work, 1940–2018",
+      "author": "David Autor, Caroline Chin, Anna Salomons, Bryan Seegmiller",
+      "year": 2024,
+      "type": "journal",
+      "journal": "Quarterly Journal of Economics",
+      "note": "Majority of current employment is in new job specialties introduced after 1940. Locus of new-work creation shifted from middle-paid production/clerical (1940–1980) to high-paid professional and low-paid services (post-1980). Operationalises the 'elastic output demand' condition in the Spreadsheets counterfactual — accountants case combined augmentation with new-work-creation-within-occupation. Empirical basis for asking whether AI generates comparable reinstatement effects."
+    },
+    {
+      "id": "acemoglu_restrepo_jep_2019",
+      "tier": 1,
+      "title": "Automation and New Tasks: How Technology Displaces and Reinstates Labor",
+      "author": "Daron Acemoglu & Pascual Restrepo",
+      "year": 2019,
+      "type": "journal",
+      "journal": "Journal of Economic Perspectives",
+      "note": "Theoretical foundation for the displacement/reinstatement framework. Finds slower employment growth over last three decades is accounted for by accelerating displacement effect, weaker reinstatement effect, and slower productivity growth. Provides formal decomposition distinguishing 'displacement won' cases (dockworkers) from 'reinstatement won' cases (accountants) via task-content-of-production methodology."
+    },
+    {
+      "id": "anthropic_economic_index_2026",
+      "tier": 1,
+      "title": "Anthropic Economic Index (full series: Jan 2026, Mar 2026)",
+      "author": "Anthropic",
+      "year": 2026,
+      "type": "dataset",
+      "journal": "Anthropic Research",
+      "note": "Economic primitives covering task complexity, skill level, autonomy, success rates (Jan 2026). Observed exposure — actual LLM usage at task level, not theoretical (Mar 2026). 49% of jobs saw Claude used for ≥25% of tasks; success-rate adjustment changes effective coverage substantially. Enables LLMs/Knowledge Workers case to upgrade from low-feasibility narrative-only to medium-feasibility with task-level coverage data. Directly relevant to sub-role task displacement measurement."
+    }
+  ],
+  "structured_metrics": {
+    "schema_version": "0.1",
+    "methodology_note": "Five cross-case metrics populated for the 7 high-feasibility disruptions. 8 medium-feasibility cases carry per-cell confidence flags. 5 low-feasibility cases are treated as narrative-only and omitted from this table. Per BR-21, each derived value ships with derivation_method and uncertainty_band fields, not clean numbers. Source: Layer 3 cross-case feasibility matrix session, 2026-04-14.",
+    "metric_definitions": {
+      "a_time_to_50pct_task_displacement": "Years from commercial viability of the technology to 50% task displacement in the primary affected occupation. Task-level, not employment-level.",
+      "b_institutional_response_lag": "Years between first measurable displacement and first major policy, regulatory, or retraining response. Structurally unavailable for pre-1930 cases (see scope statement).",
+      "c_reskilling_adjacency": "Qualitative. Adjacent = displaced workers moved to skill-near roles with transferable skill ladder. Orthogonal = displaced workers moved to skill-far roles or dropped out of labour force.",
+      "d_concentration": "Qualitative. Strong = clear geographic or demographic concentration of displacement documented. Medium = partial concentration. Distributed = no clear concentration.",
+      "e_peak_annual_displacement_rate": "Peak percentage decline in affected occupation employment per year during the fastest displacement phase. Derived from stock series; uncertainty bands reflect distributional assumptions."
+    },
+    "high_feasibility_cases": [
+      {
+        "id": "pc_office",
+        "label": "PC / Office Automation",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "14–18 years",
+            "derivation_method": "pc_adoption_curve_plus_autor_levy_murnane_2003_routine_task_substitution_onset",
+            "uncertainty_band": "±3 years"
+          },
+          "b_institutional_response_lag": {
+            "value": "17 years",
+            "derivation_method": "us_workforce_investment_act_1998_minus_ibm_pc_1981",
+            "uncertainty_band": "±2 years (EU Social Fund scale-up 1990s overlaps)"
+          },
+          "c_reskilling_adjacency": {
+            "value": "mixed",
+            "derivation_method": "autor_dorn_polarisation_literature",
+            "uncertainty_band": "medium — routine-cognitive to non-routine-cognitive adjacent in some cases, to service sector orthogonal in others"
+          },
+          "d_concentration": {
+            "value": "medium-strong",
+            "derivation_method": "autor_dorn_geographic_concentration_midwest_industrial_cities",
+            "uncertainty_band": "well-documented"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "1.5–2% per year",
+            "derivation_method": "bls_oes_routine_cognitive_occupation_share_1995_2005_linear_interpolation",
+            "uncertainty_band": "±0.5 percentage points (distributional assumption: uniform decline; actual may be front-loaded)"
+          }
+        }
+      },
+      {
+        "id": "internet_ecommerce",
+        "label": "Internet / E-commerce",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "10–15 years",
+            "derivation_method": "web_commerce_1995_to_travel_agent_and_print_classified_50pct_decline_approx_2005_2010",
+            "uncertainty_band": "±3 years (varies by sub-occupation)"
+          },
+          "b_institutional_response_lag": {
+            "value": "7–11 years",
+            "derivation_method": "us_taa_expansion_2002_and_eu_globalisation_adjustment_fund_2006_minus_1995",
+            "uncertainty_band": "±2 years"
+          },
+          "c_reskilling_adjacency": {
+            "value": "mixed",
+            "derivation_method": "retail_cashier_to_warehouse_adjacent_physically_but_wage_gap; travel_agents_mostly_out_of_industry",
+            "uncertainty_band": "medium"
+          },
+          "d_concentration": {
+            "value": "strong",
+            "derivation_method": "small_town_retail_and_print_heavy_cities_impact_documented_bls_nace_g47",
+            "uncertainty_band": "well-documented"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "4–5% per year (travel agents)",
+            "derivation_method": "bls_travel_agents_employment_2000_2005_peak_decline",
+            "uncertainty_band": "±1 percentage point; retail sector polarised, not single rate"
+          }
+        }
+      },
+      {
+        "id": "atm_tellers",
+        "label": "ATMs / Bank Tellers",
+        "class": "C_redefined_no_displacement",
+        "class_note": "v0.3 taxonomy finding: ATMs/tellers is Class C (role-redefined, no displacement during adoption window), not a long-lag Class B. Post-2009 decline is attributable to mobile banking, not delayed ATM effect. Lag parameter is undefined for Class C — replaced by role-redefinition-success indicator.",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "~14 years (cash withdrawal task only)",
+            "derivation_method": "atm_mass_adoption_1985_42pct_household_penetration_per_bessen_2015_p117_minus_first_atm_1971_seattle_first_national_bank",
+            "uncertainty_band": "±3 years; 50% occupation-level displacement NOT reached during ATM era — role was redefined, not hollowed"
+          },
+          "b_institutional_response_lag": {
+            "value": "not applicable — Class C case",
+            "derivation_method": "no_displacement_triggered_public_policy_response_because_net_teller_employment_rose_throughout_adoption_curve",
+            "uncertainty_band": "metric structurally undefined for Class C"
+          },
+          "c_reskilling_adjacency": {
+            "value": "high — within-firm role redefinition to relationship banking + cross-sell",
+            "derivation_method": "bessen_2015_ch7_p117_121_per_branch_staff_20_to_13_1988_2004_but_branches_plus_43pct_same_window_net_teller_employment_rises",
+            "uncertainty_band": "HIGH — Hannan & Hanweck bank-branch data + BLS OES teller series directly cited by Bessen Note 9"
+          },
+          "d_concentration": {
+            "value": "low — geographically dispersed retail banking; no regional scarring",
+            "derivation_method": "branch_network_spread_across_all_metro_areas_no_single_region_bearing_disproportionate_cost",
+            "uncertainty_band": "low-medium"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "NEGATIVE during ATM era: tellers GREW +130% from 1970 to 2009 baseline (250k → 576,580). Decline only post-2009 at ~2–3% per year driven by mobile banking + branch consolidation, NOT ATMs.",
+            "derivation_method": "bls_oes_tellers_504000_in_1984_to_576580_in_2009_bessen_2015_note_9_verbatim; pre_1984_levels_from_cps_363000_in_1976_bessen_note_9_verbatim; 2009_onward_decline_driven_by_online_banking_per_bessen_text_p120",
+            "uncertainty_band": "HIGH on anchor years 1976/1984/2009; intermediate years ±15k from Fig 7.1 chart read-off"
+          },
+          "f_task_vs_role_decomposition": "Critical: ATMs substituted the cash-withdrawal TASK (~80% by 2000) but the teller ROLE was redefined to absorb relationship-banking, cross-sell, and problem-resolution tasks. Latest-generation ATMs include 'live video link to a real teller' (Bessen). Task-level 50% displacement reached ~1985; role-level 50% displacement NEVER reached during 1971–2009 adoption window. This is why single-lag framings fail on Class C cases — the right measurement object is role-redefinition success, not task-to-employment lag.",
+          "g_structural_caveat_against_ai_analogy": "Class C success depends on: (i) output-demand elasticity (cheaper branches → more branches), (ii) complementary-task availability (relationship banking was a pre-existing task the teller could absorb), (iii) within-firm retraining pathway. Autor/Chin/Salomons/Seegmiller 2024 documents that augmentation-type innovations have weakened over the last four decades. AI augmentation may not reproduce Class C outcomes even when (i)-(iii) nominally hold. Historical Class C rate is an UPPER bound on AI Class C rate, not a base rate."
+        }
+      },
+      {
+        "id": "containerisation_dockworkers",
+        "label": "Containerisation / Dockworkers",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "14 years",
+            "derivation_method": "container_share_of_general_cargo_reached_50pct_approx_1970_minus_ideal_x_voyage_1956",
+            "uncertainty_band": "±3 years; varies by port, Levinson Ch 7 extraction pending"
+          },
+          "b_institutional_response_lag": {
+            "value": "bifurcated — 0–10 yr non-protected cohort; 23 yr NDLS-protected cohort",
+            "derivation_method": "uk_east_london_150k_jobs_1966_to_1976_vs_ndls_abolished_1989_7200_redundant_1989_1992_minus_first_uk_container_ship_1966; el_sahli_upward_2015_fig_1_and_tables_1_6_8_bjir_2017",
+            "uncertainty_band": "HIGH for bifurcation finding; MEDIUM for lag boundaries; replaces previous single-number 8–9yr figure (which collapsed the two cohorts)"
+          },
+          "c_reskilling_adjacency": {
+            "value": "low — no displacement-induced geographic or occupational mobility",
+            "derivation_method": "el_sahli_upward_2015_table_8_zero_treatment_effect_on_mobility_stevedores_aged_out_rather_than_relocated",
+            "uncertainty_band": "HIGH — matched DiD, 40-year panel, 397 stevedores tracked 1971-2011"
+          },
+          "d_concentration": {
+            "value": "strong — −3.7pp employment rate persisting 40 years post-shock",
+            "derivation_method": "el_sahli_upward_2015_table_1_delta_2011_port_districts_vs_non_port_districts_england_wales_census",
+            "uncertainty_band": "SE 0.007, p<0.001, 1366 districts, 40-year panel — exceptionally tight"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "2,400 redundancies/yr UK (1989–1992); for cohort attrition: −25% per decade 1961–1991 (GB stevedores 64k→6k)",
+            "derivation_method": "el_sahli_upward_2015_fig_1_gb_stevedore_series_plus_turnbull_1992_7200_redundant_1989_1992_divided_by_3_years",
+            "uncertainty_band": "UK-direct verified; US-NY figures were previously cited here but deprioritised per Apr 14 European-focus rule"
+          },
+          "f_institutional_buffering_mode": {
+            "value": "Mode 1 (income-floor) — empirically verified",
+            "derivation_method": "el_sahli_upward_2015_tables_6_and_8_matched_DiD_delta_1981_employment_plus_0_068_SE_0_027_significant_plus_delta_1981_same_occupation_plus_0_243_and_delta_1991_same_occupation_minus_0_112_post_ndls_abolition_churn",
+            "uncertainty_band": "HIGH — direct micro-econometric test of Mode 1 hypothesis"
+          },
+          "g_counterfactual_selection_caveat": "Paper's 'stevedores fared no worse than matched controls' finding is conditional on UK unskilled men having extremely poor 1980s-90s outcomes (Nickell & Bell 1995). Against a healthier counterfactual, buffered outcomes would look materially worse. Same-direction structural-optimism bias as weakening-reinstatement."
+        }
+      },
+      {
+        "id": "robots_manufacturing",
+        "label": "Industrial Robots / Manufacturing",
+        "class_assignment_us": "Class A (immediate displacement within exposed commuting zones, no offsetting gains observed in any occupation or education group)",
+        "class_assignment_germany": "Class B — VERIFIED (firm-level institutional buffering via co-determination + works councils + apprenticeship retraining). Dauth et al. (IAB-DP 30/2017) direct read completed Apr 14, 2026. +11.4410 additional days same-employer retention per robot per 1,000 workers (Table 4 Panel A col 2, SE 2.124, p<0.01). Manufacturing loss −2.12 jobs per robot per 1,000 workers (Panel F) is ~one-third the US coefficient (6.2, A&R 2020), with full offsetting non-manufacturing gain (+0.4177 log-points, Table 2 Panel A col 5). Net total employment effect −0.0058 (insignificant).",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "30–40 years (sector-specific)",
+            "derivation_method": "unimate_1961_to_sector_specific_50pct_automation_1990s_2000s",
+            "uncertainty_band": "±10 years; varies by auto/electronics/metal sectors"
+          },
+          "b_institutional_response_lag": {
+            "value": "country-dependent — US: effectively zero (no federal policy response); Germany: continuous via Betriebsverfassungsgesetz 1972 + co-determination (predates robot deployment; applies by default to every firm above threshold size)",
+            "derivation_method": "german_betriebsverfassungsgesetz_1972_predates_robot_deployment_and_applies_directly; us_no_specific_response; dauth_et_al_2017_section_7_p41_interprets_mechanism_as_unions_accept_wage_restraint_in_exchange_for_job_security_through_works_councils_directly_verified_2026_04_14",
+            "uncertainty_band": "wide variance; not a single value; both sides now HIGH confidence"
+          },
+          "c_reskilling_adjacency": {
+            "value": "LOW in US (Acemoglu/Restrepo 2020 directly verified) — no positive offsetting employment gain in any occupation or education group. HIGH in Germany — in-firm task reassignment dominant: +11.4410 days same-employer retention per robot per 1,000 workers (Dauth Table 4 Panel A col 2, SE 2.124, p<0.01), with +6.39 days same occupation same employer plus +5.05 days same occupation different employer. Cross-sector flows are NEGATIVE (−3.96 days outside manufacturing, −4.65 days same sector different employer), confirming reassignment happens inside the firm, not across firms.",
+            "derivation_method": "acemoglu_restrepo_2020_p5_and_dauth_et_al_2017_iab_dp30_table_4_both_directly_verified_2026_04_14",
+            "uncertainty_band": "US side HIGH; Germany side HIGH (standard errors tight, 993,184 worker panel, IV identification)"
+          },
+          "d_concentration": {
+            "value": "strong — automotive 39%, electronics 19%, metal products 9%, plastic/chemicals 9% of global installed base (IFR, 76% concentration)",
+            "derivation_method": "ifr_2014_world_robotics_cited_directly_in_acemoglu_restrepo_2017_p2",
+            "uncertainty_band": "HIGH — IFR is authoritative source"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "US: one more robot per 1000 workers → −0.34pp employment/pop, −0.5% wages, −5.6 workers (preferred spec with inter-CZ trade); range 0.18-0.37pp emp, 0.25-0.73% wages across three specifications (Acemoglu/Restrepo 2017). Germany: one more robot per 1000 workers → −0.0595pp manufacturing-employment/pop → 2.12 manufacturing jobs lost (Table 2 Panel F, IV); but zero effect on total employment (−0.0058, insignificant) due to +0.4177 log-point offsetting non-manufacturing gain. Total German stock 130,428 robots 1994-2014 → 276,507 manufacturing jobs lost = 23% of total manufacturing decline. Germany/US gap: 2.12 vs 6.2 jobs per robot = ~3× institutional buffering effect.",
+            "derivation_method": "acemoglu_restrepo_nber_w23285_abstract_plus_section_intro_AND_dauth_et_al_2017_iab_dp30_table_2_panel_a_and_panel_f_plus_p27_aggregate_calculation_all_directly_verified_2026_04_14",
+            "uncertainty_band": "US HIGH — three specifications bounded; Germany HIGH — IV identification, 402 local labor markets, standard errors tight"
+          },
+          "f_us_germany_contrast_VERIFIED": "Both sides of the US-vs-Germany contrast now rest on directly-verified primary sources (Acemoglu/Restrepo NBER w23285 + Dauth/Findeisen/Südekum/Wößner IAB-DP 30/2017, verified Apr 14, 2026). Quantitative contrast: Germany 2.12 jobs per robot vs US 6.2 jobs per robot (~3× gap). Mechanism contrast: Germany retains incumbents via in-firm task reassignment (+11.44 days same-employer retention, Dauth Table 4 Panel A col 2, p<0.01); US has no reinstatement 'in any occupation or education group' (A&R p.5). Institutional contrast: Germany Betriebsverfassungsgesetz 1972 + co-determination + apprenticeship vs US no federal labor-adjustment framework. This case is structurally identical to UK containerisation's Class A + Class B bifurcation — same technology, different institutional perimeter, different outcome — and confirms Germany as the canonical strong Mode 3 absorbing-employer case in the retrofit v0.3 taxonomy (replacing the partially-falsified AT&T assignment).",
+          "h_mode_3_externalities_VERIFIED": "Mode 3 buffering is not costless. Two externalities visible in Dauth: (1) Foreclosed youth entry — −0.1335 percentage points on manufacturing-entrant share per robot per 1,000 workers (Table 5 col 1, IV, SE 0.068, p<0.05). Returnee re-entry is unaffected (+0.0297, insignificant). The 276k manufacturing-job aggregate decline is driven by the foreclosed next cohort, not by displacement of the current cohort. (2) Labor income share falls — labor productivity rises +0.5365 log-points per robot per 1,000 workers but wages do not (Table 7 cols 1-3, IV); labor-productivity-minus-gross-pay gap +2.0757 log-points (col 4, p<0.05) indicates productivity gains captured by capital. Medium-skilled manufacturing workers (~75% of sample) bear the wage cost: −€63/year at 75th-vs-25th-percentile robot exposure comparison, scaling to −€800/year at 90th-vs-10th-percentile comparison (p. 35). Mode 3 protects the incumbent at the cost of the cohort and the wage — structurally identical to Mode 1 income-floor pattern (UK dockworkers) via a different mechanism.",
+          "g_weakening_reinstatement_convergent_evidence": "A&R p.5 directly states: 'we do not find positive and offsetting employment gains in any occupation or education groups.' This is structurally identical to the Autor/Chin/Salomons/Seegmiller (QJE 2024) weakening-reinstatement finding: a recent-era technology shock produces displacement without reinstatement. Strengthens the Layer 6 structural-optimism warning from a second independent empirical angle (A&R + ACSS convergent)."
+        }
+      },
+      {
+        "id": "gps_ridehailing_taxi",
+        "label": "GPS / Ride-hailing / Taxi",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "5–9 years (NYC)",
+            "derivation_method": "nyc_medallion_collapse_2013_2018_minus_uber_2009",
+            "uncertainty_band": "±2 years; varies by city"
+          },
+          "b_institutional_response_lag": {
+            "value": "8–15 years",
+            "derivation_method": "tfl_london_2017_to_platform_work_directive_2024_minus_uber_2009",
+            "uncertainty_band": "±2 years; response varies by jurisdiction"
+          },
+          "c_reskilling_adjacency": {
+            "value": "high",
+            "derivation_method": "medallion_holders_mostly_became_uber_drivers_same_skill_new_ownership",
+            "uncertainty_band": "well-documented"
+          },
+          "d_concentration": {
+            "value": "strong",
+            "derivation_method": "metro_concentration_nyc_london_paris_primary_impact_zones",
+            "uncertainty_band": "well-documented"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "10–15% per year (medallion-owner-operators, NYC, 2014–2018)",
+            "derivation_method": "nyc_medallion_value_80pct_collapse_and_owner_operator_income_decline",
+            "uncertainty_band": "±3 pp"
+          }
+        }
+      },
+      {
+        "id": "telephone_operators",
+        "label": "Telephone Operators",
+        "class_assignment": "class_x_scale_x_time — city-level Class A; industry-level Class C 1917–1927 transitioning to Class A 1927–1940",
+        "class_note": "v0.3 finding: the first case where class assignment FLIPS ENDOGENOUSLY when market-demand elasticity runs out, rather than when institutional perimeter ends. Industry-level Class C persisted while dial penetration was low (<20%) and telephone demand was still growing; industry-level flipped to Class A after 1927 when the elasticity cushion was exhausted.",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "48 years (Strowger patent 1889 → 50% Bell dial penetration ~1937)",
+            "derivation_method": "feigenbaum_gross_2023_ms_2025_figure_1_chart_read_off; patent_date_march_1889; 50pct_dial_penetration_midpoint_1935_1940_from_32pct_1930_to_60pct_1940",
+            "uncertainty_band": "±3 years on 50% midpoint"
+          },
+          "b_institutional_response_lag": {
+            "value": "30 years capability-to-first-commercial-deployment (1889 → 1919 Norfolk VA); 89 years capability-to-full-mechanization (1889 → 1978 Catalina Island); convergent 58–74 year adoption window (first-automatic-exchange to last-manual-exchange) verified across 9 countries, 5 institutional traditions: US 59yr, UK ~64yr, Australia ~74yr, Germany 58yr (Hildesheim 1908 → Uetze 1966), France 66yr (Nice 1913 → 1979), Spain 64yr (Balaguer 1924 → 1988 completion), Austria 62yr (Vienna 1910 → Fräulein-vom-Amt retired 14 Dec 1972), Poland ~63yr (Łódź 1928 Ericsson SALME → ~1989-1995 post-communist transition, Mława still manual April 1989); Switzerland 36-42yr (1917 semi / 1923 full Lausanne → 1959-12-03) is a compressed outlier (small country, dense geography), not a regulatory-regime divergence. KEY TESTS PASSED: Spain (private monopoly under Franco) 64yr; Poland (interwar private → socialist → post-communist, three regime changes across one adoption window) ~63yr; Austria (five political regimes across one adoption window) 62yr. Organizational complexity dominates regulatory regime as the adoption-window predictor across all five institutional variants.",
+            "derivation_method": "feigenbaum_gross_ms_2025_anglophone_anchor_plus_full_european_extraction_apr_14_2026_at_data_european_histories_telephony_adoption_windows_readme_and_csv; 9_country_5_institutional_tradition_complete_table",
+            "uncertainty_band": "HIGH — 9 full-window country data points across regulated private monopoly, state PTT, state PTT + strong unions, private monopoly under dictatorship, and interwar-private-socialist-post-communist; cross-institutional convergence verified with zero missing cells. Poland end-date MEDIUM precision (1989-1995 range); all other end-dates HIGH precision."
+          },
+          "c_reskilling_adjacency": {
+            "value": "medium at industry level — clerks +10.0%, electrical engineers +13.0%, mechanics +6.9%, managers +8.8% in cutover cities (Table 3); but net city-level all-workers −26.2%",
+            "derivation_method": "feigenbaum_gross_2023_table_3_cutover_event_study_261_cities_pre_1940",
+            "uncertainty_band": "HIGH — standard errors per coefficient available; SE 0.022 to 0.038 for all residual-task coefficients"
+          },
+          "d_concentration": {
+            "value": "strong geographic + demographic — large cities mechanized first (98% of top-50 by 1940) vs 7% for cities ranked 500+; young female cohort (16-25) bore disproportionate displacement (−53.6% vs −32.6% for 26+)",
+            "derivation_method": "feigenbaum_gross_table_4_age_gradient_plus_table_6_city_size_gradient",
+            "uncertainty_band": "HIGH — population-doubling coefficient t-statistic ~20"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "−44.3% within single cutover event (local); industry employment peaks 1927 at 375,272, falls to 333,162 by 1937 (−11% over 10 years) at aggregate",
+            "derivation_method": "feigenbaum_gross_table_3_coefficient_plus_table_1_industry_employment_census_of_electrical_industries",
+            "uncertainty_band": "HIGH — Table 3 SE 0.035; Table 1 quinquennial census data"
+          },
+          "f_organizational_complexity_as_lag_driver_VERIFIED": "Previous [citation pending] flag for the organizational-complexity-as-lag-driver claim is now resolved. Feigenbaum & Gross (2023/2025) formally model it in Section 4 and empirically test in Section 5. Call switching was AT&T's 'integral task' — connected to 14 other activities per Figure 3 Panel A. Proposition 2: when cross-task congruence is valuable (β > ½α), partial automation is not an equilibrium outcome. Proposition 3: when technology productivity gain α is small relative to fixed cost θ, complete automation is unprofitable. Joint Prop 2+3 explains the 30-year first-deployment lag and 59-year full-mechanization window.",
+          "g_absorbing_employer_mode_partially_falsified": "AT&T was the canonical Mode 3 (absorbing-employer) case in the prior 3-mode taxonomy. Feigenbaum & Gross event study shows this was overstated: cutover displaces ~50% of operator cohort and −26.2% of all industry workers in the city; residual-task reassignment accommodates only a minority of displaced headcount. AT&T is a WEAK Mode 3 case, not the canonical one. Canonical strong Mode 3 candidate: German co-determination under Dauth et al. 2017 (to verify in step 5)."
+        }
+      }
+    ],
+    "medium_feasibility_cases_note": "Mechanised Loom, Assembly Line, Computer/Mainframe, Mobile/Platform, Spreadsheets/Accountants, CAD/Drafters, DTP/Typesetters, E-commerce/Retail — each have 1–2 metrics with workable data; per-cell confidence flags will be populated in v0.2.",
+    "low_feasibility_cases_note": "Printing Press, Steam/Railways, Electricity, Elevator Operators, LLMs/Knowledge Workers — treated narratively in cases.html; metrics (a)–(e) are not populated because data is either pre-industrial-census or too early in the disruption.",
+    "feasibility_matrix_appendix": {
+      "legend": {
+        "H": "High (direct source data)",
+        "M": "Medium (derivable via triangulation)",
+        "L": "Low (significant estimation required)",
+        "U": "Unavailable"
+      },
+      "rows": [
+        {
+          "case": "Printing Press",
+          "a": "L",
+          "b": "L",
+          "c": "L",
+          "d": "M",
+          "e": "U"
+        },
+        {
+          "case": "Mechanised Loom",
+          "a": "H",
+          "b": "M",
+          "c": "M",
+          "d": "H",
+          "e": "M"
+        },
+        {
+          "case": "Steam/Railways",
+          "a": "L",
+          "b": "L",
+          "c": "M",
+          "d": "H",
+          "e": "L"
+        },
+        {
+          "case": "Electricity",
+          "a": "M",
+          "b": "L",
+          "c": "L",
+          "d": "M",
+          "e": "L"
+        },
+        {
+          "case": "Assembly Line",
+          "a": "M",
+          "b": "M",
+          "c": "H",
+          "d": "H",
+          "e": "M"
+        },
+        {
+          "case": "Computer/Mainframe",
+          "a": "M",
+          "b": "M",
+          "c": "M",
+          "d": "M",
+          "e": "M"
+        },
+        {
+          "case": "PC/Office Automation",
+          "a": "H",
+          "b": "H",
+          "c": "H",
+          "d": "H",
+          "e": "H"
+        },
+        {
+          "case": "Internet/E-commerce",
+          "a": "H",
+          "b": "H",
+          "c": "H",
+          "d": "H",
+          "e": "H"
+        },
+        {
+          "case": "Mobile/Platform",
+          "a": "M",
+          "b": "M",
+          "c": "M",
+          "d": "M",
+          "e": "M"
+        },
+        {
+          "case": "ATMs/Tellers",
+          "a": "H",
+          "b": "M",
+          "c": "H",
+          "d": "H",
+          "e": "H"
+        },
+        {
+          "case": "Spreadsheets/Accountants",
+          "a": "H",
+          "b": "H",
+          "c": "H",
+          "d": "L",
+          "e": "H"
+        },
+        {
+          "case": "Containerisation/Dockworkers",
+          "a": "H",
+          "b": "H",
+          "c": "H",
+          "d": "H",
+          "e": "H"
+        },
+        {
+          "case": "CAD/Drafters",
+          "a": "H",
+          "b": "M",
+          "c": "H",
+          "d": "M",
+          "e": "H"
+        },
+        {
+          "case": "Telephone Operators",
+          "a": "H",
+          "b": "L",
+          "c": "M",
+          "d": "H",
+          "e": "H"
+        },
+        {
+          "case": "Elevator Operators",
+          "a": "H",
+          "b": "U",
+          "c": "L",
+          "d": "M",
+          "e": "H"
+        },
+        {
+          "case": "DTP/Typesetters",
+          "a": "H",
+          "b": "L",
+          "c": "M",
+          "d": "H",
+          "e": "H"
+        },
+        {
+          "case": "Industrial Robots",
+          "a": "H",
+          "b": "H",
+          "c": "H",
+          "d": "H",
+          "e": "H"
+        },
+        {
+          "case": "GPS/Ride-hailing/Taxi",
+          "a": "H",
+          "b": "H",
+          "c": "H",
+          "d": "H",
+          "e": "H"
+        },
+        {
+          "case": "E-commerce/Retail",
+          "a": "H",
+          "b": "H",
+          "c": "M",
+          "d": "H",
+          "e": "H"
+        },
+        {
+          "case": "LLMs/Knowledge Workers",
+          "a": "M",
+          "b": "L",
+          "c": "M",
+          "d": "L",
+          "e": "L"
+        }
+      ]
+    }
+  },
+  "spreadsheets_counterfactual": {
+    "summary": "The one case in this 20-disruption sample where massive task exposure produced MORE of the occupation, not less. Accountants grew from ~1 million (US, 1985) to ~1.4 million (US, 2020) after Excel (1985) substituted the core numerical-calculation task.",
+    "three_conditions_for_augmentation": [
+      {
+        "condition": "exposure_to_augmentation_innovations_AND_elastic_output_demand",
+        "description": "Three distinct sub-tests, all required. (a) Market demand for existing output can expand faster than productivity rises. (b) The technology is specifically an AUGMENTATION innovation (one that creates new task categories the human operator can take on) rather than an AUTOMATION innovation (one that substitutes existing tasks without generating new ones). (c) The role has new-task absorption potential — the worker's skill ladder is deep enough to climb into new cognitive tasks. Autor/Chin/Salomons/Seegmiller (QJE 2024, verified 2026-04-14) establish that augmentation innovations strongly predict where new work emerges, while automation innovations do NOT predict new-work creation. Automation exposure alone, even with elastic demand, does not generate reinstatement. Accountants after Excel passed all three: demand grew AND Excel was an augmentation innovation (enabled real-time financial analysis, M&A modelling, advisory work that weren't feasible with paper ledgers) AND accountants had the skill ladder to climb. For AI specifically: the augmentation-vs-automation distinction is the sharpest predictive cut. An AI tool that automates document review is NOT the same category as one that enables new forms of legal analysis; the first tends to shrink the occupation regardless of demand elasticity, the second tends to expand it when other conditions hold.",
+        "theoretical_basis": "Acemoglu & Restrepo (JEP 2019) displacement/reinstatement decomposition; Autor/Chin/Salomons/Seegmiller (QJE 2024) — the majority of current US employment is in job specialties introduced after 1940; new-work creation shifted from middle-paid production/clerical (1940–1980) to high-paid professional + low-paid services (1980–2018); augmentation innovations predict new work, automation innovations do not."
+      },
+      {
+        "condition": "intact_skill_ladder",
+        "description": "The role retains a climbable skill hierarchy. The tool automates one rung (numerical calculation for accountants), not the ladder itself (audit judgment, tax strategy, advisory work). Workers can climb past the automated rung."
+      },
+      {
+        "condition": "complement_not_substitute_for_core_task",
+        "description": "Technology substitutes peripheral tasks while the core task that defines the role remains human. Spreadsheets substituted bookkeeping mechanics; audit judgment and client relationships remained irreplaceable."
+      }
+    ],
+    "when_all_three_hold": "Type 2 pathway (Transformation + Market Expansion). Employment grows despite or because of the technology.",
+    "when_any_fails": "Drift toward Type 3 (absorbed), Type 4 (restructured), or Type 5 (eliminated).",
+    "ai_application": {
+      "paralegals": "Core task IS document review; AI substitutes document review directly; condition 3 fails; predicted Type 3/5 drift.",
+      "lawyers": "Core task is judgment and advocacy; AI substitutes drafting and research (peripheral); conditions plausibly hold; Type 2 candidate.",
+      "junior_developers": "Boilerplate peripheral; architecture and judgment core; depends on whether demand for software output is elastic enough (condition 1); uncertain case.",
+      "radiologists": "Image reading core, but patient interaction and complex diagnosis also core; partial failure of condition 3; Type 3 absorption likely."
+    },
+    "operationalisation": "Each ISCO 3-digit group can be scored against the three conditions using Layer 1 (AI exposure, augmentation score, education distribution) and Layer 2 (Cedefop growth projections) data. Output: predicted pattern type per occupation.",
+    "theoretical_foundation": "The three conditions align with Acemoglu & Restrepo's displacement/reinstatement decomposition (JEP 2019). Condition 1 is the reinstatement channel — technology creates demand for new or expanded tasks faster than displacement removes existing ones. Autor/Chin/Salomons/Seegmiller (QJE 2024) provide the empirical evidence: the majority of current employment is in new job specialties introduced after 1940, and the locus of new-work creation within occupations drives whether augmentation produces employment growth. Accountants after Excel is not pure augmentation — it is new-work-creation-within-occupation (tax strategy, M&A advisory, risk services) that replaced ledger-posting tasks. This distinction matters for AI: augmentation without new-work-creation may produce productivity gains without employment growth.",
+    "weakening_reinstatement_warning": "Autor/Chin/Salomons/Seegmiller (QJE 2024, verified 2026-04-14): 'the demand-eroding effects of automation innovations have intensified in the past four decades while the demand-increasing effects of augmentation innovations have not.' The structural conditions that produced accountants-after-Excel (1985–2020) have weakened since the 1980s. AI arrives in a world where reinstatement is a harder test to pass than it was when Excel launched. This is the single most important caveat on the Spreadsheets filter: historical success does not guarantee future success even when the three conditions nominally hold. Policymakers and occupation forecasters should treat reinstatement as the null case requiring positive evidence, not the default expectation.",
+    "structural_bias_in_historical_calibration": "Because reinstatement effects have intensified as headwinds over the last four decades while augmentation effects have not kept pace, every historical case in this project — accountants, telephone operators, dockworkers, and all others — played out in an era when reinstatement was structurally stronger than it is now. Applying those lag estimates, adjacency findings, or corridor assignments to AI WITHOUT discounting for the weakening-reinstatement trend will systematically UNDERESTIMATE displacement severity. This is not a caveat on individual cases. It is a structural bias in the entire calibration methodology. The historical record is structurally optimistic relative to the current moment. Implication for Layer 6: the 'managed transition' scenario corridor — where displacement is absorbed through augmentation and new-work creation — is narrower than historical calibration alone would suggest. The corridors themselves are not as wide as they used to be.",
+    "sources": [
+      "bessen_2015",
+      "autor_levy_murnane_2003",
+      "autor_chin_salomons_seegmiller_2024",
+      "acemoglu_restrepo_jep_2019",
+      "anthropic_economic_index_2026"
+    ]
+  },
+  "incumbent_vs_cohort_displacement": {
+    "finding": "Technology disruption produces fundamentally different outcomes for incumbents (workers currently in the occupation at the time of displacement) vs subsequent cohorts (workers who never enter the occupation because the entry pathway narrows). Measuring aggregate employment rates hides this distinction.",
+    "empirical_evidence": {
+      "telephone_operators_feigenbaum_gross_qje_2024": "After a city cut over to dial switching, employment of 16–25-year-old women as operators fell 50–80% immediately and permanently. BUT overall employment rates for subsequent cohorts of young women did not decline — they shifted to secretarial and food service work. Incumbent operators, however, were significantly worse off a decade later. Cohort-level adjustment works; incumbent-level impact does not.",
+      "llms_brynjolfsson_2025_and_anthropic_ei_2026": "~14% drop in job-finding rates for 22–25-year-olds entering exposed occupations. Not systematic unemployment for incumbents. Same pattern as telephone operators: the hiring pipeline for new entrants narrows while incumbents stay employed."
+    },
+    "implication_for_layer_6_lens_1": "Lens 1 must track WHO is displaced, not just HOW MANY. Age and incumbency status change the outcome dramatically. A country with low overall unemployment but collapsed entry-level hiring in exposed occupations is in a different scenario than a country with broad-based displacement — even if the aggregate employment statistics look similar. Design implication: Lens 1 needs a youth-entry-rate metric alongside its displacement-velocity metric.",
+    "sources": [
+      "feigenbaum_gross_qje_2024",
+      "anthropic_economic_index_2026",
+      "brynjolfsson_et_al_2025"
+    ]
+  },
+  "capability_vs_adoption_gap": {
+    "finding": "Technological capability and actual deployment are different metrics. For computer/mathematical occupations, theoretical AI capability is ~94% (Eloundou et al. β scores) but observed Claude coverage is ~33% (Anthropic Economic Index March 2026). Computer programmers specifically show 75% task coverage — the highest single occupation. The gap between capability and adoption is the installation-phase Perez signal.",
+    "implication_for_layer_6_lens_1": "Displacement velocity is bounded by ADOPTION rate, not CAPABILITY rate. A concrete calibration input: Lens 1 should use observed-exposure data (Anthropic EI) as the leading-edge input, not theoretical-capability scores (Eloundou). The gap between the two measures the installation-phase runway before broad-based displacement becomes visible.",
+    "historical_parallel": "Feigenbaum & Gross (QJE 2024, MS 2025) document AT&T's ~40-year gap between knowing about automatic switching (1900s) and widespread deployment. Capability existed; organizational interdependency slowed adoption. Similar dynamics likely in enterprise AI adoption today — technology exists, but organizational complexity in large enterprises (legacy systems, regulatory approvals, workforce integration) slows deployment below capability-frontier pace.",
+    "sources": [
+      "anthropic_economic_index_2026",
+      "feigenbaum_gross_qje_2024",
+      "feigenbaum_gross_ms_2025"
+    ]
+  },
+  "institutional_response_scope_statement": {
+    "finding": "Metric (b) institutional response lag is structurally undefined for pre-1930 cases. 'Policy response' as an institutional category did not exist before the welfare state.",
+    "the_two_eras": {
+      "pre_welfare_state": {
+        "range": "1440–1880",
+        "cases": [
+          "Printing Press",
+          "Mechanised Loom",
+          "Steam/Railways"
+        ],
+        "characteristic": "Displacement occurred without institutional response apparatus. Gaps closed via migration, generational replacement, or emergent new institutions."
+      },
+      "post_welfare_state": {
+        "range": "1930–present",
+        "cases": [
+          "Assembly Line onward"
+        ],
+        "characteristic": "Institutional response apparatus exists; metric (b) is measurable and varies 7–17 years for post-WWII cases with data."
+      }
+    },
+    "historical_precedent_for_current_coverage_gap": "Pre-Bismarck industrial workers (1760–1880) were structurally outside any institutional response perimeter. The gap closed via institutional INVENTION (Bismarck social insurance 1883, factory acts) not via extension of existing institutions. This is the first historical coverage gap; the current freelance/platform/cross-border-remote coverage gap is the second. Institutional response compression (~4–5x vs Bismarck baseline, see Layer 6 Lens 3) suggests closure in 15–40 years, not 50–120.",
+    "implication_for_layer_6": "Absorption-capacity variable in Lens 1 has zero pre-1930 calibration data. For contemporary low-state-capacity or cross-jurisdictional displacement (gig/freelance/remote), the framework can only calibrate against the single post-WWII historical base — not against the pre-Bismarck coverage-gap closure, which is too far in the past to be quantitatively useful."
+  }
+}

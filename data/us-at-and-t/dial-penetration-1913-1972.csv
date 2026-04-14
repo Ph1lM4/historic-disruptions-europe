@@ -1,0 +1,14 @@
+year,bell_system_dial_penetration_pct,source,notes
+1913,0,"Feigenbaum & Gross 2021 Fig 1 (AT&T Archives, box 85-04-03-02)","Figure 1 S-curve starts near 0."
+1919,1,"Feigenbaum & Gross 2021 narrative","First AT&T commercial dial deployment: Chesapeake & Potomac Tel Co, Norfolk VA, November 1919 — 30 yr after Strowger patent (March 1889)."
+1925,10,"Feigenbaum & Gross 2021 Fig 1 (chart read-off)",
+1930,32,"Feigenbaum & Gross 2021 narrative (p.12)","Cited verbatim — 'reaching 32% by 1930'."
+1935,40,"Feigenbaum & Gross 2021 Fig 1 (chart read-off)","End of Great Depression plateau begins."
+1940,60,"Feigenbaum & Gross 2021 narrative (p.12)","Cited verbatim — 'reaching 32% by 1930 and 60% by 1940'. ~53% of US population in a city with ≥1 cutover by 1940."
+1942,62,"Feigenbaum & Gross 2021 Fig 1","WPB copper restrictions halt new installations until 1945 (wartime plateau)."
+1945,65,"Feigenbaum & Gross 2021 Fig 1",
+1950,75,"Feigenbaum & Gross 2021 Fig 1 (chart read-off)",
+1960,85,"Feigenbaum & Gross 2021 Fig 1 (chart read-off)",
+1970,98,"Feigenbaum & Gross 2021 Fig 1 (chart read-off)","Still ~2% manual — rural and small markets."
+1972,100,"Feigenbaum & Gross 2021 Fig 1","Curve reaches asymptote."
+1978,100,"Feigenbaum & Gross 2021 narrative (p.1)","Pacific Bell Santa Catalina Island (pop ~2000) cutover June 4, 1978 — final manual-exchange elimination. Total: 89 yr from Strowger patent to full mechanization."

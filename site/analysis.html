@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Analysis &mdash; What 580 Years Actually Shows</title>
+<meta name="description" content="Deep-dive analysis: spreadsheets counterfactual, two eras of institutional response, incumbent-vs-cohort displacement, capability-adoption gap, and feasibility matrix.">
+<link rel="canonical" href="https://disruptions.nexalps.com/analysis.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Deep Analysis — What 580 Years Actually Shows">
+<meta property="og:description" content="Spreadsheets counterfactual, two eras of institutional response, incumbent-vs-cohort displacement, capability-adoption gap, and feasibility matrix.">
+<meta property="og:url" content="https://disruptions.nexalps.com/analysis.html">
+<meta property="og:site_name" content="Nexalps">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://disruptions.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:title" content="Deep Analysis — What 580 Years Actually Shows">
+<meta name="twitter:description" content="Spreadsheets counterfactual, two eras of institutional response, cohort displacement, capability-adoption gap, and feasibility matrix.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
+  --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#71717a;
+  --accent:#27272a;--border:rgba(255,255,255,0.12);--ring:#f97316;
+  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+  --transition:150ms cubic-bezier(0.4,0,0.2,1);
+}
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}
+.site-nav-links a:hover{color:var(--foreground)}
+.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);min-width:44px;min-height:44px;padding:13px 12px;cursor:pointer;flex-direction:column;justify-content:center;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}
+.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}
+.burger-panel a:hover{color:var(--foreground)}
+.burger-panel a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger-sep{height:1px;background:var(--border);margin:4px 0}
+@media(max-width:900px){.site-nav-links{display:none}.burger{display:flex}.container{padding:0 16px}}
+
+/* Hero */
+.hero{padding:80px 32px 24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}
+.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.hero .byline a:hover{color:var(--foreground)}
+.hero .byline+.byline{margin-top:4px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero{padding:64px 20px 20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:56px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted);margin-top:4px}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+section p{margin:0 0 16px}
+section p:last-child{margin-bottom:0}
+section strong{color:var(--foreground);font-weight:600}
+section em{color:#d4d4d8}
+
+/* Condition / fact rows */
+.condition-row{margin:0 0 12px;padding:14px 18px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);font-size:15px;color:#d4d4d8;line-height:1.7}
+.condition-row strong{color:var(--foreground);font-weight:600}
+
+/* Key-takeaway panel (blends finding + implication) */
+.takeaway{margin:20px 0;padding:18px 22px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.takeaway .takeaway-label{font-size:11px;font-weight:700;color:var(--ring);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px}
+.takeaway p{font-size:15px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Highlight (primary-source evidence blocks) */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight .pattern-num{font-size:12px;font-weight:700;color:var(--ring);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px}
+.highlight h3{font-size:16px;font-weight:600;margin:0 0 6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Chart box */
+.chart-box{margin:32px 0;padding:24px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:16px}
+.chart-box .chart-caption{font-size:12px;color:var(--muted-foreground);line-height:1.6;margin-top:12px}
+.chart-box svg text{font-family:var(--font)}
+
+/* Data table */
+.data-table{width:100%;border-collapse:collapse;font-size:14px}
+.data-table th{text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted-foreground)}
+.data-table td{padding:10px 12px;color:#d4d4d8;border-bottom:1px solid var(--card-border);vertical-align:top}
+.data-table td.num-cell{text-align:center;font-variant-numeric:tabular-nums;font-weight:600;color:var(--foreground)}
+.data-table td.center{text-align:center;font-weight:600;color:var(--foreground)}
+.data-table .tag{display:inline-block;padding:2px 8px;border-radius:9999px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;border:1px solid var(--card-border);color:var(--muted)}
+.data-table .tag-hostile{background:rgba(249,115,22,0.10);border-color:rgba(249,115,22,0.35);color:var(--ring)}
+.data-table .tag-outlier{background:rgba(212,212,216,0.08);border-color:rgba(212,212,216,0.25);color:#d4d4d8}
+.data-table tr.row-outlier{background:rgba(255,255,255,0.02)}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0 24px;border:1px solid var(--card-border);border-radius:var(--radius-md)}
+.table-wrap .data-table td:last-child,.table-wrap .data-table th:last-child{padding-right:16px}
+.table-wrap .data-table td:first-child,.table-wrap .data-table th:first-child{padding-left:16px}
+.table-wrap .data-table tr:last-child td{border-bottom:0}
+
+/* Scorecard mark: ✓ / ✗ / ? with semantic color using the same pill system as the feasibility matrix */
+.mark{display:inline-block;min-width:22px;text-align:center;font-weight:700;font-size:13px;padding:2px 7px;border-radius:4px;line-height:1.3;font-family:var(--font)}
+.mark-yes{background:rgba(34,197,94,0.18);color:#86efac}
+.mark-no{background:rgba(249,115,22,0.18);color:#fdba74}
+.mark-maybe{background:rgba(245,158,11,0.18);color:#fbbf24}
+
+/* Legend strip (for feasibility matrix) */
+.legend-strip{display:flex;flex-wrap:wrap;gap:16px 24px;padding:12px 16px;margin:12px 0;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);font-size:12px;color:var(--muted)}
+.legend-strip strong{color:var(--foreground);font-weight:600}
+.legend-strip .lg-item{display:inline-flex;align-items:center;gap:6px}
+.lg-grade{display:inline-block;min-width:22px;text-align:center;font-weight:700;font-size:11px;padding:2px 7px;border-radius:4px;line-height:1.3;font-family:var(--font)}
+.lg-h{background:rgba(34,197,94,0.18);color:#86efac}
+.lg-m{background:rgba(245,158,11,0.18);color:#fbbf24}
+.lg-l{background:rgba(249,115,22,0.18);color:#fdba74}
+.lg-u{background:rgba(161,161,170,0.18);color:#a1a1aa}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}
+.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+.footer a:hover{color:var(--foreground)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Deep Analysis: What 580 Years Actually Shows", "description": "Spreadsheets counterfactual, two eras of institutional response, incumbent-vs-cohort displacement, capability-adoption gap, and feasibility matrix.", "url": "https://disruptions.nexalps.com/analysis.html", "isPartOf": {"@type": "Article", "name": "What Happened Every Other Time: Historic Technology Disruptions and European Labour", "url": "https://disruptions.nexalps.com/"}, "datePublished": "2026-04", "author": {"@type": "Person", "name": "Philipp Maul", "url": "https://www.linkedin.com/in/pmaul/", "affiliation": {"@type": "Organization", "name": "Nexalps", "url": "https://nexalps.com"}}, "publisher": {"@type": "Organization", "name": "Nexalps", "url": "https://nexalps.com"}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html">Overview</a>
+    <a href="cases.html">Case Studies</a>
+    <a href="findings.html">Findings &amp; Predictions</a>
+    <a href="analysis.html" aria-current="page">Deep Analysis</a>
+    <a href="outcomes.html">Worker Outcomes</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html">Overview</a>
+  <a href="cases.html">Case Studies</a>
+  <a href="findings.html">Findings &amp; Predictions</a>
+  <a href="analysis.html" aria-current="page">Deep Analysis</a>
+  <a href="outcomes.html">Worker Outcomes</a>
+  <a href="sources.html">Sources</a>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+</div>
+
+<main id="main" role="main">
+
+<header class="hero container">
+  <h1>Deep Analysis: What 580 Years Actually Shows</h1>
+  <p class="lede">Five deep-dive analyses extending the headline findings &mdash; the spreadsheets counterfactual, two eras of institutional response, incumbent-vs-cohort decomposition, the capability&ndash;adoption gap, and the methodological appendix.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a> &middot; Early 2026 &middot; Part 3 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Based on <a href="sources.html">52 primary sources</a> including Acemoglu &amp; Restrepo, Dittmar, Feigenbaum &amp; Gross, David and Autor.</p>
+</header>
+
+<!-- Section 1: Spreadsheets Counterfactual -->
+<section class="container" role="region" aria-label="Spreadsheets counterfactual">
+  <h2><span class="num">1.</span> The Spreadsheets Counterfactual <span class="subtitle">The one case where massive task exposure produced MORE of the occupation, not less</span></h2>
+  <p>In a sample of 20 disruptions spanning 580 years, a single case breaks the displacement pattern: accountants grew from ~1 million (US, 1985) to ~1.4 million (US, 2020) after Excel substituted the core numerical-calculation task. That&rsquo;s not a data anomaly &mdash; it&rsquo;s the empirical basis for the entire augmentation narrative.</p>
+  <p>Three structural conditions converged. All three had to hold.</p>
+  <div class="condition-row"><strong>1. Elastic output demand.</strong> The market for accounting output (audits, tax returns, financial analysis) expanded faster than per-worker productivity rose. If the tool makes each worker 10x more productive AND demand grows 15x, employment grows. If demand grows only 2x, employment falls.</div>
+  <div class="condition-row"><strong>2. Intact skill ladder.</strong> The role retained a climbable skill hierarchy. Excel automated one rung (arithmetic, ledger posting). It did not automate the ladder itself (audit judgment, tax strategy, advisory work). Workers climbed past the automated rung.</div>
+  <div class="condition-row"><strong>3. Complement not substitute for the core task.</strong> Technology substituted peripheral tasks while the core task that defines the role remained human. Spreadsheets substituted bookkeeping mechanics; audit judgment and client relationships remained irreplaceable.</div>
+  <div class="takeaway">
+    <div class="takeaway-label">Decision rule</div>
+    <p>All three hold &rarr; Type 2 (Transformation + Market Expansion) pathway and employment grows. Any condition fails &rarr; drift toward Type 3 (absorbed), Type 4 (restructured), or Type 5 (eliminated).</p>
+  </div>
+  <p>Applied to AI: each occupation can be scored against the three conditions. The scorecard shows which roles have the structural shape to follow the spreadsheets path (Type 2: transformation + growth) and which drift toward absorption or elimination.</p>
+
+  <div class="table-wrap">
+    <table class="data-table" aria-label="AI occupations scored against the three Type-2 conditions">
+      <thead>
+        <tr>
+          <th>Occupation</th>
+          <th class="center">C1: Elastic demand</th>
+          <th class="center">C2: Intact ladder</th>
+          <th class="center">C3: Core task stays human</th>
+          <th>Predicted pathway</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Lawyers</strong></td>
+          <td class="center"><span class="mark mark-yes" title="Yes">&#10003;</span></td>
+          <td class="center"><span class="mark mark-yes" title="Yes">&#10003;</span></td>
+          <td class="center"><span class="mark mark-yes" title="Yes">&#10003;</span></td>
+          <td>Type 2 candidate &mdash; judgment &amp; advocacy remain core</td>
+        </tr>
+        <tr>
+          <td><strong>Junior developers</strong></td>
+          <td class="center"><span class="mark mark-maybe" title="Uncertain">?</span></td>
+          <td class="center"><span class="mark mark-yes" title="Yes">&#10003;</span></td>
+          <td class="center"><span class="mark mark-yes" title="Yes">&#10003;</span></td>
+          <td>Type 2 or Type 3 &mdash; hinges on software-demand elasticity</td>
+        </tr>
+        <tr>
+          <td><strong>Radiologists</strong></td>
+          <td class="center"><span class="mark mark-yes" title="Yes">&#10003;</span></td>
+          <td class="center"><span class="mark mark-yes" title="Yes">&#10003;</span></td>
+          <td class="center"><span class="mark mark-no" title="No">&#10007;</span></td>
+          <td>Type 3 absorption &mdash; image reading IS the core task</td>
+        </tr>
+        <tr>
+          <td><strong>Paralegals</strong></td>
+          <td class="center"><span class="mark mark-no" title="No">&#10007;</span></td>
+          <td class="center"><span class="mark mark-maybe" title="Uncertain">?</span></td>
+          <td class="center"><span class="mark mark-no" title="No">&#10007;</span></td>
+          <td>Type 3 or Type 5 &mdash; document review IS the role</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted-foreground);margin:-16px 0 24px;line-height:1.6"><span class="mark mark-yes" style="font-size:11px">&#10003;</span> condition holds &middot; <span class="mark mark-no" style="font-size:11px">&#10007;</span> condition fails &middot; <span class="mark mark-maybe" style="font-size:11px">?</span> uncertain / depends on external factor</p>
+  <p>This filter replaces vibes-based augmentation claims with empirical scoring. Each ISCO 3-digit group can be scored against the three conditions using existing Layer 1 (AI exposure, education distribution) and Layer 2 (Cedefop growth projections) data. The output is a predicted pattern type per occupation &mdash; augmentation candidate, absorption candidate, or displacement candidate.</p>
+</section>
+
+<!-- Section 2: Institutional Response Scope Statement -->
+<section class="container" role="region" aria-label="Pre/post welfare state scope">
+  <h2><span class="num">2.</span> Two Eras of Institutional Response <span class="subtitle">Pre-1930 displacement occurred without institutional response apparatus</span></h2>
+  <p>One of the cross-case metrics in this project is &ldquo;institutional response lag&rdquo; &mdash; the years between first measurable displacement and first major policy, regulatory, or retraining response. The metric is structurally undefined for pre-1930 disruptions. &ldquo;Policy response&rdquo; as an institutional category did not yet exist.</p>
+  <p>This is not a data gap. It is a structural observation about the sample itself. The 20 cases partition into two eras:</p>
+  <div class="condition-row"><strong>Pre-welfare-state era (1440&ndash;1880).</strong> Printing Press, Mechanised Loom, Steam/Railways. Displacement occurred without institutional response apparatus. Gaps closed via migration, generational replacement, or emergent new institutions (Factory Acts from 1833, Poor Law reform 1834). Handloom weavers did not become factory workers &mdash; their children did, in Lancashire and Yorkshire.</div>
+  <div class="condition-row"><strong>Post-welfare-state era (1930&ndash;present).</strong> Assembly Line onward. Institutional response apparatus exists. Metric (b) is measurable and varies from 7 years (US TAA expansion 2002, EU Globalisation Adjustment Fund 2006) to 17 years (Workforce Investment Act 1998 after PC 1981) for post-WWII cases with data.</div>
+  <div class="takeaway">
+    <div class="takeaway-label">Historical precedent worth naming</div>
+    <p>Pre-Bismarck industrial workers (1760&ndash;1880) were structurally outside any institutional response perimeter. Guild protections had been obsoleted by the mechanised loom and factory system; welfare-state protections had not yet been invented. The gap closed not by extending existing institutions but by <em>inventing</em> new ones (Bismarck social insurance 1883, Factory Acts, labour law). That is the first coverage gap in the historical sample.</p>
+  </div>
+  <p>The current freelance/platform/cross-border-remote coverage gap is the second. The Lisbon freelancer working for a San Francisco startup is visible to the Portuguese tax system but uninterpretable &mdash; no contract-non-renewal event fires, &ldquo;self-employed IT services&rdquo; covers thriving and displaced identically, and no jurisdiction has reach to the SF employer. Data exists; reading capacity doesn&rsquo;t. Historical precedent suggests this gap closes through institutional invention, not extension &mdash; but the compression of institutional response speed since Bismarck (~4&ndash;5x faster, Platform Work Directive 2024 came within ~9&ndash;11 years of platform displacement becoming visible) implies closure in 15&ndash;40 years, not the 50&ndash;120 suggested by the pre-Bismarck baseline alone.</p>
+</section>
+
+<!-- Section 3: Incumbent-vs-Cohort Displacement -->
+<section class="container" role="region" aria-label="Incumbent vs cohort displacement">
+  <h2><span class="num">3.</span> Incumbent vs Cohort: Aggregate Numbers Hide the Displacement Pattern <span class="subtitle">Who actually bears the cost when a technology is institutionally buffered</span></h2>
+  <p>Two of the best-documented buffered disruptions in the dataset &mdash; German industrial robots (1994&ndash;2014) and US telephone operators (1917&ndash;1940) &mdash; both produce aggregate employment numbers that look benign until you decompose them by cohort. The incumbent workers protected by the institutional buffer do fine. The next cohort does not.</p>
+  <div class="highlight">
+    <div class="pattern-num">German robots &mdash; Dauth et al. 2017, primary-source verified Apr 14, 2026</div>
+    <h3>+11.44 days same-employer retention, &minus;0.13 pp foreclosed youth entry</h3>
+    <p>Per additional robot per 1,000 workers over 20 years (IV, p&lt;0.01): incumbent manufacturing workers gain <strong>+11.44 additional days employed at the same employer</strong> (Table 4 Panel A col 2) while young workers see a <strong>&minus;0.1335 percentage-point drop</strong> in manufacturing-entry share (Table 5 col 1, p&lt;0.05). Returnees from unemployment are unaffected. The 276,507 aggregate manufacturing-job decline is driven entirely by the foreclosed next cohort, not by displacement of the current cohort. Mode 3 buffering via co-determination (Betriebsverfassungsgesetz 1972) + works councils + apprenticeship reassigns incumbents in-firm; the bill lands on the kids who never get hired.</p>
+  </div>
+  <div class="highlight">
+    <div class="pattern-num">US telephone operators &mdash; Feigenbaum &amp; Gross 2023/2025</div>
+    <h3>Operator employment held at the aggregate; entry collapsed for the 16&ndash;25 cohort</h3>
+    <p>At the city cutover event: operator employment falls &minus;44.3% and all-industry employment &minus;26.2% per cutover. But the age-gradient decomposition shows the collapse is concentrated in the 16&ndash;25 cohort: &minus;53.6% vs &minus;32.6% for 26+. AT&amp;T retained incumbents via residual-task reassignment (clerks +10%, electrical engineers +13%, mechanics +7%) while youth entry into operator roles evaporated. Same pattern as the German robot case: the incumbent cohort is buffered; the next cohort is foreclosed.</p>
+  </div>
+  <p><strong>Implication for AI exposure.</strong> The Brynjolfsson et al. 2024 finding of &minus;14% entry-level employment in US IT occupations post-ChatGPT, paired with the Anthropic Economic Index showing 14% higher AI-use concentration among workers aged 25&ndash;34, is the same shape. The aggregate US tech-employment numbers don&rsquo;t yet show displacement &mdash; but the entry pipeline for junior developers is contracting. The historical precedent says this is the leading indicator. <strong>Institutional buffering protects the incumbent and shifts the cost to the cohort that hasn&rsquo;t entered yet.</strong> Lens 1 of the companion AI Labour Suite requires a youth-entry-rate metric for exactly this reason.</p>
+  <p><strong>Cost distribution beyond the cohort.</strong> Dauth also finds productivity gains accrue to capital, not wages &mdash; labor productivity +0.5365 log-points per robot per 1,000 workers (Table 7, IV, p&lt;0.05), average wages flat-to-negative. Medium-skilled workers (~75% of the German manufacturing workforce) bear the wage cost of the insider-outsider wage-restraint bargain: &minus;€63 to &minus;€800 per year depending on robot-exposure gradient. Mode 3 buffering is not costless. It protects the incumbent at the cost of the cohort <em>and</em> the wage.</p>
+</section>
+
+<!-- Section 4: Capability-vs-Adoption Gap -->
+<section class="container" role="region" aria-label="Capability vs adoption gap">
+  <h2><span class="num">4.</span> The Capability&ndash;Adoption Gap: Displacement Velocity is Bounded by Adoption, Not Capability <span class="subtitle">Theoretical exposure doesn&rsquo;t tell you what will actually happen this year</span></h2>
+  <p>Two datasets measure AI&rsquo;s reach into occupations, and they disagree by a factor of three. Eloundou et al. (OpenAI, 2023) estimates <strong>task-level capability exposure of ~94%</strong> for computer and mathematical occupations &mdash; the share of work tasks where an LLM <em>could</em> meaningfully reduce time. The Anthropic Economic Index (2025) measures <strong>observed AI-use coverage of ~33%</strong> &mdash; the share of actual conversations in which workers in those occupations are using Claude. The gap is not noise. It is the installation-phase Perez signal.</p>
+  <p>Historical precedent matches. Strowger filed the automatic-switching patent in 1889. The first commercial automatic exchange opened in Norfolk, Virginia in 1919 (30-year capability-to-commercial gap). The last manual exchange was retired in 1978, on Catalina Island (89-year capability-to-full-mechanization window). Between 1889 and 1919, operator employment continued to grow. Between 1919 and 1978, adoption expanded at a bounded pace set by installation cost, switching-equipment production capacity, and the organizational-complexity lag documented in Feigenbaum &amp; Gross 2023/2025. <strong>Capability was not the binding constraint. Adoption was.</strong></p>
+
+  <div class="chart-box" aria-label="Convergent adoption windows across 9 countries">
+    <h3>Telephone-operator mechanization windows · 9 countries · verified Apr 14, 2026</h3>
+    <svg id="telephony-bars" viewBox="0 0 680 340" preserveAspectRatio="xMinYMin meet" style="width:100%;max-width:820px;height:auto;display:block" role="img" aria-label="Horizontal bar chart showing adoption-window length in years for 9 countries"></svg>
+    <p class="chart-caption">Orange bars = hostile-test passes (political-economy regime stress). Gray bar = Switzerland scale-effect outlier. Dashed band marks the 59&ndash;74 year convergent envelope.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data-table" aria-label="Mechanization window per country with role tags">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th class="center">Window (yr)</th>
+          <th>Period</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Switzerland</td><td class="num-cell">36&ndash;42</td><td>Zurich 1917 &rarr; ~1959</td><td><span class="tag tag-outlier">Scale outlier</span></td></tr>
+        <tr><td>Germany</td><td class="num-cell">58</td><td>Hildesheim 1908 &rarr; Uetze 1966</td><td><span class="tag">State PTT</span></td></tr>
+        <tr><td>United States</td><td class="num-cell">59</td><td>Norfolk 1919 &rarr; Catalina 1978</td><td><span class="tag">Private monopoly</span></td></tr>
+        <tr><td>Austria</td><td class="num-cell">62</td><td>Vienna 1910 &rarr; Fr&auml;ulein vom Amt retired 14 Dec 1972</td><td><span class="tag tag-hostile">5 political regimes</span></td></tr>
+        <tr><td>Poland</td><td class="num-cell">~63</td><td>&Lstrok;&oacute;d&zacute; 1928 &rarr; M&lstrok;awa ~1991</td><td><span class="tag tag-hostile">3 political regimes</span></td></tr>
+        <tr><td>Spain</td><td class="num-cell">64</td><td>Balaguer 1924 &rarr; 1988</td><td><span class="tag tag-hostile">Franco dictatorship</span></td></tr>
+        <tr><td>United Kingdom</td><td class="num-cell">~64</td><td>early 1910s &rarr; late 1970s</td><td><span class="tag">State PTT</span></td></tr>
+        <tr><td>France</td><td class="num-cell">66</td><td>Nice 1913 &rarr; 1979</td><td><span class="tag">State PTT</span></td></tr>
+        <tr><td>Australia</td><td class="num-cell">~74</td><td>1912 &rarr; mid-1980s</td><td><span class="tag">State PTT</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="takeaway">
+    <div class="takeaway-label">What the spread is telling you</div>
+    <p>Eight of nine countries land in a 58&ndash;74 year envelope despite spanning private monopoly, state PTT, dictatorship, and multiple regime transitions within one adoption window. Switzerland compresses to 36&ndash;42 years on scale (small dense country, universal deployment faster) not regulatory regime. <strong>Organizational complexity dominates political regime as the adoption-window predictor.</strong></p>
+  </div>
+
+  <p><strong>Implication for AI exposure scoring.</strong> Use observed-exposure data (Anthropic Economic Index) as the leading signal, not theoretical-capability data (Eloundou). The gap between them is the window in which displacement is possible but not yet realised. Plan around adoption curves, not capability curves. The historical base rate says full mechanization takes decades from commercial availability, even when the technology is already technically capable of replacing the task.</p>
+</section>
+
+<!-- Section 5: Methodological Appendix -->
+<section class="container" role="region" aria-label="Feasibility matrix methodological appendix">
+  <h2><span class="num">5.</span> Methodological Appendix: Cross-Case Feasibility Matrix <span class="subtitle">Where the numbers are solid and where they&rsquo;re derived</span></h2>
+  <p>Not every case in this sample has equally strong data for every metric. The following matrix shows data confidence per disruption per metric, so readers can see where the quantitative claims are solid and where they rest on estimation. Per BR-21, every derived value in <code>disruptions-data.json</code> ships with <code>derivation_method</code> and <code>uncertainty_band</code> fields &mdash; clean numbers would propagate false precision into downstream analysis.</p>
+  <div class="legend-strip">
+    <span class="lg-item"><span class="lg-grade lg-h">H</span>High &mdash; direct source data</span>
+    <span class="lg-item"><span class="lg-grade lg-m">M</span>Medium &mdash; derivable via triangulation</span>
+    <span class="lg-item"><span class="lg-grade lg-l">L</span>Low &mdash; significant estimation</span>
+    <span class="lg-item"><span class="lg-grade lg-u">U</span>Unavailable</span>
+  </div>
+  <p><strong>Metrics:</strong> (a) time from commercial viability to 50% task displacement &middot; (b) institutional response lag &middot; (c) reskilling adjacency &middot; (d) geographic/demographic concentration &middot; (e) peak annual displacement rate.</p>
+  <div id="feasibility-matrix"></div>
+  <div class="takeaway">
+    <div class="takeaway-label">Scope decision</div>
+    <p>Of 20 cases: 7 are high-feasibility across most metrics (PC/Office Automation, Internet/E-commerce, ATMs, Containerisation, Industrial Robots, GPS/Ride-hailing, Telephone Operators &mdash; plus Spreadsheets, E-commerce/Retail with mixed profile). 8 are medium-feasibility with per-cell confidence flags. 5 are low-feasibility and appear in case narratives but not in the structured metrics table (Printing Press, Steam/Railways, Electricity, Elevator Operators, LLMs/Knowledge Workers). 75% of cases are workable &mdash; scope matched to data density, not forced quantification where data doesn&rsquo;t support it.</p>
+  </div>
+  <p>The LLMs/Knowledge Workers case is low-feasibility because the disruption is current and data is still accumulating. This is the case the other 19 are meant to calibrate. The thin-data-on-the-case-we-most-want-to-predict problem is structural, not a flaw in this project.</p>
+</section>
+
+<!-- CTA -->
+<section class="container">
+  <div class="cta-bar">
+    <h3>Start with the headline findings</h3>
+    <p>These five deep-dives extend the ten findings and ten predictions on the main findings page. Read that first if you haven&rsquo;t.</p>
+    <div class="btn-row">
+      <a href="findings.html" class="btn btn-primary">Findings &amp; Predictions &rarr;</a>
+      <a href="cases.html" class="btn btn-outline">20 Case Studies &rarr;</a>
+      <a href="outcomes.html" class="btn btn-outline">Worker Outcomes &rarr;</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer container" role="contentinfo">
+  What Happened Every Other Time v1.0 &middot; Early 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="cases.html">Case Studies</a> &middot; <a href="findings.html">Findings &amp; Predictions</a> &middot; <a href="analysis.html">Deep Analysis</a> &middot; <a href="outcomes.html">Worker Outcomes</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> Philipp Maul | Nexalps
+</footer>
+
+<script>
+(function(){
+'use strict';
+let DATA=null;
+fetch('disruptions-data.json').then(r=>r.json()).then(d=>{DATA=d;render()}).catch(e=>console.error('Data load failed:',e));
+
+function render(){
+  renderTelephonyBars();
+  renderFeasibilityMatrix();
+  setupBurger();
+}
+
+// 9-country telephone-operator mechanization windows, verified Apr 14, 2026.
+// Inline data: this is the only place it's used. Migrate to disruptions-data.json.structured_metrics.telephony_windows if it earns reuse.
+const TELEPHONY_WINDOWS=[
+  {country:'Switzerland',years:39,label:'36–42',role:'outlier'},
+  {country:'Germany',years:58,label:'58',role:'normal'},
+  {country:'United States',years:59,label:'59',role:'normal'},
+  {country:'Austria',years:62,label:'62',role:'hostile'},
+  {country:'Poland',years:63,label:'~63',role:'hostile'},
+  {country:'Spain',years:64,label:'64',role:'hostile'},
+  {country:'United Kingdom',years:64,label:'~64',role:'normal'},
+  {country:'France',years:66,label:'66',role:'normal'},
+  {country:'Australia',years:74,label:'~74',role:'normal'}
+];
+
+function renderTelephonyBars(){
+  const svg=document.getElementById('telephony-bars');
+  if(!svg) return;
+  const data=TELEPHONY_WINDOWS.slice().sort((a,b)=>a.years-b.years);
+  const W=680,labelCol=130,rightPad=30,rowH=20,rowGap=4,topPad=22,bottomPad=34;
+  const chartX=labelCol,chartW=W-labelCol-rightPad;
+  const maxY=80,scale=chartW/maxY;
+  const H=topPad+data.length*(rowH+rowGap)+bottomPad;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  // gridlines 0/20/40/60/80 years
+  const grid=[0,20,40,60,80];
+  let s='';
+  // envelope band 59–74
+  const bx=chartX+59*scale,bw=(74-59)*scale;
+  s+=`<rect x="${bx}" y="${topPad-6}" width="${bw}" height="${data.length*(rowH+rowGap)-rowGap+12}" fill="rgba(249,115,22,0.08)" stroke="rgba(249,115,22,0.35)" stroke-dasharray="3 3"/>`;
+  s+=`<text x="${bx+bw/2}" y="${topPad-10}" text-anchor="middle" font-size="10" fill="#f97316" font-weight="600">59–74 yr envelope</text>`;
+  grid.forEach(g=>{
+    const x=chartX+g*scale;
+    s+=`<line x1="${x}" y1="${topPad}" x2="${x}" y2="${H-bottomPad+4}" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>`;
+    s+=`<text x="${x}" y="${H-bottomPad+20}" text-anchor="middle" font-size="11" fill="#71717a">${g}</text>`;
+  });
+  s+=`<text x="${chartX+chartW/2}" y="${H-6}" text-anchor="middle" font-size="11" fill="#a1a1aa">Years from first commercial exchange to full mechanization</text>`;
+  data.forEach((d,i)=>{
+    const y=topPad+i*(rowH+rowGap);
+    const barW=d.years*scale;
+    let fill='rgba(161,161,170,0.55)',stroke='rgba(161,161,170,0.8)';
+    if(d.role==='hostile'){fill='rgba(249,115,22,0.70)';stroke='#f97316';}
+    else if(d.role==='outlier'){fill='rgba(161,161,170,0.30)';stroke='rgba(212,212,216,0.55)';}
+    else if(d.role==='normal'){fill='rgba(212,212,216,0.35)';stroke='rgba(212,212,216,0.6)';}
+    s+=`<text x="${chartX-10}" y="${y+rowH/2+4}" text-anchor="end" font-size="12" fill="#d4d4d8" font-weight="500">${d.country}</text>`;
+    s+=`<rect x="${chartX}" y="${y}" width="${barW}" height="${rowH}" fill="${fill}" stroke="${stroke}" stroke-width="1" rx="3"/>`;
+    s+=`<text x="${chartX+barW+6}" y="${y+rowH/2+4}" font-size="11" fill="#fafafa" font-weight="600">${d.label} yr</text>`;
+  });
+  svg.innerHTML=s;
+}
+
+function renderFeasibilityMatrix(){
+  const el=document.getElementById('feasibility-matrix');
+  if(!el||!DATA.structured_metrics||!DATA.structured_metrics.feasibility_matrix_appendix) return;
+  const rows=DATA.structured_metrics.feasibility_matrix_appendix.rows;
+  const cell=g=>{
+    const v=(g||'').toString().trim().toUpperCase();
+    const cls=v==='H'?'lg-h':v==='M'?'lg-m':v==='L'?'lg-l':'lg-u';
+    return `<td class="center"><span class="lg-grade ${cls}">${v||'—'}</span></td>`;
+  };
+  el.innerHTML=`
+    <div class="table-wrap">
+      <table class="data-table" aria-label="Cross-case feasibility matrix">
+        <thead>
+          <tr>
+            <th>Case</th>
+            <th class="center">(a) Time to 50%</th>
+            <th class="center">(b) Response lag</th>
+            <th class="center">(c) Adjacency</th>
+            <th class="center">(d) Concentration</th>
+            <th class="center">(e) Peak rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(r=>`<tr><td>${r.case}</td>${cell(r.a)}${cell(r.b)}${cell(r.c)}${cell(r.d)}${cell(r.e)}</tr>`).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function setupBurger(){
+  const btn=document.getElementById('burger-btn'),panel=document.getElementById('burger-panel');
+  btn.addEventListener('click',()=>{const o=panel.classList.toggle('open');btn.classList.toggle('open',o);btn.setAttribute('aria-expanded',o)});
+  document.addEventListener('click',e=>{if(!panel.contains(e.target)&&!btn.contains(e.target)&&panel.classList.contains('open')){panel.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('open')){panel.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+}
+
+})();
+</script>
+</body>
+</html>
