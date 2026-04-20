@@ -80,18 +80,19 @@ This is Part 3 of 7 in the European AI Labour Market suite:
 1. **[AI Exposure Map](https://ai-exposure.nexalps.com)** — AI exposure scores for ~130 occupation groups × 36 countries
 2. **[Job Market](https://job-market.nexalps.com)** — Hiring trends and career intelligence across 9 roles × 34 countries
 3. **[Disruptions](https://disruptions.nexalps.com)** — What happened every other time (this repo)
-4. *Coming soon*
+4. **[Demographics](https://demographics.nexalps.com)** — Population decline × AI substitution through 2050
 5. *Coming soon*
 6. *Coming soon*
 7. *Coming soon*
 
-**How the three products connect:**
+**How the four products connect:**
 
 - `ai-exposure.nexalps.com` = **which jobs** AI hits
 - `job-market.nexalps.com` = **where demand** is going
 - `disruptions.nexalps.com` = **what happened every other time**
+- `demographics.nexalps.com` = **the structural constraint** (population decline × AI mismatch)
 
-ISCO-08 codes bridge all three products. Shared design system (shadcn dark, Geist font, #f97316 orange accent).
+ISCO-08 codes bridge all four products. Shared design system (shadcn dark, Geist font, #f97316 orange accent).
 
 ## Tech Stack
 
