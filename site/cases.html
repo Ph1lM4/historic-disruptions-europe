@@ -157,6 +157,47 @@ h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
 .btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
 .btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
+/* Metrics block (cross-case structured metrics) */
+.metrics-block{margin:20px 0 8px;padding:14px 16px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md)}
+.metrics-block h4{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:10px}
+.metrics-block .feas-tag{display:inline-block;padding:2px 8px;border-radius:9999px;font-size:10px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;margin-left:8px;vertical-align:middle}
+.metrics-block .feas-high{background:rgba(134,239,172,0.12);color:#86efac;border:1px solid rgba(134,239,172,0.3)}
+.metrics-block .feas-medium{background:rgba(250,204,21,0.10);color:#facc15;border:1px solid rgba(250,204,21,0.3)}
+.metrics-block .feas-low{background:rgba(212,212,216,0.10);color:#d4d4d8;border:1px solid rgba(212,212,216,0.25)}
+.metrics-list{display:grid;grid-template-columns:1fr;gap:8px;margin:0}
+.metrics-list .row{display:grid;grid-template-columns:200px 1fr;gap:12px;padding:8px 10px;background:rgba(255,255,255,0.02);border-radius:var(--radius-sm);font-size:13px;color:#d4d4d8;align-items:start}
+@media(max-width:640px){.metrics-list .row{grid-template-columns:1fr;gap:4px}}
+.metrics-list .row .key{font-weight:600;color:var(--muted)}
+.metrics-list .row .val{color:#fafafa;font-weight:500}
+.metrics-list .row .meta{display:block;font-size:11px;color:var(--muted-foreground);margin-top:3px;line-height:1.5}
+.feas-flags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.feas-flags .cell{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:rgba(255,255,255,0.03);border:1px solid var(--card-border);border-radius:var(--radius-sm);font-size:11px;color:#d4d4d8}
+.feas-flags .cell .lbl{color:var(--muted-foreground);text-transform:uppercase;letter-spacing:0.04em;font-size:10px;font-weight:600}
+.feas-flags .cell .flag{font-weight:700;font-size:11px}
+.flag-H{color:#86efac}.flag-M{color:#facc15}.flag-L{color:#fb923c}.flag-U{color:#71717a}
+.metrics-narrative{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+.cell-flag{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:9999px;font-size:10px;font-weight:700;letter-spacing:0.04em;border:1px solid currentColor;cursor:help}
+.cell-flag.flag-H{color:#86efac;background:rgba(134,239,172,0.08)}
+.cell-flag.flag-M{color:#facc15;background:rgba(250,204,21,0.08)}
+.cell-flag.flag-L{color:#fb923c;background:rgba(251,146,60,0.08)}
+.cell-flag.flag-U{color:#71717a;background:rgba(113,113,122,0.10)}
+.metrics-list .val-suppressed{color:var(--muted-foreground);font-style:italic;font-weight:400;cursor:help}
+.metric-legend{margin-top:14px;padding:10px 14px;background:rgba(255,255,255,0.03);border:1px solid var(--card-border);border-radius:var(--radius-sm);overflow:visible}
+.metric-legend summary{font-size:13px;font-weight:600;color:var(--foreground);cursor:pointer;padding:4px 0;list-style:none;line-height:1.5}
+.metric-legend summary::-webkit-details-marker{display:none}
+.metric-legend summary::before{content:"\25B8";display:inline-block;width:14px;color:var(--muted-foreground);transition:transform .15s}
+.metric-legend[open] summary::before{transform:rotate(90deg)}
+.metric-legend ol{margin:10px 0 4px 0;padding:0 0 0 22px;list-style:none;counter-reset:none}
+.metric-legend li{font-size:13px;color:#d4d4d8;line-height:1.7;padding:6px 0;list-style:none;overflow-wrap:break-word;word-break:normal;white-space:normal}
+.metric-legend li strong{color:#fafafa;font-weight:600}
+
+/* Methodology note + structural-bias warning */
+.method-note{margin:24px 0;padding:14px 18px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);font-size:13px;color:var(--muted);line-height:1.7}
+.method-note h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:6px}
+.bias-warning{margin:16px 0 24px;padding:14px 18px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.bias-warning h3{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--ring);margin-bottom:6px}
+.bias-warning p{font-size:13px;color:#d4d4d8;line-height:1.7;margin:0}
+
 /* Footer */
 .footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
 .footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
@@ -181,6 +222,7 @@ h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
     <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
     <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
     <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+    <a href="https://reskilling.nexalps.com/" target="_blank" rel="noopener">Reskilling &#8599;</a>
 
   </div>
   <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -195,6 +237,7 @@ h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
   <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
   <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
   <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+  <a href="https://reskilling.nexalps.com/" target="_blank" rel="noopener">Reskilling &#8599;</a>
 
 </div>
 
@@ -206,6 +249,20 @@ h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
   <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a> &middot; Early 2026 &middot; Part 3 of 7 in the European AI Labour Market suite</p>
   <p class="byline">Based on <a href="sources.html">52 primary sources</a> including Acemoglu &amp; Restrepo, Dittmar, Feigenbaum &amp; Gross, David and Autor.</p>
 </header>
+
+<!-- Methodology note + structural-bias warning -->
+<section class="container" role="region" aria-label="Methodology and structural bias">
+  <div class="method-note">
+    <h3>What is a cross-case structured metric?</h3>
+    <p>A <strong>cross-case structured metric</strong> is a single dimension &mdash; like &ldquo;time to 50% task displacement&rdquo; &mdash; populated consistently across multiple historical disruptions so cases can be compared on the same axis. Every case below is enumerated against the same five metrics where data feasibility allows: <strong>(a) Time to 50% Task Displacement</strong>, <strong>(b) Institutional Response Lag</strong>, <strong>(c) Reskilling Adjacency</strong>, <strong>(d) Geographic / Demographic Concentration</strong>, and <strong>(e) Peak Annual Displacement Rate</strong>. We use them because narrative-only comparison invites cherry-picking; structured metrics force every case to answer the same questions or declare why it can&rsquo;t.</p>
+    <p style="margin-top:10px"><strong>7 high-feasibility cases</strong> carry full metric values with derivation method and uncertainty band. <strong>8 medium-feasibility cases</strong> carry actual values where data permits, paired with per-cell confidence flags (H / M / L). When a cell&rsquo;s flag is <strong>U</strong> (uncertain) the value is suppressed rather than shown with false precision. <strong>5 low-feasibility cases</strong> are treated narratively. Per BR-21, every derived value ships with derivation method and uncertainty band, not a clean number. The full feasibility matrix lives on <a href="findings.html#feasibility-matrix" style="color:var(--ring);text-decoration:underline">findings.html</a>.</p>
+    <div id="metric-legend-top"></div>
+  </div>
+  <div class="bias-warning">
+    <h3>&#9888; Structural-bias warning</h3>
+    <p>Reinstatement effects (the share of new tasks that absorb displaced workers) have weakened as headwinds over the last four decades. Historical augmentation patterns (e.g. spreadsheets &rarr; accountants) are calibrated against a stronger reinstatement rate than current AI deployment is likely to encounter. Treat historic Type 2 outcomes as upper bounds, not point predictions, for AI cases.</p>
+  </div>
+</section>
 
 <!-- Section 1: Macro Disruptions -->
 <section class="container" role="region" aria-label="Macro disruptions">
@@ -267,9 +324,135 @@ function render(){
   renderMiniTimelines();
   renderMicroAccordions();
   renderTimescaleChart();
+  renderMetricLegendTop();
   setupAccordions();
   setupBurger();
 }
+
+// ── ID → feasibility-matrix case-name map (for cross-case metrics lookup) ──
+const ID_TO_MATRIX_CASE={
+  printing_press:'Printing Press',
+  mechanised_loom:'Mechanised Loom',
+  steam_railways:'Steam/Railways',
+  electricity:'Electricity',
+  assembly_line:'Assembly Line',
+  computer_mainframe:'Computer/Mainframe',
+  pc_office:'PC/Office Automation',
+  internet_ecommerce:'Internet/E-commerce',
+  mobile_platform:'Mobile/Platform',
+  atm_tellers:'ATMs/Tellers',
+  spreadsheets_accountants:'Spreadsheets/Accountants',
+  containerisation_dockworkers:'Containerisation/Dockworkers',
+  cad_drafters:'CAD/Drafters',
+  telephone_operators:'Telephone Operators',
+  elevator_operators:'Elevator Operators',
+  dtp_typesetters:'DTP/Typesetters',
+  robots_manufacturing:'Industrial Robots',
+  ridehailing_taxi:'GPS/Ride-hailing/Taxi',
+  ecommerce_retail:'E-commerce/Retail',
+  llm_knowledge_workers:'LLMs/Knowledge Workers'
+};
+// micro_disruption ridehailing_taxi maps to high_feasibility id gps_ridehailing_taxi
+const ID_TO_HIGH_FEAS_ID={
+  pc_office:'pc_office',
+  internet_ecommerce:'internet_ecommerce',
+  atm_tellers:'atm_tellers',
+  containerisation_dockworkers:'containerisation_dockworkers',
+  robots_manufacturing:'robots_manufacturing',
+  ridehailing_taxi:'gps_ridehailing_taxi',
+  telephone_operators:'telephone_operators'
+};
+const METRIC_LABELS={
+  a_time_to_50pct_task_displacement:'(a) Time to 50% task displacement',
+  b_institutional_response_lag:'(b) Institutional response lag',
+  c_reskilling_adjacency:'(c) Reskilling adjacency',
+  d_concentration:'(d) Concentration',
+  e_peak_annual_displacement_rate:'(e) Peak annual displacement rate'
+};
+
+function getCaseMetrics(caseId){
+  // Returns {tier, html} or null
+  const sm=DATA.structured_metrics;
+  if(!sm)return null;
+  const highId=ID_TO_HIGH_FEAS_ID[caseId];
+  if(highId){
+    const c=sm.high_feasibility_cases.find(x=>x.id===highId);
+    if(c)return {tier:'high', html:renderHighMetrics(c.metrics)};
+  }
+  const medium=(sm.medium_feasibility_cases||[]).find(x=>x.id===caseId);
+  if(medium)return {tier:'medium', html:renderMediumMetrics(medium.metrics)};
+  const matrixCase=ID_TO_MATRIX_CASE[caseId];
+  if(!matrixCase)return null;
+  const row=sm.feasibility_matrix_appendix.rows.find(r=>r.case===matrixCase);
+  if(!row)return null;
+  const lowCases=['Printing Press','Steam/Railways','Electricity','Elevator Operators','LLMs/Knowledge Workers'];
+  if(lowCases.indexOf(matrixCase)>-1){
+    return {tier:'low', html:renderLowMetrics(row)};
+  }
+  // Fallback: medium case without populated entry — show flag row only
+  return {tier:'medium', html:renderMediumFlagsOnly(row)};
+}
+function renderHighMetrics(metrics){
+  const rows=Object.keys(METRIC_LABELS).map(k=>{
+    const m=metrics[k];if(!m)return '';
+    return `<div class="row"><div class="key">${METRIC_LABELS[k]}</div><div><div class="val">${escapeHtml(m.value)}</div><span class="meta"><strong>Derivation:</strong> ${escapeHtml(m.derivation_method)}<br><strong>Uncertainty:</strong> ${escapeHtml(m.uncertainty_band)}</span></div></div>`;
+  }).join('');
+  return `<div class="metrics-list">${rows}</div>`;
+}
+function renderMediumMetrics(metrics){
+  // v0.2: actual values + per-cell uncertainty flags. U → suppress value, show flag with tooltip.
+  const rows=Object.keys(METRIC_LABELS).map(k=>{
+    const m=metrics[k];if(!m)return '';
+    const flag=m.uncertainty||'M';
+    const flagBadge=`<span class="cell-flag flag-${flag}" title="${escapeHtml(UNCERTAINTY_TOOLTIPS[flag]||'')}">${flag}</span>`;
+    let valHtml;
+    if(flag==='U'){
+      valHtml=`<div class="val val-suppressed" title="${escapeHtml(UNCERTAINTY_TOOLTIPS.U)}">&mdash; not reliable enough to estimate</div>`;
+    } else {
+      valHtml=`<div class="val">${escapeHtml(m.value||'')}</div>`;
+    }
+    return `<div class="row"><div class="key">${METRIC_LABELS[k]} ${flagBadge}</div><div>${valHtml}<span class="meta"><strong>Derivation:</strong> ${escapeHtml(m.derivation_method||'')}<br><strong>Uncertainty:</strong> ${escapeHtml(m.uncertainty_band||'')}</span></div></div>`;
+  }).join('');
+  return `<div class="metrics-list">${rows}</div>`;
+}
+function renderMediumFlagsOnly(row){
+  const cells=[['a','(a) Time to 50%'],['b','(b) Inst. response'],['c','(c) Reskilling'],['d','(d) Concentration'],['e','(e) Peak rate']]
+    .map(([k,lbl])=>`<span class="cell"><span class="lbl">${lbl}</span><span class="flag flag-${row[k]}">${row[k]}</span></span>`).join('');
+  return `<p class="metrics-narrative">Per-cell confidence flags only for this case &mdash; values pending.</p><div class="feas-flags">${cells}</div>`;
+}
+function renderLowMetrics(row){
+  const cells=[['a','(a)'],['b','(b)'],['c','(c)'],['d','(d)'],['e','(e)']]
+    .map(([k,lbl])=>`<span class="cell"><span class="lbl">${lbl}</span><span class="flag flag-${row[k]}">${row[k]}</span></span>`).join('');
+  return `<p class="metrics-narrative">Treated narratively. Cross-case metrics are not populated &mdash; data is either pre-industrial-census or too early in the disruption. See case body above for qualitative account.</p><div class="feas-flags">${cells}</div>`;
+}
+const UNCERTAINTY_TOOLTIPS={
+  H:'High confidence — point estimate or tight range from direct primary-source data.',
+  M:'Medium confidence — narrow range derived via triangulation across sources.',
+  L:'Low confidence — wide range; significant estimation required.',
+  U:'Uncertain — data not reliable enough to estimate; value suppressed to avoid false precision.'
+};
+function renderMetricsBlock(caseId){
+  const m=getCaseMetrics(caseId);
+  if(!m)return '';
+  const tagClass={high:'feas-high',medium:'feas-medium',low:'feas-low'}[m.tier];
+  const tagLabel={high:'High feasibility',medium:'Medium feasibility',low:'Low feasibility'}[m.tier];
+  return `<div class="metrics-block"><h4>Cross-case structured metrics<span class="feas-tag ${tagClass}">${tagLabel}</span></h4>${m.html}</div>`;
+}
+function renderMetricLegendTop(){
+  const el=document.getElementById('metric-legend-top');
+  if(!el||!DATA.structured_metrics||!DATA.structured_metrics.metric_definitions)return;
+  const md=DATA.structured_metrics.metric_definitions;
+  const order=['a_time_to_50pct_task_displacement','b_institutional_response_lag','c_reskilling_adjacency','d_concentration','e_peak_annual_displacement_rate'];
+  const items=order.filter(k=>md[k]).map(k=>{
+    const d=md[k];
+    const name=(d&&typeof d==='object')?d.name:'';
+    const desc=(d&&typeof d==='object')?d.description:d;
+    return `<li><strong>${escapeHtml(k.charAt(0))}. ${escapeHtml(name)}</strong> &mdash; ${escapeHtml(desc)}</li>`;
+  }).join('');
+  if(!items)return;
+  el.innerHTML=`<details class="metric-legend"><summary>What do these five metrics mean?</summary><ol>${items}</ol></details>`;
+}
+function escapeHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 
 // ── AI Relevance for micro disruptions ──
 const AI_RELEVANCE={
@@ -376,6 +559,7 @@ function renderMacroAccordions(){
           <h4>European variation</h4>
           <p>${c.european}</p>
           <div class="ai-card"><h4>Relevance to AI</h4><p>${c.ai}</p></div>
+          ${renderMetricsBlock(c.id)}
         </div>
       </div>
     </div>`;
@@ -478,6 +662,7 @@ function renderMicroAccordions(){
           <p><strong style="color:#86efac">Winners:</strong> ${d.winners}</p>
           <p><strong style="color:#fca5a5">Losers:</strong> ${d.losers}</p>
           <div class="ai-card"><h4>Relevance to AI</h4><p>${aiRelevance}</p></div>
+          ${renderMetricsBlock(d.id)}
           ${d.isco_codes.length?iscoLinks:''}
         </div>
       </div>

@@ -1972,11 +1972,26 @@
     "schema_version": "0.1",
     "methodology_note": "Five cross-case metrics populated for the 7 high-feasibility disruptions. 8 medium-feasibility cases carry per-cell confidence flags. 5 low-feasibility cases are treated as narrative-only and omitted from this table. Per BR-21, each derived value ships with derivation_method and uncertainty_band fields, not clean numbers. Source: Layer 3 cross-case feasibility matrix session, 2026-04-14.",
     "metric_definitions": {
-      "a_time_to_50pct_task_displacement": "Years from commercial viability of the technology to 50% task displacement in the primary affected occupation. Task-level, not employment-level.",
-      "b_institutional_response_lag": "Years between first measurable displacement and first major policy, regulatory, or retraining response. Structurally unavailable for pre-1930 cases (see scope statement).",
-      "c_reskilling_adjacency": "Qualitative. Adjacent = displaced workers moved to skill-near roles with transferable skill ladder. Orthogonal = displaced workers moved to skill-far roles or dropped out of labour force.",
-      "d_concentration": "Qualitative. Strong = clear geographic or demographic concentration of displacement documented. Medium = partial concentration. Distributed = no clear concentration.",
-      "e_peak_annual_displacement_rate": "Peak percentage decline in affected occupation employment per year during the fastest displacement phase. Derived from stock series; uncertainty bands reflect distributional assumptions."
+      "a_time_to_50pct_task_displacement": {
+        "name": "Time to 50% Task Displacement",
+        "description": "Years from commercial viability of the technology to 50% task displacement in the primary affected occupation. Task-level, not employment-level."
+      },
+      "b_institutional_response_lag": {
+        "name": "Institutional Response Lag",
+        "description": "Years between first measurable displacement and first major policy, regulatory, or retraining response. Structurally unavailable for pre-1930 cases (see scope statement)."
+      },
+      "c_reskilling_adjacency": {
+        "name": "Reskilling Adjacency",
+        "description": "Qualitative. Adjacent = displaced workers moved to skill-near roles with transferable skill ladder. Orthogonal = displaced workers moved to skill-far roles or dropped out of labour force."
+      },
+      "d_concentration": {
+        "name": "Geographic / Demographic Concentration",
+        "description": "Qualitative. Strong = clear geographic or demographic concentration of displacement documented. Medium = partial concentration. Distributed = no clear concentration."
+      },
+      "e_peak_annual_displacement_rate": {
+        "name": "Peak Annual Displacement Rate",
+        "description": "Peak percentage decline in affected occupation employment per year during the fastest displacement phase. Derived from stock series; uncertainty bands reflect distributional assumptions."
+      }
     },
     "high_feasibility_cases": [
       {
@@ -2216,7 +2231,297 @@
         }
       }
     ],
-    "medium_feasibility_cases_note": "Mechanised Loom, Assembly Line, Computer/Mainframe, Mobile/Platform, Spreadsheets/Accountants, CAD/Drafters, DTP/Typesetters, E-commerce/Retail — each have 1–2 metrics with workable data; per-cell confidence flags will be populated in v0.2.",
+    "medium_feasibility_cases": [
+      {
+        "id": "mechanised_loom",
+        "label": "Mechanised Loom / Handloom Weavers",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "20–25 years",
+            "uncertainty": "H",
+            "derivation_method": "cartwright_power_loom_commercial_~1813_to_uk_handloom_weaver_count_50pct_decline_from_240k_1820_to_~120k_~1837_per_feinstein_1998_and_bythell_handloom_weavers_1969",
+            "uncertainty_band": "±5 years; UK-only; varies by textile sub-trade"
+          },
+          "b_institutional_response_lag": {
+            "value": "40–60 years",
+            "uncertainty": "M",
+            "derivation_method": "factory_acts_1833_partial_response_minus_first_handloom_weaver_distress_~1820; full_response_only_with_bismarck_1883_or_uk_old_age_pensions_1908",
+            "uncertainty_band": "±10 years; pre-welfare-state era — see scope statement on metric (b)"
+          },
+          "c_reskilling_adjacency": {
+            "value": "Orthogonal (incumbents); adjacent next cohort",
+            "uncertainty": "M",
+            "derivation_method": "engels_1845_condition_of_working_class_plus_bythell_1969_handloom_weavers_aged_out_in_decline_their_children_entered_factory_system",
+            "uncertainty_band": "qualitative; cohort decomposition not directly measured in 19c sources"
+          },
+          "d_concentration": {
+            "value": "Strong",
+            "uncertainty": "H",
+            "derivation_method": "lancashire_yorkshire_spitalfields_concentration_documented_in_cuca_2011_and_crafts_thomas_1986",
+            "uncertainty_band": "regional concentration well-documented; sub-regional gradient less so"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "5–10%/yr",
+            "uncertainty": "M",
+            "derivation_method": "weaver_count_240k_1820_to_43k_1850_average_~5pct_yr; peak_phase_1830s_~8pct_yr_per_feinstein_1998_real_wage_collapse_curve",
+            "uncertainty_band": "±2 pp; distributional assumption — peak rate concentrated in 1830s decade"
+          }
+        }
+      },
+      {
+        "id": "assembly_line",
+        "label": "Assembly Line / Craft Auto Workers",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "15–25 years",
+            "uncertainty": "M",
+            "derivation_method": "ford_highland_park_1913_plus_european_diffusion_lag_minus_50pct_craft_auto_displacement_~1930_us_~1945_eu",
+            "uncertainty_band": "±5 years; geographically asymmetric (US fast, EU slow)"
+          },
+          "b_institutional_response_lag": {
+            "value": "20–25 years",
+            "uncertainty": "M",
+            "derivation_method": "us_wagner_act_1935_uaw_recognition_1937_minus_ford_1913; german_betriebsrat_origins_1918_minus_ford_diffusion_~1920_negative_lag_european_response",
+            "uncertainty_band": "±5 years; transatlantic asymmetry — EU response prior to displacement; US response 22 years after"
+          },
+          "c_reskilling_adjacency": {
+            "value": "Adjacent — craft auto to assembly within firm",
+            "uncertainty": "H",
+            "derivation_method": "ford_internal_workforce_records_show_retention_with_role_shift_to_assembly_line_position_documented_in_meyer_1981_five_dollar_day",
+            "uncertainty_band": "well-documented within Ford; less so for craft suppliers displaced wholesale"
+          },
+          "d_concentration": {
+            "value": "Strong (Detroit / Midwest auto belt)",
+            "uncertainty": "H",
+            "derivation_method": "us_census_of_manufactures_1919_1929_michigan_auto_employment_concentration_documented_in_klepper_2002_geographical_distribution_of_us_auto_industry",
+            "uncertainty_band": "concentration well-documented"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "3–7%/yr (craft auto subgroup)",
+            "uncertainty": "M",
+            "derivation_method": "highland_park_assembly_time_88pct_reduction_1913_1914_plus_craft_auto_workforce_decline_~50pct_over_~12_years_~5pct_yr_average_peak_phase_higher",
+            "uncertainty_band": "±2 pp; aggregate auto employment GREW (deskilling + expansion), so the rate applies to craft sub-occupation only"
+          }
+        }
+      },
+      {
+        "id": "computer_mainframe",
+        "label": "Computer / Mainframe",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "20–30 years",
+            "uncertainty": "M",
+            "derivation_method": "univac_leo_1951_minus_50pct_us_clerical_computerisation_~1975_1985_per_oliner_sichel_2000_capital_deepening_series",
+            "uncertainty_band": "±5 years; varies sharply by office sub-task (calculation faster, filing slower)"
+          },
+          "b_institutional_response_lag": {
+            "value": "10–22 years",
+            "uncertainty": "M",
+            "derivation_method": "us_trade_adjustment_assistance_1962_then_ceta_1973_minus_first_commercial_computer_1951_plus_eu_social_fund_1958_origin",
+            "uncertainty_band": "±5 years; broad ALMP framework, not computer-specific"
+          },
+          "c_reskilling_adjacency": {
+            "value": "Mixed — clerks orthogonal; technicians adjacent",
+            "uncertainty": "M",
+            "derivation_method": "displaced_clerical_to_service_sector_orthogonal_per_autor_dorn_2013_plus_in_firm_clerk_to_data_entry_pathway_adjacent_per_attewell_rule_1984",
+            "uncertainty_band": "qualitative; bimodal outcome distribution"
+          },
+          "d_concentration": {
+            "value": "Medium (financial / administrative centres)",
+            "uncertainty": "M",
+            "derivation_method": "early_mainframe_adoption_concentrated_in_large_enterprise_in_financial_administrative_centres_per_cortada_2006_digital_hand",
+            "uncertainty_band": "concentration eroded as cost dropped through 1970s–1980s"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "0.5–1.5%/yr (clerical sub-occupations)",
+            "uncertainty": "M",
+            "derivation_method": "bls_oes_clerical_share_employment_decline_1970_1995_~0_5pct_yr_average_peak_phase_~1pct_yr_per_autor_levy_murnane_2003_routine_task_series",
+            "uncertainty_band": "±0.3 pp; aggregate IT employment grew sharply, so rate applies to displaced clerical sub-occupations only"
+          }
+        }
+      },
+      {
+        "id": "mobile_platform",
+        "label": "Mobile / Platform Economy",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "7–12 years",
+            "uncertainty": "M",
+            "derivation_method": "iphone_2007_minus_50pct_displacement_in_most_exposed_sub_occupations_2015_2019_classifieds_travel_agents",
+            "uncertainty_band": "±3 years; highly variable by occupation — some sub-occupations not yet 50%"
+          },
+          "b_institutional_response_lag": {
+            "value": "14–17 years",
+            "uncertainty": "M",
+            "derivation_method": "spain_riders_law_2021_minus_iphone_2007_eq_14yr; eu_platform_work_directive_2024_minus_iphone_2007_eq_17yr",
+            "uncertainty_band": "±2 years; direct primary-source dates"
+          },
+          "c_reskilling_adjacency": {
+            "value": "Adjacent — same skill, restructured employment relationship",
+            "uncertainty": "M",
+            "derivation_method": "platform_workers_perform_legacy_task_under_independent_contractor_classification_per_eu_platform_work_directive_2024_recital",
+            "uncertainty_band": "ambiguous: skill is adjacent, employment quality is downgraded"
+          },
+          "d_concentration": {
+            "value": "Distributed (urban-skewed)",
+            "uncertainty": "M",
+            "derivation_method": "platform_economy_28m_eu_workers_per_european_commission_impact_assessment_2021_urban_concentration_per_oecd_platforms_2023",
+            "uncertainty_band": "broad-based but with urban-rural gradient"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "5–10%/yr (most-exposed sub-occupations)",
+            "uncertainty": "M",
+            "derivation_method": "us_travel_agents_124k_2000_to_~37k_2021_~70pct_decline_over_21_years_~5pct_yr_average_peak_~10pct_yr_per_bls_oes",
+            "uncertainty_band": "±3 pp; rate applies to travel-agent / classifieds-clerk sub-occupations, not platform economy as a whole"
+          }
+        }
+      },
+      {
+        "id": "spreadsheets_accountants",
+        "label": "Spreadsheets / Accountants",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "10–15 years (calculation task only)",
+            "uncertainty": "H",
+            "derivation_method": "excel_1985_minus_50pct_of_routine_calculation_tasks_substituted_~1995_2000_per_autor_levy_murnane_2003_routine_task_intensity_series",
+            "uncertainty_band": "±3 years; task-level not employment-level — accountant headcount GREW"
+          },
+          "b_institutional_response_lag": {
+            "value": "Not applicable — augmentation, no displacement-driven policy response",
+            "uncertainty": "H",
+            "derivation_method": "no_us_or_eu_labour_adjustment_response_was_triggered_because_us_accountant_headcount_grew_~1m_1985_to_~1_4m_2020_per_bls_oes",
+            "uncertainty_band": "structurally undefined for augmentation cases — see Spreadsheets Counterfactual section"
+          },
+          "c_reskilling_adjacency": {
+            "value": "Adjacent — within-occupation skill ladder climb",
+            "uncertainty": "H",
+            "derivation_method": "bookkeeper_to_advisor_progression_within_same_isco_2411_per_autor_chin_salomons_seegmiller_qje_2024_new_work_within_occupation",
+            "uncertainty_band": "well-documented; counterfactual case for the entire augmentation literature"
+          },
+          "d_concentration": {
+            "value": "",
+            "uncertainty": "U",
+            "derivation_method": "no_systematic_geographic_concentration_data_assembled_for_accountants_during_excel_diffusion; accountants_distributed_nationally_in_us_and_eu",
+            "uncertainty_band": "data not reliable enough to estimate"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "0–1%/yr (bookkeeper subgroup); occupation overall grew",
+            "uncertainty": "H",
+            "derivation_method": "us_bookkeeping_clerk_employment_decline_~0_5_to_1pct_yr_1990_2010_per_bls_oes_43_3031_versus_accountant_growth_~1_2pct_yr_per_bls_oes_13_2011",
+            "uncertainty_band": "±0.5 pp; diverging sub-occupation rates within same ISCO group"
+          }
+        }
+      },
+      {
+        "id": "cad_drafters",
+        "label": "CAD / Drafters",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "10–15 years",
+            "uncertainty": "H",
+            "derivation_method": "autocad_1982_minus_50pct_of_us_drafter_employment_decline_~1995_2000_per_bls_oes_17_3010_series",
+            "uncertainty_band": "±3 years"
+          },
+          "b_institutional_response_lag": {
+            "value": "10–20 years",
+            "uncertainty": "M",
+            "derivation_method": "no_drafter_specific_us_or_eu_response_documented; closest_proxy_us_workforce_investment_act_1998_minus_autocad_1982",
+            "uncertainty_band": "±5 years; broad ALMP framework, not drafter-specific"
+          },
+          "c_reskilling_adjacency": {
+            "value": "Adjacent — into engineering / architecture firms",
+            "uncertainty": "H",
+            "derivation_method": "drafter_role_absorbed_into_engineer_or_architect_workflow_per_acemoglu_autor_2011_handbook_chapter_routinisation",
+            "uncertainty_band": "well-documented in occupational task literature"
+          },
+          "d_concentration": {
+            "value": "Medium (design / engineering hubs)",
+            "uncertainty": "M",
+            "derivation_method": "drafter_employment_concentrated_in_engineering_architecture_design_clusters_per_bls_oes_metro_breakdown",
+            "uncertainty_band": "moderate concentration; less acute than dockworkers / steelworkers"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "2–4%/yr",
+            "uncertainty": "H",
+            "derivation_method": "us_drafter_employment_~330k_1980s_to_~190k_2010s_~1_7pct_yr_average_peak_phase_mid_1990s_~3pct_yr_per_bls_oes",
+            "uncertainty_band": "±1 pp; standard occupational displacement curve"
+          }
+        }
+      },
+      {
+        "id": "dtp_typesetters",
+        "label": "DTP / Typesetters",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "5–10 years",
+            "uncertainty": "H",
+            "derivation_method": "pagemaker_1985_aldus_release_minus_50pct_of_us_uk_typesetter_compositor_employment_~1992_1995_per_bls_oes_51_5022",
+            "uncertainty_band": "±2 years; one of the fastest disruption arcs in the dataset (15-year total)"
+          },
+          "b_institutional_response_lag": {
+            "value": "20–40 years",
+            "uncertainty": "L",
+            "derivation_method": "no_typesetter_specific_response_documented; uk_wapping_dispute_1986_outcome_was_union_defeat_not_policy_response; closest_eu_globalisation_adjustment_fund_2006_minus_pagemaker_1985_eq_21yr",
+            "uncertainty_band": "wide range; no typesetter-specific institutional response materialised"
+          },
+          "c_reskilling_adjacency": {
+            "value": "Mixed — into graphic design or orthogonal exit",
+            "uncertainty": "M",
+            "derivation_method": "displaced_compositors_split_into_graphic_design_adjacent_path_and_unemployment_or_unrelated_industry_orthogonal_path_per_cockburn_1991_brothers_male_dominance_and_technological_change",
+            "uncertainty_band": "bimodal outcome distribution"
+          },
+          "d_concentration": {
+            "value": "Strong (print industry hubs — London Fleet Street, US print belt)",
+            "uncertainty": "H",
+            "derivation_method": "wapping_dispute_1986_concentrated_displacement_at_news_international_london_plus_us_print_belt_concentration_per_us_census_of_manufactures_27_print",
+            "uncertainty_band": "well-documented at city level"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "5–10%/yr (industry); up to 90% in single-event cutovers (Wapping)",
+            "uncertainty": "H",
+            "derivation_method": "wapping_1986_670_replacement_workers_for_6800_displaced_one_event_eq_90pct_overnight; us_uk_typesetter_employment_decline_~50pct_over_15_years_~5pct_yr_per_bls_oes",
+            "uncertainty_band": "±2 pp on industry rate; cutover-event rate is single-firm not industry-wide"
+          }
+        }
+      },
+      {
+        "id": "ecommerce_retail",
+        "label": "E-commerce / Retail Workers",
+        "metrics": {
+          "a_time_to_50pct_task_displacement": {
+            "value": "20–25 years",
+            "uncertainty": "H",
+            "derivation_method": "netscape_1995_minus_50pct_of_uk_us_high_street_retail_under_disruption_~2015_2020_per_uk_brc_retail_jobs_decline_420k_us_bls_oes_41_2031_retail_salesperson",
+            "uncertainty_band": "±3 years; varies by retail subsector — books fastest, groceries slowest"
+          },
+          "b_institutional_response_lag": {
+            "value": "10–15 years",
+            "uncertainty": "H",
+            "derivation_method": "eu_globalisation_adjustment_fund_2006_minus_netscape_1995_eq_11yr; us_workforce_investment_act_amendments_2014_minus_amazon_1995_eq_19yr",
+            "uncertainty_band": "±2 years; direct primary-source policy dates"
+          },
+          "c_reskilling_adjacency": {
+            "value": "Mixed — to warehouse / logistics; significant wage gap",
+            "uncertainty": "M",
+            "derivation_method": "displaced_retail_to_warehouse_picker_physically_adjacent_but_~20pct_wage_gap_per_cbpp_2017_warehousing_employment_analysis",
+            "uncertainty_band": "skill-adjacent but compensation-orthogonal"
+          },
+          "d_concentration": {
+            "value": "Strong (small-town high streets, mall-belt regions)",
+            "uncertainty": "H",
+            "derivation_method": "uk_47_daily_store_closures_2016_2020_concentrated_in_small_town_high_streets_per_lds_centre_for_retail_research; us_dead_mall_phenomenon_concentrated_in_rust_belt_per_pacewicz_2016",
+            "uncertainty_band": "concentration well-documented at sub-national level"
+          },
+          "e_peak_annual_displacement_rate": {
+            "value": "3–5%/yr (most-exposed subsectors)",
+            "uncertainty": "H",
+            "derivation_method": "uk_retail_jobs_lost_420k_2009_2019_~3pct_yr_per_brc_office_for_national_statistics; us_department_store_employment_decline_~4pct_yr_2010_2020_per_bls_oes_4521",
+            "uncertainty_band": "±1 pp; varies by subsector"
+          }
+        }
+      }
+    ],
+    "medium_feasibility_cases_note": "8 medium-feasibility cases shipped with v0.2 actual values + per-cell uncertainty flags (H/M/L/U). Per BR-21, every cell carries derivation_method and uncertainty_band; cells flagged U have no value (data not reliable enough to estimate); L cells use wide ranges; M cells use narrow ranges; H cells use point estimates or tight ranges.",
     "low_feasibility_cases_note": "Printing Press, Steam/Railways, Electricity, Elevator Operators, LLMs/Knowledge Workers — treated narratively in cases.html; metrics (a)–(e) are not populated because data is either pre-industrial-census or too early in the disruption.",
     "feasibility_matrix_appendix": {
       "legend": {

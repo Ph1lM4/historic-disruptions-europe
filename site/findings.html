@@ -113,6 +113,44 @@ p{font-size:16px;color:#d4d4d8;line-height:1.8}
 .btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
 .btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
+/* Counterfactual / Two-Eras / Appendix sections */
+.cf-block{margin:24px 0;padding:20px 24px;background:rgba(255,255,255,0.03);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.cf-block h3{font-size:18px;font-weight:600;margin-bottom:8px}
+.cf-block p{font-size:15px;color:#d4d4d8;line-height:1.75;margin:8px 0}
+.cf-block h4{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin:16px 0 6px}
+.cf-block ol,.cf-block ul{margin:8px 0 8px 24px;color:#d4d4d8;font-size:14px;line-height:1.7}
+.cf-block li{margin:6px 0}
+.cf-block strong{color:var(--foreground);font-weight:600}
+.cf-warning{margin-top:16px;padding:14px 18px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.cf-warning h4{color:var(--ring);font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:6px}
+.cf-warning p{margin:0;font-size:13px;line-height:1.7}
+
+.two-eras-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+@media(max-width:680px){.two-eras-grid{grid-template-columns:1fr}}
+.era-card{padding:14px 18px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md)}
+.era-card h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--ring);margin-bottom:6px}
+.era-card .range{font-size:13px;color:var(--muted);margin-bottom:8px;font-weight:500}
+.era-card .cases{font-size:12px;color:var(--muted-foreground);margin-bottom:8px}
+.era-card p{font-size:13px;color:#d4d4d8;line-height:1.65;margin:0}
+
+/* Feasibility matrix */
+.matrix-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0 24px;border:1px solid var(--card-border);border-radius:var(--radius-md)}
+.matrix-table{width:100%;min-width:560px;border-collapse:collapse;font-size:13px}
+.matrix-table th,.matrix-table td{padding:8px 10px;text-align:center;border-bottom:1px solid var(--card-border);color:#d4d4d8}
+.matrix-table th{background:rgba(255,255,255,0.03);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted-foreground);text-align:center}
+.matrix-table th.case-col,.matrix-table td.case-col{text-align:left;font-weight:500;color:#fafafa;min-width:200px}
+.matrix-table tr:last-child td{border-bottom:none}
+.matrix-flag{display:inline-block;min-width:28px;padding:3px 6px;border-radius:6px;font-weight:700;font-size:12px}
+.flag-H{background:rgba(134,239,172,0.10);color:#86efac}
+.flag-M{background:rgba(250,204,21,0.10);color:#facc15}
+.flag-L{background:rgba(251,146,60,0.10);color:#fb923c}
+.flag-U{background:rgba(113,113,122,0.10);color:#a1a1aa}
+.matrix-legend{font-size:12px;color:var(--muted);margin:8px 0 0;line-height:1.7}
+.deep-link{display:inline-block;color:var(--ring);font-size:13px;font-weight:500;text-decoration:none}
+.deep-link:hover{text-decoration:underline}
+.section-sub a{color:var(--ring);text-decoration:none}
+.section-sub a:hover{text-decoration:underline}
+
 /* Footer */
 .footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
 .footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
@@ -138,6 +176,7 @@ p{font-size:16px;color:#d4d4d8;line-height:1.8}
     <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
     <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
     <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+    <a href="https://reskilling.nexalps.com/" target="_blank" rel="noopener">Reskilling &#8599;</a>
   </div>
   <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
@@ -151,6 +190,7 @@ p{font-size:16px;color:#d4d4d8;line-height:1.8}
   <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
   <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
   <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+  <a href="https://reskilling.nexalps.com/" target="_blank" rel="noopener">Reskilling &#8599;</a>
 </div>
 
 <main id="main" role="main">
@@ -176,7 +216,28 @@ p{font-size:16px;color:#d4d4d8;line-height:1.8}
   <div id="predictions"></div>
 </section>
 
-<!-- Section 3: Author's Note -->
+<!-- Section 3: Spreadsheets Counterfactual (summary; canonical content on analysis.html) -->
+<section class="container" id="spreadsheets-counterfactual" role="region" aria-label="Spreadsheets counterfactual summary">
+  <h2><span class="num">3.</span> Spreadsheets Counterfactual <span class="subtitle">The one case where massive task exposure produced more of the occupation, not less</span></h2>
+  <p class="section-sub">In a sample of 20 disruptions, accountants are the single counterexample to the displacement pattern: US accountants grew from ~1M (1985) to ~1.4M (2020) after Excel substituted the core calculation task. Three structural conditions had to hold simultaneously &mdash; elastic output demand, intact skill ladder, complement-not-substitute for the core task &mdash; and the same scorecard can be applied per occupation to AI exposure.</p>
+  <p><a class="deep-link" href="analysis.html#spreadsheets-counterfactual">Read full analysis &rarr;</a></p>
+</section>
+
+<!-- Section 4: Two Eras of Institutional Response (summary; canonical content on analysis.html) -->
+<section class="container" id="two-eras" role="region" aria-label="Two eras of institutional response summary">
+  <h2><span class="num">4.</span> Two Eras of Institutional Response <span class="subtitle">Why metric (b) is structurally undefined for pre-1930 cases</span></h2>
+  <p class="section-sub">The 20 cases partition into a pre-welfare-state era (1440&ndash;1880) where institutional response apparatus did not yet exist, and a post-welfare-state era (1930&ndash;present) where metric (b) is measurable. The current freelance/platform/cross-border-remote coverage gap is the second structural gap of this kind &mdash; historical precedent suggests it closes through institutional invention, not extension.</p>
+  <p><a class="deep-link" href="analysis.html#two-eras">Read full analysis &rarr;</a></p>
+</section>
+
+<!-- Section 5: Methodological Appendix — Feasibility Matrix (live on findings.html; canonical narrative on analysis.html) -->
+<section class="container" id="feasibility-matrix" role="region" aria-label="Feasibility matrix appendix">
+  <h2><span class="num">5.</span> Methodological Appendix <span class="subtitle">Cross-case metric feasibility matrix</span></h2>
+  <p class="section-sub">Per-case data confidence per metric: where numbers are observed (H), derived via triangulation (M), heavily estimated (L), or unavailable (U). Full narrative + scope decision on analysis.html. <a class="deep-link" href="analysis.html#methodological-appendix">Read full analysis &rarr;</a></p>
+  <div id="feasibility-matrix-body"></div>
+</section>
+
+<!-- Section: Author's Note -->
 <section class="container">
   <div class="author-note">
     <h3>Author&rsquo;s Note</h3>
@@ -231,7 +292,44 @@ setTimeout(function(){
 function render(){
   renderPatterns();
   renderPredictions();
+  renderFeasibilityMatrix();
   setupBurger();
+}
+
+function escapeHtml(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function renderFeasibilityMatrix(){
+  const el=document.getElementById('feasibility-matrix-body');
+  if(!el||!DATA.structured_metrics||!DATA.structured_metrics.feasibility_matrix_appendix)return;
+  const fm=DATA.structured_metrics.feasibility_matrix_appendix;
+  const rows=(fm.rows||[]).map(r=>
+    `<tr><td class="case-col">${escapeHtml(r.case)}</td>`+
+    ['a','b','c','d','e'].map(k=>`<td><span class="matrix-flag flag-${r[k]}">${r[k]}</span></td>`).join('')+
+    `</tr>`
+  ).join('');
+  const legend=fm.legend||{};
+  const legendHtml=['H','M','L','U'].filter(k=>legend[k]).map(k=>
+    `<span class="matrix-flag flag-${k}">${k}</span> ${escapeHtml(legend[k])}`
+  ).join(' &nbsp;&middot;&nbsp; ');
+  const md=DATA.structured_metrics.metric_definitions||{};
+  const defs=['a_time_to_50pct_task_displacement','b_institutional_response_lag','c_reskilling_adjacency','d_concentration','e_peak_annual_displacement_rate']
+    .filter(k=>md[k]).map(k=>{
+      const d=md[k];
+      const name=(d&&typeof d==='object')?d.name:'';
+      const desc=(d&&typeof d==='object')?d.description:d;
+      return `<li><strong>${escapeHtml(k.charAt(0))}. ${escapeHtml(name)}</strong> &mdash; ${escapeHtml(desc)}</li>`;
+    }).join('');
+  el.innerHTML=`<div class="cf-block">
+    ${DATA.structured_metrics.methodology_note?'<p>'+escapeHtml(DATA.structured_metrics.methodology_note)+'</p>':''}
+    <div class="matrix-wrap">
+      <table class="matrix-table">
+        <thead><tr><th class="case-col">Case</th><th>(a) Time</th><th>(b) Inst. lag</th><th>(c) Reskilling</th><th>(d) Concentration</th><th>(e) Peak rate</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    <p class="matrix-legend">${legendHtml}</p>
+    ${defs?'<h4>Metric definitions</h4><ol>'+defs+'</ol>':''}
+  </div>`;
 }
 
 function renderPatterns(){
