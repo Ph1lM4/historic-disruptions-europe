@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>20 Case Studies &mdash; Historic Technology Disruptions &amp; European Labour</title>
+<title>20 Case Studies: Historic Technology Disruptions &amp; European Labour</title>
 <meta name="description" content="9 macro-level GPT disruptions and 11 occupation-level case studies spanning 580 years of technology-driven labour market change.">
 <link rel="canonical" href="https://disruptions.nexalps.com/cases.html">
 <meta property="og:type" content="article">
@@ -256,7 +256,7 @@ h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
 <section class="container" role="region" aria-label="Methodology and structural bias">
   <div class="method-note">
     <h3>What is a cross-case structured metric?</h3>
-    <p>A <strong>cross-case structured metric</strong> is a single dimension &mdash; like &ldquo;time to 50% task displacement&rdquo; &mdash; populated consistently across multiple historical disruptions so cases can be compared on the same axis. Every case below is enumerated against the same five metrics where data feasibility allows: <strong>(a) Time to 50% Task Displacement</strong>, <strong>(b) Institutional Response Lag</strong>, <strong>(c) Reskilling Adjacency</strong>, <strong>(d) Geographic / Demographic Concentration</strong>, and <strong>(e) Peak Annual Displacement Rate</strong>. We use them because narrative-only comparison invites cherry-picking; structured metrics force every case to answer the same questions or declare why it can&rsquo;t.</p>
+    <p>A <strong>cross-case structured metric</strong> is a single dimension (like &ldquo;time to 50% task displacement&rdquo;) populated consistently across multiple historical disruptions so cases can be compared on the same axis. Every case below is enumerated against the same five metrics where data feasibility allows: <strong>(a) Time to 50% Task Displacement</strong>, <strong>(b) Institutional Response Lag</strong>, <strong>(c) Reskilling Adjacency</strong>, <strong>(d) Geographic / Demographic Concentration</strong>, and <strong>(e) Peak Annual Displacement Rate</strong>. We use them because narrative-only comparison invites cherry-picking; structured metrics force every case to answer the same questions or declare why it can&rsquo;t.</p>
     <p style="margin-top:10px"><strong>7 high-feasibility cases</strong> carry full metric values with derivation method and uncertainty band. <strong>8 medium-feasibility cases</strong> carry actual values where data permits, paired with per-cell confidence flags (H / M / L). When a cell&rsquo;s flag is <strong>U</strong> (uncertain) the value is suppressed rather than shown with false precision. <strong>5 low-feasibility cases</strong> are treated narratively. Per BR-21, every derived value ships with derivation method and uncertainty band, not a clean number. The full feasibility matrix lives on <a href="findings.html#feasibility-matrix" style="color:var(--ring);text-decoration:underline">findings.html</a>.</p>
     <div id="metric-legend-top"></div>
   </div>
@@ -276,7 +276,7 @@ h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
 <!-- Section 2: Micro Disruptions -->
 <section class="container" role="region" aria-label="Micro disruptions">
   <h2><span class="num">2.</span> Micro Disruptions <span class="subtitle">Eleven occupations, eleven different outcomes from the same forces</span></h2>
-  <p class="section-sub">Each case study includes a disruption Type badge linking to the taxonomy on the <a href="index.html" style="color:var(--ring);text-decoration:underline">overview page</a>. Frey &amp; Osborne (2013) estimated 47% of US jobs are susceptible to automation in principle; the OECD estimated 14% fully replaceable. The difference is methodological &mdash; but both agree: the inverse relationship between income/education and exposure is the dominant pattern. ISCO codes link to the AI Exposure Map.</p>
+  <p class="section-sub">Each case study includes a disruption Type badge linking to the taxonomy on the <a href="index.html" style="color:var(--ring);text-decoration:underline">overview page</a>. Frey &amp; Osborne (2013) estimated 47% of US jobs are susceptible to automation in principle; the OECD estimated 14% fully replaceable. The difference is methodological. But both agree: the inverse relationship between income/education and exposure is the dominant pattern. ISCO codes link to the AI Exposure Map.</p>
   <div id="micro-accordions" role="region" aria-label="Micro disruption case studies"></div>
 </section>
 
@@ -309,7 +309,7 @@ h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
 </main>
 
 <footer class="footer container" role="contentinfo">
-  What Happened Every Other Time v1.0 &middot; Early 2026 &middot; Source on GitHub<br>
+  What Happened Every Other Time v1.1 &middot; Early 2026 &middot; Source on GitHub<br>
   <a href="index.html">Overview</a> &middot; <a href="cases.html">Case Studies</a> &middot; <a href="analysis.html">Deep Analysis</a> &middot; <a href="outcomes.html">Worker Outcomes</a> &middot; <a href="findings.html">Findings &amp; Predictions</a> &middot; <a href="sources.html">Sources</a><br>
   Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
   Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> Philipp Maul | Nexalps
@@ -409,7 +409,7 @@ function renderMediumMetrics(metrics){
     const flagBadge=`<span class="cell-flag flag-${flag}" title="${escapeHtml(UNCERTAINTY_TOOLTIPS[flag]||'')}">${flag}</span>`;
     let valHtml;
     if(flag==='U'){
-      valHtml=`<div class="val val-suppressed" title="${escapeHtml(UNCERTAINTY_TOOLTIPS.U)}">&mdash; not reliable enough to estimate</div>`;
+      valHtml=`<div class="val val-suppressed" title="${escapeHtml(UNCERTAINTY_TOOLTIPS.U)}">Not reliable enough to estimate</div>`;
     } else {
       valHtml=`<div class="val">${escapeHtml(m.value||'')}</div>`;
     }
@@ -420,18 +420,18 @@ function renderMediumMetrics(metrics){
 function renderMediumFlagsOnly(row){
   const cells=[['a','(a) Time to 50%'],['b','(b) Inst. response'],['c','(c) Reskilling'],['d','(d) Concentration'],['e','(e) Peak rate']]
     .map(([k,lbl])=>`<span class="cell"><span class="lbl">${lbl}</span><span class="flag flag-${row[k]}">${row[k]}</span></span>`).join('');
-  return `<p class="metrics-narrative">Per-cell confidence flags only for this case &mdash; values pending.</p><div class="feas-flags">${cells}</div>`;
+  return `<p class="metrics-narrative">Per-cell confidence flags only for this case. Values pending.</p><div class="feas-flags">${cells}</div>`;
 }
 function renderLowMetrics(row){
   const cells=[['a','(a)'],['b','(b)'],['c','(c)'],['d','(d)'],['e','(e)']]
     .map(([k,lbl])=>`<span class="cell"><span class="lbl">${lbl}</span><span class="flag flag-${row[k]}">${row[k]}</span></span>`).join('');
-  return `<p class="metrics-narrative">Treated narratively. Cross-case metrics are not populated &mdash; data is either pre-industrial-census or too early in the disruption. See case body above for qualitative account.</p><div class="feas-flags">${cells}</div>`;
+  return `<p class="metrics-narrative">Treated narratively. Cross-case metrics are not populated: data is either pre-industrial-census or too early in the disruption. See case body above for qualitative account.</p><div class="feas-flags">${cells}</div>`;
 }
 const UNCERTAINTY_TOOLTIPS={
-  H:'High confidence — point estimate or tight range from direct primary-source data.',
-  M:'Medium confidence — narrow range derived via triangulation across sources.',
-  L:'Low confidence — wide range; significant estimation required.',
-  U:'Uncertain — data not reliable enough to estimate; value suppressed to avoid false precision.'
+  H:'High confidence: point estimate or tight range from direct primary-source data.',
+  M:'Medium confidence: narrow range derived via triangulation across sources.',
+  L:'Low confidence: wide range; significant estimation required.',
+  U:'Uncertain: data not reliable enough to estimate; value suppressed to avoid false precision.'
 };
 function renderMetricsBlock(caseId){
   const m=getCaseMetrics(caseId);
@@ -449,7 +449,7 @@ function renderMetricLegendTop(){
     const d=md[k];
     const name=(d&&typeof d==='object')?d.name:'';
     const desc=(d&&typeof d==='object')?d.description:d;
-    return `<li><strong>${escapeHtml(k.charAt(0))}. ${escapeHtml(name)}</strong> &mdash; ${escapeHtml(desc)}</li>`;
+    return `<li><strong>${escapeHtml(k.charAt(0))}. ${escapeHtml(name)}</strong>: ${escapeHtml(desc)}</li>`;
   }).join('');
   if(!items)return;
   el.innerHTML=`<details class="metric-legend"><summary>What do these five metrics mean?</summary><ol>${items}</ol></details>`;
@@ -458,15 +458,15 @@ function escapeHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;
 
 // ── AI Relevance for micro disruptions ──
 const AI_RELEVANCE={
-  atm_tellers:'Bessen\'s ATM paradox is the canonical "enabling technology" case (Frey, 2019): ATMs automated cash dispensing but reduced branch costs enough to expand the network — creating more teller jobs, not fewer. But Acemoglu warns this is "Type 2 with a half-life": mobile banking eventually replaced both ATMs and tellers. The productivity bandwagon only runs while technology raises worker marginal productivity; when it shifts to replacing core tasks, the expansion reverses.',
-  spreadsheets_accountants:'The spreadsheet case validates Susskind\'s task-based analysis: Excel didn\'t eliminate accounting — it eliminated calculation tasks, freeing accountants to do more advisory work. The ALM hypothesis in action: routine cognitive tasks automated, non-routine judgment tasks expanded. But Susskind\'s "superiority assumption" warning applies: AI advisory tools may eventually outcompete human judgment in financial analysis, collapsing the expanded role.',
-  containerisation_dockworkers:'Levinson documents that the container took 20+ years from invention (1956) to full cost collapse (late 1970s) — requiring not just technology but deregulation and shipper coordination. The ILWU model (accept automation, negotiate terms) doubled productivity in 8 years while protecting incomes; the ILA resistance model lost both jobs and money. AI deployment will face the same choice: accommodation that shares gains, or resistance that delays but ultimately fails. Frey\'s "enabling vs replacing" framework is the diagnostic: containers were pure replacement for dockworkers.',
+  atm_tellers:'Bessen\'s ATM paradox is the canonical "enabling technology" case (Frey, 2019): ATMs automated cash dispensing but reduced branch costs enough to expand the network, creating more teller jobs, not fewer. But Acemoglu warns this is "Type 2 with a half-life": mobile banking eventually replaced both ATMs and tellers. The productivity bandwagon only runs while technology raises worker marginal productivity; when it shifts to replacing core tasks, the expansion reverses.',
+  spreadsheets_accountants:'The spreadsheet case validates Susskind\'s task-based analysis: Excel didn\'t eliminate accounting. It eliminated calculation tasks, freeing accountants to do more advisory work. The ALM hypothesis in action: routine cognitive tasks automated, non-routine judgment tasks expanded. But Susskind\'s "superiority assumption" warning applies: AI advisory tools may eventually outcompete human judgment in financial analysis, collapsing the expanded role.',
+  containerisation_dockworkers:'Levinson documents that the container took 20+ years from invention (1956) to full cost collapse (late 1970s), requiring not just technology but deregulation and shipper coordination. The ILWU model (accept automation, negotiate terms) doubled productivity in 8 years while protecting incomes; the ILA resistance model lost both jobs and money. AI deployment will face the same choice: accommodation that shares gains, or resistance that delays but ultimately fails. Frey\'s "enabling vs replacing" framework is the diagnostic: containers were pure replacement for dockworkers.',
   cad_drafters:'AI design tools (Midjourney, DALL-E) are absorbing graphic design tasks into adjacent roles, exactly as CAD absorbed drafting into engineering. The standalone "production designer" role is following the drafter trajectory.',
-  telephone_operators:'Frey\'s three engineering bottlenecks explain why this took 91 years: early automation could handle routine switching but not the social intelligence of operator-assisted calls. Polanyi\'s Paradox — "we know more than we can tell" — protected operators for decades. The Feigenbaum & Gross finding (50-80% immediate city-level displacement when cutovers were sudden) is the base rate for any AI deployment that breaches a bottleneck suddenly.',
-  elevator_operators:'The only fully eliminated occupation in 270 census categories. The lesson: even when technology is ready (1900), social friction (fear, unions, regulation) can delay adoption by 50 years. AI face similar friction — but the economic pressure is stronger.',
+  telephone_operators:'Frey\'s three engineering bottlenecks explain why this took 91 years: early automation could handle routine switching but not the social intelligence of operator-assisted calls. Polanyi\'s Paradox ("we know more than we can tell") protected operators for decades. The Feigenbaum & Gross finding (50-80% immediate city-level displacement when cutovers were sudden) is the base rate for any AI deployment that breaches a bottleneck suddenly.',
+  elevator_operators:'The only fully eliminated occupation in 270 census categories. The lesson: even when technology is ready (1900), social friction (fear, unions, regulation) can delay adoption by 50 years. AI faces similar friction, but the economic pressure is stronger.',
   dtp_typesetters:'The fastest completed disruption in our dataset: 15 years from tech-ready to near-complete elimination. AI content generation tools could follow a similar timeline for routine content production roles. The Wapping precedent (670 replacing 6,800 overnight) is the scenario AI makes possible at scale.',
-  robots_manufacturing:'The single most important case for Hall & Soskice\'s Varieties of Capitalism framework. Same robot technology, opposite outcomes: US lost 36% of manufacturing jobs; Germany maintained employment at 4× the robot density. The variable is institutional design — CME coordination (works councils, vocational retraining, patient capital) redirected automation toward enabling applications. Acemoglu & Johnson: "There is nothing automatic about new technologies bringing widespread prosperity — whether they do or not is a choice."',
-  ridehailing_taxi:'AI autonomous vehicles will complete what ride-hailing started. The taxi case shows that market restructuring can be worse than elimination — the job persists but earnings collapse 73%. The regulatory divergence (Germany vs US vs UK) is a preview of the AI regulatory battle.',
+  robots_manufacturing:'The single most important case for Hall & Soskice\'s Varieties of Capitalism framework. Same robot technology, opposite outcomes: the US lost 36% of manufacturing jobs while Germany, with a robot density about 1.5× that of the US, lost only ~5%. The variable is institutional design: CME coordination (works councils, vocational retraining, patient capital) redirected automation toward enabling applications. Acemoglu & Johnson: "There is nothing automatic about new technologies bringing widespread prosperity — whether they do or not is a choice."',
+  ridehailing_taxi:'AI autonomous vehicles will complete what ride-hailing started. The taxi case shows that market restructuring can be worse than elimination. The job persists but earnings collapse 73%. The regulatory divergence (Germany vs US vs UK) is a preview of the AI regulatory battle.',
   ecommerce_retail:'AI-powered retail (personalisation, automated checkout, warehouse robotics) is accelerating the shift from Type 2 to Type 4. The UK\'s 420,000 lost jobs and 47 daily store closures show the trajectory. The absence of any longitudinal tracking of displaced retail workers is a warning for AI displacement.'
 };
 
@@ -477,39 +477,39 @@ const MACRO_CASES=[
    before:'Before c.1450, every book in Europe was hand-copied by monks. Perhaps 30,000 books existed in all of Europe. Monasteries held a near-monopoly on knowledge production.',
    happened:'Gutenberg completed the 42-line Bible by 1455. By 1480, 110+ cities had presses. By 1500, 236 towns had active print shops producing 8–20 million volumes. Book prices fell two-thirds. An entirely new supply chain emerged: printers, typesetters, ink-makers, booksellers, editors.',
    jcurve:'The J-curve was mild because printing vastly expanded the total market rather than substituting for scribes. The productivity paradox lasted ~70 years: from Gutenberg to the Reformation (1517). Cities with early presses grew <strong>60% faster</strong> than comparable cities 1500–1600 (Dittmar, QJE 2011).',
-   european:'Geographic variation was pronounced. Venice had ~150 presses by 1500. The Ottoman Empire banned Arabic-script printing 1483–1729, creating a dramatic divergence. England was a laggard — Caxton\'s London press arrived only in 1477.',
-   ai:'The printing press shows that knowledge-democratising technologies create far more jobs than they destroy — but the productivity lag can last generations. The 70-year paradox between Gutenberg and the Reformation is the longest in our dataset.'},
+   european:'Geographic variation was pronounced. Venice had ~150 presses by 1500. The Ottoman Empire banned Arabic-script printing 1483–1729, creating a dramatic divergence. England was a laggard. Caxton\'s London press arrived only in 1477.',
+   ai:'The printing press shows that knowledge-democratising technologies create far more jobs than they destroy. But the productivity lag can last generations. The 70-year paradox between Gutenberg and the Reformation is the longest in our dataset.'},
   {id:'mechanised_loom',title:'The Mechanised Loom',dates:'1760s–1850s',arc:'90 yr',
    stats:[{v:'240K→43K',l:'Weavers 1820→1850'},{v:'–75%',l:'Wage collapse'},{v:'46%',l:'GDP growth'},{v:'12%',l:'Real wage growth'}],
    before:'Textile production was Britain\'s largest manufacturing sector, organised as a putting-out system. Thousands of spinners, weavers, and dyers worked in their homes.',
-   happened:'Mechanised spinning initially <strong>created</strong> demand for hand weavers — they surged from 37,000 (1780) to 240,000 (1820). Then power looms destroyed them: 240,000 → 43,000 by 1850. Wages fell from 20 shillings/week (1806) to 6 shillings (1830) — a 75% decline.',
+   happened:'Mechanised spinning initially <strong>created</strong> demand for hand weavers. They surged from 37,000 (1780) to 240,000 (1820). Then power looms destroyed them: 240,000 → 43,000 by 1850. Wages fell from 20 shillings/week (1806) to 6 shillings (1830), a 75% decline.',
    jcurve:'The canonical J-curve. Per-capita GDP grew <strong>46%</strong> (1780–1840) but real wages grew only <strong>12%</strong> (Feinstein 1998). The profits share roughly doubled. TFP growth was trivial before 1830. This "Engels Pause" lasted half a century.',
    european:'France mechanised more slowly due to cheaper labour. Belgium industrialised rapidly via the Cockerill works. Ireland\'s handloom weaving persisted until the Famine triggered mechanisation in the 1850s.',
    ai:'The loom shows the most documented wage collapse in GPT history. Key lesson: the same technology first <em>creates</em> demand (spinning → more weavers needed) before <em>destroying</em> it (power looms). Type 2 has a half-life.'},
   {id:'steam_railways',title:'Steam & Railways',dates:'1800s–1870s',arc:'50 yr',
    stats:[{v:'97→23,713',l:'UK rail miles'},{v:'275K',l:'Rail jobs by 1873'},{v:'7–11%',l:'NNI social savings'},{v:'–50%',l:'Share crash 1846–50'}],
    before:'Britain had ~4,000 miles of canal built 1745–1830. Coaching inns employed thousands. Road transport was slow and expensive.',
-   happened:'UK railway: 97 miles (1830) → 6,000 (1850) → 23,713 (1913 peak). £109 million invested 1843–1850. At peak construction, 200,000–250,000 navvies — bigger than the Army and Navy combined. Permanent railway employment: 275,000 by 1873 (3.3% of male labour force).',
+   happened:'UK railway: 97 miles (1830) → 6,000 (1850) → 23,713 (1913 peak). £109 million invested 1843–1850. At peak construction, 200,000–250,000 navvies, bigger than the Army and Navy combined. Permanent railway employment: 275,000 by 1873 (3.3% of male labour force).',
    jcurve:'Parliament authorised 272 companies covering 9,500 miles at ~£200 million (approximately annual GDP) in 1846. Railway shares dropped ~50% 1846–1850. Nearly 1/3 of authorised lines never built. Social savings: 7–11% of NNI by 1865.',
    european:'Belgium built the first continental railway (Brussels–Mechelen, 1835) with 560km of state-built lines by 1843. Germany\'s first line: Nuremberg–Fürth, 6km, same year. The Zollverein (1834) unified German trade before railways connected it physically.',
    ai:'Railways show that infrastructure GPTs create massive employment during the build phase but trigger speculative bubbles. The 1846 Railway Mania is the closest historical parallel to the AI investment boom.'},
   {id:'electricity',title:'Electricity',dates:'1880s–1930s',arc:'55 yr',
    stats:[{v:'~40 yr',l:'Productivity lag'},{v:'5%/yr',l:'TFP in 1920s'},{v:'3.1%/yr',l:'Labour prod 1919–29'},{v:'1.3%/yr',l:'Labour prod 1889–1919'}],
    before:'Factories ran on water wheels and steam engines connected by elaborate shaft-and-belt systems. Factory layout was dictated by the power source, not workflow efficiency.',
-   happened:'Edison\'s Pearl Street Station (1882) to the 1920s productivity surge — a <strong>~40 year lag</strong>. Three stages: electric line shaft → group drive → unit drive. Manufacturing labour productivity: 1.3%/yr (1889–1919) → 3.1%/yr (1919–1929). TFP ~5%/yr in the 1920s.',
-   jcurve:'Paul David\'s landmark 1990 paper ("The Dynamo and the Computer," AER) documented the 40-year productivity paradox. The breakthrough required factory redesign — complementary innovation, not just technology adoption. Alexander Field: 1919–1941 was "nothing comparable in US economic history."',
+   happened:'Edison\'s Pearl Street Station (1882) to the 1920s productivity surge was a <strong>~40 year lag</strong>. Three stages: electric line shaft → group drive → unit drive. Manufacturing labour productivity: 1.3%/yr (1889–1919) → 3.1%/yr (1919–1929). TFP ~5%/yr in the 1920s.',
+   jcurve:'Paul David\'s landmark 1990 paper ("The Dynamo and the Computer," AER) documented the 40-year productivity paradox. The breakthrough required factory redesign: complementary innovation, not just technology adoption. Alexander Field: 1919–1941 was "nothing comparable in US economic history."',
    european:'By 1935, France and Germany had ~90% rural electrification; Denmark 85%. The US lagged at 10.9% of farms. Italy\'s coal import costs (800% above Britain) made electrification more valuable but slower.',
-   ai:'Electricity is the canonical productivity paradox case. David\'s insight — that GPTs require complementary reorganisation — is the most-cited argument for why AI hasn\'t yet shown macro productivity gains. AI is in year 4–9 of what took electricity 40 years.'},
+   ai:'Electricity is the canonical productivity paradox case. David\'s insight, that GPTs require complementary reorganisation, is the most-cited argument for why AI hasn\'t yet shown macro productivity gains. AI is in year 4–9 of what took electricity 40 years.'},
   {id:'assembly_line',title:'The Assembly Line',dates:'1910s–1950s',arc:'40 yr',
    stats:[{v:'–88%',l:'Assembly time cut'},{v:'~€805→~€228',l:'Model T price'},{v:'370%',l:'Labour turnover'},{v:'~€4.24/day',l:'Ford wage (2× market)'}],
-   before:'Automobile manufacturing used craft production — skilled workers assembled cars individually. A Model T chassis took 12.5 hours to assemble.',
-   happened:'Ford Highland Park (1913) cut chassis assembly from 12.5 hours to <strong>93 minutes</strong> — an 88% reduction. Model T price: ~€805 (1908) → ~€228 (1923). Ford produced 300,000+ vehicles in 1914, ~half the US market. Labour turnover hit 370% — Ford hired 52,000 to maintain 14,000.',
-   jcurve:'Ford announced the <strong>~€4.24 day</strong> (January 5, 1914) — up from ~€1.98 for 9 hours — to solve turnover. 40%+ of jobs could be learned in 1–2 days. The UAW grew from 30,000 to 400,000 members in 1937 alone after the GM sit-down strike.',
+   before:'Automobile manufacturing used craft production. Skilled workers assembled cars individually. A Model T chassis took 12.5 hours to assemble.',
+   happened:'Ford Highland Park (1913) cut chassis assembly from 12.5 hours to <strong>93 minutes</strong>, an 88% reduction. Model T price: ~€805 (1908) → ~€228 (1923). Ford produced 300,000+ vehicles in 1914, ~half the US market. Labour turnover hit 370%: Ford hired 52,000 to maintain 14,000.',
+   jcurve:'Ford announced the <strong>~€4.24 day</strong> (January 5, 1914), up from ~€1.98 for 9 hours, to solve turnover. 40%+ of jobs could be learned in 1–2 days. The UAW grew from 30,000 to 400,000 members in 1937 alone after the GM sit-down strike.',
    european:'European tariffs (45% France, 33% UK) slowed adoption. Morris grew from 3,000 to 55,000 cars (1921–1925). Ford Dagenham (1931) became the largest European plant. German works councils (Betriebsräte) originated in the 1918 November Revolution.',
    ai:'The assembly line shows that deskilling + massive wage increases can coexist. Ford\'s ~€4.24 day was both a productivity innovation and a political response to worker resistance. The UAW\'s rapid growth shows how disruption can strengthen, not weaken, labour institutions.'},
   {id:'computer_mainframe',title:'The Computer / Mainframe',dates:'1950s–1980s',arc:'50 yr',
    stats:[{v:'450K→4.6M',l:'US IT jobs 1970→2014'},{v:'44 yr',l:'Solow Paradox lag'},{v:'100×',l:'Computing capacity gain'},{v:'~1%/yr',l:'Productivity in 1980s'}],
-   before:'Computation was done by human "computers" — mostly women. NACA/NASA employed ~400 women as computers at Langley by 1946, including ~80 Black women.',
+   before:'Computation was done by human "computers," mostly women. NACA/NASA employed ~400 women as computers at Langley by 1946, including ~80 Black women.',
    happened:'LEO I (1951) processed 40 payslips/minute. US IT employment: 450,000 (1970) → 4.6 million (2014). Women\'s share in computing: ~35% (1990) → 26% (2013). The Solow Paradox: "You can see the computer age everywhere but in the productivity statistics" (1987).',
    jcurve:'Computing capacity increased 100-fold in the 1970s–1980s while labour productivity growth fell from 3%/yr (1960s) to ~1%/yr (1980s). The 44-year lag from UNIVAC (1951) to the productivity surge (1995) is the longest measured Solow Paradox.',
    european:'ICL (formed 1968, UK) and France\'s Plan Calcul (~€85M+, 1966) both failed against IBM\'s 50%+ market share. European computing policy was a series of national champion failures.',
@@ -517,22 +517,22 @@ const MACRO_CASES=[
   {id:'pc_office',title:'PC / Office Automation',dates:'1980s–2000s',arc:'25 yr',
    stats:[{v:'400K',l:'Clerk jobs lost'},{v:'>3%/yr',l:'Productivity 1995–2003'},{v:'40→80%',l:'College wage premium'},{v:'670→6,800',l:'Wapping replacement ratio'}],
    before:'Office work was paper-intensive. Typing pools, filing systems, carbon copies. Office and administrative support peaked at 12.7% of all US employment (~1980).',
-   happened:'VisiCalc (1979), Lotus 1-2-3 (1983), Excel (1985) automated calculation. 400,000 accounting clerk and typist jobs disappeared 1980–2000. The Wapping dispute (1986): <strong>670 replacement workers produced same output as 6,800</strong> — a 90% overnight workforce reduction.',
+   happened:'VisiCalc (1979), Lotus 1-2-3 (1983), Excel (1985) automated calculation. 400,000 accounting clerk and typist jobs disappeared 1980–2000. The Wapping dispute (1986): <strong>670 replacement workers produced same output as 6,800</strong>, a 90% overnight workforce reduction.',
    jcurve:'Labour productivity: ~1.5%/yr (1970s–1995) → >3%/yr (1995–2003). Oliner & Sichel: ~60% of acceleration attributed to IT. The college wage premium rose from ~40% (1980) to ~80% (2000). Job polarisation documented across Europe (Goos & Manning 2007).',
    european:'The Wapping dispute was a watershed for UK labour relations. Continental Europe\'s works councils and stronger unions produced slower but less traumatic transitions.',
-   ai:'The PC era shows that office automation eliminates <em>routine cognitive</em> tasks — exactly what AI targets next. The college premium doubling shows how technology can restructure the returns to education within a single generation.'},
+   ai:'The PC era shows that office automation eliminates <em>routine cognitive</em> tasks, exactly what AI targets next. The college premium doubling shows how technology can restructure the returns to education within a single generation.'},
   {id:'internet_ecommerce',title:'Internet / E-commerce',dates:'1995–2015',arc:'20 yr',
    stats:[{v:'–70%',l:'Travel agent jobs'},{v:'~€4.2T',l:'Dot-com wealth destroyed'},{v:'1.576M',l:'Amazon employees'},{v:'15 yr',l:'NASDAQ recovery'}],
    before:'Retail was physical. Travel was booked through agents. Classified ads ran in newspapers. Blockbuster had 9,094 US stores at peak.',
    happened:'Department stores shed 200,000+ jobs while warehouse/logistics/courier employment grew. Online sales: 2.5% (mid-1990s) → ~15% (2024). Travel agents: 124,000 (2000) → ~37,000 (2021, -70%). Newspaper classifieds: ~€16.6B (2000) → ~€4.2B (2012). Amazon: ~1.576 million employees.',
-   jcurve:'The dot-com crash destroyed ~€4.2 trillion in paper wealth. NASDAQ lost 78% of value (2000–2002). 2 million jobs lost in 2001. NASDAQ didn\'t return to its 2000 peak until April 2015 — 15 years later. But 80.2 million miles of fibre-optic cable laid during the bubble became critical infrastructure.',
+   jcurve:'The dot-com crash destroyed ~€4.2 trillion in paper wealth. NASDAQ lost 78% of value (2000–2002). 2 million jobs lost in 2001. NASDAQ didn\'t return to its 2000 peak until April 2015, 15 years later. But 80.2 million miles of fibre-optic cable laid during the bubble became critical infrastructure.',
    european:'The dot-com crash hit Europe less severely. European e-commerce adoption lagged the US by 5–10 years but accelerated post-2010. The platform economy diverged sharply: EU regulated; US deregulated.',
-   ai:'The internet shows that speculative bubbles can be <em>productive</em> — overinvestment in infrastructure (fibre, data centres) created the foundation for subsequent waves. The AI infrastructure boom may follow the same pattern.'},
+   ai:'The internet shows that speculative bubbles can be <em>productive</em>. Overinvestment in infrastructure (fibre, data centres) created the foundation for later waves. The AI infrastructure boom may follow the same pattern.'},
   {id:'mobile_platform',title:'Mobile / Platform Economy',dates:'2007–2020',arc:'13 yr',
    stats:[{v:'28M',l:'EU platform workers'},{v:'€14B',l:'Platform revenues 2020'},{v:'207M',l:'Global creators'},{v:'4%',l:'Earn >~€85K/yr'}],
    before:'No smartphones. No app economy. No gig work platforms. No on-demand services.',
-   happened:'iPhone (2007) → App Store (2008) → EU platform economy: ~28 million workers (2022), expected 43 million by 2025. Revenues: €3B (2016) → €14B (2020). Content creator economy: ~€162B (2025), 207 million creators globally — but only 4% earn >~€85K/yr.',
-   jcurve:'No clear productivity signal at the macro level. The platform economy created massive employment but restructured the employment relationship — from employee to "independent contractor." The EU Platform Work Directive (2024) and Spain\'s Riders\' Law (2021) are the first regulatory responses.',
+   happened:'iPhone (2007) → App Store (2008) → EU platform economy: ~28 million workers (2022), expected 43 million by 2025. Revenues: €3B (2016) → €14B (2020). Content creator economy: ~€162B (2025), 207 million creators globally, but only 4% earn >~€85K/yr.',
+   jcurve:'No clear productivity signal at the macro level. The platform economy created massive employment but restructured the employment relationship, from employee to "independent contractor." The EU Platform Work Directive (2024) and Spain\'s Riders\' Law (2021) are the first regulatory responses.',
    european:'Stark divergence. Germany requires Uber to comply with taxi regulations. Spain\'s Riders\' Law: Glovo hired only 20% of workforce; Deliveroo exited Spain. UK Supreme Court ruled Uber drivers are "workers" (2021). Airbnb effects: 1.3–2.7% annual rent increases in Berlin.',
    ai:'The platform economy shows that technology can create millions of jobs while simultaneously degrading job quality. The question isn\'t just "will AI create jobs?" but "what kind of jobs?" The EU\'s regulatory response is the most aggressive attempt to shape this outcome.'}
 ];
